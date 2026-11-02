@@ -4,23 +4,23 @@ import { CITYWIDE, fmt, pctOfUniverse, roundThousand } from '@/lib/citywide'
 const PILLARS = [
   {
     icon: Building2,
-    title: 'Official signage',
+    title: 'Top-down signage',
     text: 'Government buildings, transit stations, street signs, and municipal notices: the languages the city chooses to communicate in.',
   },
   {
     icon: Store,
-    title: 'Grassroots signage',
+    title: 'Bottom-up signage',
     text: 'Storefronts, community flyers, murals, and neighborhood notices: the languages Chicagoans actually use day to day.',
   },
   {
     icon: Ruler,
     title: 'A measurable gap',
-    text: `An estimated ${fmt(roundThousand(CITYWIDE.nonEnglish))} Chicagoans speak a language other than English at home. We measure how often those languages show up in public.`,
+    text: `An estimated ${fmt(roundThousand(CITYWIDE.nonEnglish))} Chicagoans speak a language other than English at home. We track how often those languages are represented in public spaces.`,
   },
   {
     icon: Users,
     title: 'Community-driven',
-    text: 'Soon, anyone will be able to contribute. Every photo and pin helps researchers, educators, and advocates understand the city better. Submissions are reviewed before they appear.',
+    text: 'Work in progress.. Every photo and pin helps researchers, educators, and advocates understand the city better. Submissions are reviewed..',
   },
 ]
 
@@ -34,7 +34,7 @@ export function AboutSection() {
           <div>
             <p className="text-sm font-semibold uppercase tracking-wider text-accent">About the project</p>
             <h2 className="mt-3 text-balance font-serif text-3xl leading-tight text-foreground md:text-4xl">
-              A living record of Chicago&apos;s linguistic diversity.
+              Documenting the languages that shape Chicago while making it&apos;s linguistic landscape visible.
             </h2>
             <p className="mt-5 text-pretty text-lg leading-relaxed text-muted-foreground">
               Inspired by{' '}
@@ -46,13 +46,13 @@ export function AboutSection() {
               >
                 LinguaSnapp
               </a>
-              , the app built by the University of Manchester&apos;s Multilingual Manchester project, LinguaChicago pairs
-              census data on who speaks what with a record of the languages that actually appear on signs, revealing
-              which languages thrive in public space and which remain invisible.
+              , the app developed by the University of Manchester&apos;s Multilingual Manchester project. LinguaChicago bridges
+              official census data with a record of the languages that actually appear on signs and text in public
+              spaces. Ultimately, it reveals which languages are visibly recognized.
             </p>
             <p className="mt-4 leading-relaxed text-muted-foreground">
-              Every documented sign becomes a data point, helping us see the gap between official multilingualism and
-              the grassroots linguistic reality of the city.
+              Every documented photo becomes a data point, helping us see the gap between what the city officially displays and
+              the broad mix of languages spoken by Chicagoans everyday.
             </p>
           </div>
 

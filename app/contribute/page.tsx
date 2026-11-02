@@ -24,8 +24,8 @@ export default function ContributePage() {
               <h2 className="font-semibold text-foreground">Photo submissions are coming soon</h2>
             </div>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              We are finishing the review system so that every submission can be checked before it appears on the map.
-              If you would like to help early, or hear when submissions open, get in touch.
+              Work in progess, finishing the review system so that every submission can be checked before it appears on the map.
+              
             </p>
             <a
               href={`mailto:${SITE.email}?subject=LinguaChicago%20contributions`}
@@ -42,7 +42,7 @@ export default function ContributePage() {
             </div>
             <ul className="mt-3 flex flex-col gap-2 text-sm leading-relaxed text-muted-foreground">
               <li>Photograph signs, not people. Avoid faces, license plates, and private homes.</li>
-              <li>Stay on public property and follow local rules.</li>
+              <li>Safety First! Stay on public property and follow local rules.</li>
               <li>Approved photos and their locations will be shown publicly on the map.</li>
             </ul>
           </div>

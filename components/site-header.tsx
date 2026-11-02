@@ -82,7 +82,7 @@ export function SiteHeader() {
                 onClick={() => setOpen(false)}
                 className="mt-1 block rounded-md bg-accent px-3 py-2.5 text-center text-sm font-semibold text-accent-foreground"
               >
-                Contribute a sign
+                Contribute a photo
               </Link>
             </li>
           </ul>

@@ -39,9 +39,9 @@ export function HomeHero() {
           Who gets to be seen on Chicago&apos;s streets?
         </h1>
         <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-slate-200">
-          The signs, notices, and wayfinding in public space don&apos;t always reflect the languages people speak at
-          home. We compare the languages residents speak with the languages they can actually see, and document where
-          official and grassroots signage leaves communities out.
+          The signs and text we see in public spaces don&apos;t always reflect the languages residents of Chicago speak at
+          home. We compare the languages residents speak with the languages they can actually see, documenting where
+          official and public text leaves communities out.
         </p>
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -57,7 +57,7 @@ export function HomeHero() {
             className="inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-accent-foreground transition-colors hover:bg-accent/90"
           >
             <Camera className="size-4" />
-            Contribute a sign
+            Contribute a photo
           </Link>
         </div>
 

@@ -14,8 +14,8 @@ export function SiteFooter() {
               <span className="font-serif text-lg text-white">{SITE.name}</span>
             </div>
             <p className="mt-4 max-w-md text-sm leading-relaxed">
-              An open civic project comparing the languages Chicagoans speak with the languages they can see in public
-              space. Built for residents, researchers, and language advocates.
+              An open civic project comparing the languages Chicagoans speak with the languages that are seen in public
+              spaces. Made for residents, students, researchers, and language advocates.
             </p>
             <div className="mt-5 flex gap-3">
               <a

@@ -1,10 +1,17 @@
-import { STATUS_META, largestGaps, representationRatio, strongestRepresentation, visibilityGap } from '@/lib/metrics'
+import {
+  MIN_SIGNS_SURVEYED,
+  STATUS_META,
+  equityStatus,
+  leastRepresented,
+  representationPct,
+  representationRatio,
+  strongestRepresentation,
+} from '@/lib/metrics'
 import { DataPending } from './data-pending'
 
 export function Rankings() {
-  const gaps = largestGaps(10)
+  const gaps = leastRepresented(10)
   const strongest = strongestRepresentation(5)
-  const maxGap = Math.max(1, ...gaps.map((a) => visibilityGap(a) ?? 0))
 
   return (
     <section id="gaps" className="mx-auto max-w-7xl scroll-mt-20 px-4 py-20 md:px-6">
@@ -12,22 +19,26 @@ export function Rankings() {
         <p className="text-sm font-semibold uppercase tracking-wider text-accent">Where the gap is widest</p>
         <h2 className="mt-3 text-balance font-serif text-3xl text-foreground md:text-4xl">Many voices, few signs</h2>
         <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-          The visibility gap is the difference, in percentage points, between residents who speak another language at
-          home and public signage that includes one.
+          The representation match compares the share of surveyed signs that include a non-English language with the
+          share of residents who speak one at home. A match of 100% means signs keep pace with speakers; below 50%
+          means signs reflect less than half of the community. Areas need at least {MIN_SIGNS_SURVEYED} surveyed signs
+          to be scored.
         </p>
       </div>
 
       <div className="mt-12 grid gap-10 lg:grid-cols-[1.4fr_1fr]">
         <div>
-          <h3 className="text-sm font-semibold text-foreground">Largest visibility gaps</h3>
+          <h3 className="text-sm font-semibold text-foreground">Lowest representation match</h3>
           {gaps.length === 0 ? (
             <DataPending title="Ranking not available yet" className="mt-4">
-              Requires both the census speaker share and a signage survey for at least one community area.
+              Requires the census speaker share and at least {MIN_SIGNS_SURVEYED} surveyed signs for at least one
+              community area.
             </DataPending>
           ) : (
             <ol className="mt-4 flex flex-col">
               {gaps.map((area, i) => {
-                const gap = visibilityGap(area) ?? 0
+                const match = Math.min(100, representationPct(area) ?? 0)
+                const color = STATUS_META[equityStatus(area)].color
                 return (
                   <li key={area.id} className="grid grid-cols-[2rem_1fr_auto] items-center gap-3 border-b border-border py-3">
                     <span className="font-serif text-lg tabular-nums text-muted-foreground">{i + 1}</span>
@@ -37,14 +48,15 @@ export function Rankings() {
                         <span className="text-xs text-muted-foreground">{area.languages[0]?.language}</span>
                       </span>
                       <span className="h-1.5 overflow-hidden rounded-full bg-secondary">
-                        <span
-                          className="block h-full rounded-full"
-                          style={{ width: `${(Math.max(0, gap) / maxGap) * 100}%`, backgroundColor: STATUS_META.under.color }}
-                        />
+                        <span className="block h-full rounded-full" style={{ width: `${match}%`, backgroundColor: color }} />
+                      </span>
+                      <span className="text-xs text-muted-foreground">
+                        {area.speakers}% speak another language · {area.visibility}% of signs include one ·{' '}
+                        {area.signsSurveyed} signs surveyed
                       </span>
                     </div>
                     <span className="text-right text-sm tabular-nums text-foreground">
-                      <span className="font-semibold">{gap}</span> pts
+                      <span className="font-semibold">{match}%</span> match
                     </span>
                   </li>
                 )
@@ -60,7 +72,7 @@ export function Rankings() {
           </p>
           {strongest.length === 0 ? (
             <p className="mt-5 text-sm text-muted-foreground">
-              Will list areas where at least 25% of residents speak another language and signage keeps pace.
+              Lists areas where at least 25% of residents speak another language and signs keep pace with speakers (an 85%+ match). None meet this bar yet.
             </p>
           ) : (
             <ul className="mt-5 flex flex-col gap-4">

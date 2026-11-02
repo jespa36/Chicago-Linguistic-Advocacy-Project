@@ -1,11 +1,11 @@
-import { cityStats } from '@/lib/metrics'
+import { MIN_SIGNS_SURVEYED, cityStats } from '@/lib/metrics'
 import { SNAPSHOTS } from '@/lib/data'
 
 export function DataProgress() {
   const stats = cityStats()
   const progress = [
     { label: 'Census language data (by community area)', value: stats.withCensus },
-    { label: 'Signage survey', value: stats.withSignage },
+    { label: `Signage survey (${MIN_SIGNS_SURVEYED}+ signs per area)`, value: stats.withSignage },
   ]
 
   return (

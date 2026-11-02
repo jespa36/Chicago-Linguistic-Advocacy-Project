@@ -1,6 +1,14 @@
 import { MousePointerClick, X } from 'lucide-react'
 import { SNAPSHOTS, type CommunityArea } from '@/lib/data'
-import { STATUS_META, STATUS_ORDER, cityStats, equityStatus, visibilityGap, type EquityStatus } from '@/lib/metrics'
+import {
+  MIN_SIGNS_SURVEYED,
+  STATUS_META,
+  STATUS_ORDER,
+  cityStats,
+  equityStatus,
+  representationPct,
+  type EquityStatus,
+} from '@/lib/metrics'
 import { DataPending } from './data-pending'
 
 const ADVOCACY: Partial<Record<EquityStatus, string>> = {
@@ -10,6 +18,8 @@ const ADVOCACY: Partial<Record<EquityStatus, string>> = {
     'Community languages appear in public space but lag behind the share of speakers. Look at which sign types (civic, transit, commercial) are missing them.',
   under:
     'A large share of residents speak a language that is rarely visible in public space. Priorities could include translated city services, multilingual wayfinding, and resident-led signage audits.',
+  insufficient:
+    'Not enough signs have been surveyed here yet to score this area reliably. More field survey data is needed before drawing conclusions about representation.',
   english:
     'Few residents speak another language at home. Census language data does not capture dialects such as African American English, so dialect and heritage visibility deserve separate study.',
 }
@@ -36,7 +46,7 @@ function CityOverview() {
     <div className="flex flex-col gap-6 p-6">
       <div className="flex items-start gap-3 rounded-md border border-dashed border-border p-3 text-sm text-muted-foreground">
         <MousePointerClick className="mt-0.5 size-4 shrink-0" aria-hidden="true" />
-        Select a community area on the map to see its language profile and visibility gap.
+        Select a community area on the map to see its language profile and how well signs match its speakers.
       </div>
       <div>
         <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Citywide</p>
@@ -71,9 +81,10 @@ export function AreaPanel({ area, onClear }: { area: CommunityArea | null; onCle
 
   const status = equityStatus(area)
   const meta = STATUS_META[status]
-  const gap = visibilityGap(area)
+  // Only areas that are actually scored show a match; English-predominant and unscored areas show a dash.
+  const match = status === 'represented' || status === 'partial' || status === 'under' ? representationPct(area) : null
   const snapshots = SNAPSHOTS.filter((s) => s.areaId === area.id)
-  const neutral = status === 'english' || status === 'nodata'
+  const neutral = status === 'english' || status === 'nodata' || status === 'insufficient'
 
   return (
     <div className="flex flex-col gap-6 p-6">
@@ -111,9 +122,9 @@ export function AreaPanel({ area, onClear }: { area: CommunityArea | null; onCle
         />
         <dl className="grid grid-cols-2 gap-3 pt-1">
           <div className="rounded-md bg-secondary p-3">
-            <dt className="text-xs text-muted-foreground">Visibility gap</dt>
+            <dt className="text-xs text-muted-foreground">Signs match speakers</dt>
             <dd className="mt-1 text-xl font-semibold tabular-nums text-foreground">
-              {gap === null ? '—' : gap > 0 ? `${gap} pts` : 'None'}
+              {match === null ? '—' : `${Math.min(100, match)}%`}
             </dd>
           </div>
           <div className="rounded-md bg-secondary p-3">
@@ -123,8 +134,17 @@ export function AreaPanel({ area, onClear }: { area: CommunityArea | null; onCle
             </dd>
           </div>
         </dl>
-        {area.signsSurveyed !== null && (
-          <p className="text-xs text-muted-foreground">Based on {area.signsSurveyed} signs surveyed.</p>
+        {status === 'insufficient' ? (
+          <p className="text-xs text-muted-foreground">
+            {area.signsSurveyed === null
+              ? 'The number of signs surveyed has not been recorded.'
+              : `Only ${area.signsSurveyed} signs surveyed so far.`}{' '}
+            At least {MIN_SIGNS_SURVEYED} are needed to score this area.
+          </p>
+        ) : (
+          area.signsSurveyed !== null && (
+            <p className="text-xs text-muted-foreground">Based on {area.signsSurveyed} signs surveyed.</p>
+          )
         )}
       </div>
 

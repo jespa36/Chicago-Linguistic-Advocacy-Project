@@ -9,7 +9,7 @@ const STEPS = [
   },
   {
     title: 'Measuring the gap',
-    body: 'Visibility divided by speaker share. 85% or above counts as well represented, 50–85% as partially represented, and below 50% as under-represented. These cutoffs are provisional.',
+    body: 'The share of surveyed signs that include a non-English language, divided by the share of residents who speak one. 85% or above counts as well represented, 50–85% as partially represented, and below 50% as under-represented. An area needs at least 30 surveyed signs to be scored; with fewer, the result is too uncertain (about ±18 percentage points at 30 signs, even for a random sample), so the map shows “Too few signs surveyed.” These cutoffs and the minimum are provisional.',
   },
   {
     title: 'What it misses',

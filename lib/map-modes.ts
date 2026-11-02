@@ -1,12 +1,12 @@
 import type { CommunityArea } from './data'
-import { STATUS_META, equityStatus, languageShare, rampColor } from './metrics'
+import { STATUS_META, equityStatus, hasEnoughSigns, languageShare, rampColor } from './metrics'
 
 export type MapMode = 'equity' | 'speakers' | 'visibility' | 'language'
 
 export const MAP_MODES: { value: MapMode; label: string; hint: string }[] = [
   { value: 'equity', label: 'Equity', hint: 'How well public signage reflects the languages residents speak.' },
   { value: 'speakers', label: 'Speakers', hint: 'Share of residents who speak a language other than English at home.' },
-  { value: 'visibility', label: 'Visibility', hint: 'Share of surveyed public signage that includes a non-English language.' },
+  { value: 'visibility', label: 'Visibility', hint: 'Share of surveyed public signage that includes a non-English language (areas with too few surveyed signs are left gray).' },
   { value: 'language', label: 'By language', hint: 'Where a specific language is spoken at home.' },
 ]
 
@@ -21,7 +21,7 @@ export function areaFill(area: CommunityArea, mode: MapMode, language: string) {
     case 'speakers':
       return rampColor(area.speakers, modeMax(mode))
     case 'visibility':
-      return rampColor(area.visibility, modeMax(mode))
+      return rampColor(hasEnoughSigns(area) ? area.visibility : null, modeMax(mode))
     case 'language':
       return rampColor(area.languages.length ? languageShare(area, language) ?? 0 : null, modeMax(mode))
   }

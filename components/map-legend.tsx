@@ -39,7 +39,7 @@ export function MapLegend({ mode, language }: { mode: MapMode; language: string 
       </div>
       <p className="mt-2 flex items-center gap-2 text-[11px] text-foreground/80">
         <span className="size-3 rounded-sm" style={{ backgroundColor: NO_DATA_COLOR }} aria-hidden="true" />
-        No data yet
+        {mode === 'visibility' ? 'No data or too few signs' : 'No data yet'}
       </p>
     </div>
   )

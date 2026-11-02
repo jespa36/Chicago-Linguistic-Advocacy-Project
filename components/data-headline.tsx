@@ -1,4 +1,4 @@
-import { cityStats } from '@/lib/metrics'
+import { MIN_SIGNS_SURVEYED, cityStats } from '@/lib/metrics'
 
 /** Headline figures computed from the community-area data (empty until data is added). */
 export function DataHeadline() {
@@ -34,7 +34,7 @@ export function DataHeadline() {
       </dl>
       <p className="mt-4 text-xs text-muted-foreground">
         {hasScores
-          ? `*Across the ${stats.scored} community areas with both census and signage data where at least 10% of residents speak another language.`
+          ? `*Simple average across the ${stats.scored} community areas with census data and at least ${MIN_SIGNS_SURVEYED} surveyed signs, where at least 10% of residents speak another language.`
           : `No community-area data has been added yet. Figures will appear once census and signage data are added (0 of ${stats.total} areas so far). The citywide benchmark below is a separate, sourced figure.`}
       </p>
     </section>

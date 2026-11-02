@@ -10,7 +10,8 @@ import type { AreaMeasurements, Snapshot } from './data'
  *     lep: 0,             // ACS: % of pop. 5+ speaking English less than "very well"
  *     languages: [{ language: 'Spanish', pct: 0 }],
  *     visibility: 0,      // your survey: % of signs with a non-English language
- *     signsSurveyed: 0,   // your survey: number of signs counted
+ *     signsSurveyed: 0,   // your survey: number of signs counted (an area is only scored at 30+,
+ *                         // see MIN_SIGNS_SURVEYED in lib/metrics.ts)
  *   },
  *
  * SNAPSHOT_DATA holds individual field observations (photos/notes of real signs).

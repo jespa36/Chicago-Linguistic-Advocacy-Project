@@ -11,8 +11,8 @@ export default function ContributePage() {
     <>
       <PageHeader eyebrow="Contribute" title="Help document Chicago's signs">
         <p>
-          No single person can map all of Chicago. Photos of public signs from students, residents, and language
-          advocates will help build a record of the languages people actually see.
+          One person can&apos;t map all of Chicago. Photos of public signs and text from students, residents, and language
+          advocates will help build a record of the languages that are visibily seen.
         </p>
       </PageHeader>
 
@@ -41,9 +41,9 @@ export default function ContributePage() {
               <h2 className="font-semibold text-foreground">Before you photograph</h2>
             </div>
             <ul className="mt-3 flex flex-col gap-2 text-sm leading-relaxed text-muted-foreground">
-              <li>Photograph signs, not people. Avoid faces, license plates, and private homes.</li>
-              <li>Safety First! Stay on public property and follow local rules.</li>
-              <li>Approved photos and their locations will be shown publicly on the map.</li>
+              <li>Please photograph signs and text, not people. Avoid faces, license plates, and private homes.</li>
+              <li>Safety Always comes first, Stay on public property and follow local rules.</li>
+              <li>Approved photo submissions will be shown publicly on the map, with the location included.</li>
             </ul>
           </div>
         </div>

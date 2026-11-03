@@ -14,7 +14,7 @@ const STEPS = [
   {
     icon: Languages,
     title: 'Tag the languages',
-    text: 'Select every language you see on the sign, mark which one dominates, or choose “not sure” if you cannot tell.',
+    text: 'Select every language you see on the sign or text, mark which one dominates, or choose “not sure” if you cannot tell.',
   },
   {
     icon: Tag,
@@ -28,7 +28,7 @@ const STEPS = [
   },
 ]
 
-export function FieldGuide({ heading = 'How contributing will work' }: { heading?: string }) {
+export function FieldGuide({ heading = 'How contributions work' }: { heading?: string }) {
   return (
     <section id="field-guide" className="scroll-mt-20 bg-[var(--ink-navy)]">
       <div className="mx-auto max-w-7xl px-4 py-20 md:px-6">

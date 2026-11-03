@@ -8,11 +8,11 @@ const STEPS = [
   },
   {
     title: 'What is visible',
-    body: 'A field survey records which languages appear on the public signs people actually encounter: storefronts, transit, government notices, flyers.',
+    body: 'Photo contributions keeps track of the languages that are visibily represented througout Chicago&apos;s landscape. These records include data such as storefronts, transit, government notices, flyers.',
   },
   {
     title: 'The gap',
-    body: 'Comparing the two shows where public space keeps pace with the community and where it falls behind.',
+    body: 'Comparing the two allows us to spot where public space keeps up with the community and where it falls behind.',
   },
 ]
 

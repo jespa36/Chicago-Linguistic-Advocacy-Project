@@ -14,8 +14,8 @@ export function SiteFooter() {
               <span className="font-serif text-lg text-white">{SITE.name}</span>
             </div>
             <p className="mt-4 max-w-md text-sm leading-relaxed">
-              An open civic project comparing the languages Chicagoans speak with the languages that are seen in public
-              spaces. Made for residents, students, researchers, and language advocates.
+              An open civic project comparing the languages Chicagoan&apos;s speak with the languages that are seen throughout the city.
+              Developed for residents, students, researchers, and language advocates.
             </p>
             <div className="mt-5 flex gap-3">
               <a
@@ -91,7 +91,7 @@ export function SiteFooter() {
             >
               LinguaSnapp
             </a>{' '}
-            (University of Manchester). Language data: U.S. Census Bureau, American Community Survey.
+            (University of Manchester). Language data: U.S. Census Bureau, American Community Survey... More references
           </p>
           <p>Boundaries: City of Chicago Data Portal · Basemap: Esri, OpenStreetMap</p>
         </div>

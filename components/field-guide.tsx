@@ -3,8 +3,8 @@ import { Camera, ClipboardCheck, MapPin, Languages, Tag } from 'lucide-react'
 const STEPS = [
   {
     icon: Camera,
-    title: 'Photograph a sign',
-    text: 'Snap a photo of public signage: a transit notice, storefront window, community flyer, or street sign. Photograph the sign, not people.',
+    title: 'Snap a photo',
+    text: 'Take a photo of any linguistic landscape markings. Markings in public environments include a street signs, storefront displays, community flyer, or even murals. Please photograph the , not people.',
   },
   {
     icon: MapPin,
@@ -18,13 +18,13 @@ const STEPS = [
   },
   {
     icon: Tag,
-    title: 'Classify the sign',
-    text: 'Mark it as Official (government, transit, municipal) or Grassroots (storefront, community, independent) and choose the type of sign.',
+    title: 'Label the photo',
+    text: 'Mark it as Top-down (government, transit, municipal) or Bottom-up (storefront, community, independent) and choose the type of sign.',
   },
   {
     icon: ClipboardCheck,
     title: 'Submit for review',
-    text: 'Every submission is checked before it appears on the public map.',
+    text: 'For accurate representation every submission is checked before it appears on the public map.',
   },
 ]
 
@@ -37,7 +37,7 @@ export function FieldGuide({ heading = 'How contributing will work' }: { heading
           <h2 className="mt-3 text-balance font-serif text-3xl leading-tight text-white md:text-4xl">{heading}</h2>
           <p className="mt-4 leading-relaxed text-slate-300">
             From sidewalk to data point in five steps, following established linguistic landscape research: photograph,
-            locate, tag, classify, and review.
+            locate, tag, label, and review.
           </p>
         </div>
         <ol className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-5">

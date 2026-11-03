@@ -1,11 +1,11 @@
 const STEPS = [
   {
     title: 'Who speaks what',
-    body: 'Citywide, we use the 2025 American Community Survey 1-year estimates (table C16001). For individual community areas we plan to use 5-year estimates by census tract, combined into Chicago’s 77 community areas, because 1-year estimates are not available for small areas. CMAP Community Data Snapshots publish figures at the community-area level.',
+    body: 'Citywide, we use the 2025 American Community Survey 1-year estimates (table C16001). For the 77 individual community areas, CCA 2026 Snapshots data will be used... ',
   },
   {
     title: 'What is visible',
-    body: 'A systematic field survey of public-facing signs (storefronts, government notices, transit, community boards), recording every language on each sign. Crowd contributions will be reviewed and kept separate from survey data, since volunteers photograph where they happen to walk.',
+    body: 'A systematic field survey of bottom-up signs (storefronts, government notices, transit, community boards), recording every language on each sign. Crowd contributions will be reviewed and kept separate from survey data, since volunteers photograph where they happen to walk.',
   },
   {
     title: 'Measuring the gap',
@@ -13,7 +13,7 @@ const STEPS = [
   },
   {
     title: 'What it misses',
-    body: 'Census data does not capture dialects such as African American English, many Indigenous languages, or ASL, and sign counts cannot measure spoken services. Census language groups are also broad, so sign languages are rolled up into Census groups for comparison.',
+    body: 'Census data does not capture dialects such as African American English, many Indigenous languages, or ASL, and sign counts cannot measure spoken services. Census language groups are also broad, so sign languages are rolled up into Census groups for comparison. Another thing to note is that the census data numbers are estimates, becasuese not everyone is filling out the surveys.',
   },
 ]
 

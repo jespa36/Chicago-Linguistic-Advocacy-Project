@@ -60,7 +60,7 @@ export function SiteFooter() {
             <ul className="mt-4 flex flex-col gap-2.5 text-sm">
               <li>
                 <Link href="/contribute/" className="hover:text-white">
-                  Contribute a sign
+                  Contribute a photo
                 </Link>
               </li>
               <li>
@@ -91,7 +91,7 @@ export function SiteFooter() {
             >
               LinguaSnapp
             </a>{' '}
-            (University of Manchester). Language data: U.S. Census Bureau, American Community Survey... More references
+            (University of Manchester). Language data: U.S. Census Bureau, American Community Survey...More references to be added here
           </p>
           <p>Boundaries: City of Chicago Data Portal · Basemap: Esri, OpenStreetMap</p>
         </div>

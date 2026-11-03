@@ -4,27 +4,27 @@ const STEPS = [
   {
     icon: Camera,
     title: 'Snap a photo',
-    text: 'Take a photo of any linguistic landscape markings. Markings in public environments include a street signs, storefront displays, community flyer, or even murals. Please photograph the , not people.',
+    text: 'Take a photo of any linguistic landscape markings. Markings in public environments include street signs, storefront displays, community flyer, or even murals. Please photograph only the text that is visible.',
   },
   {
     icon: MapPin,
     title: 'Confirm the location',
-    text: 'Each sign is placed on the map. You will be able to adjust the pin if the photo was taken somewhere else or at an earlier time.',
+    text: 'Every contribution is placed on the map. The pin for it can be adjusted if the photo was taken somewhere else or at an earlier time.',
   },
   {
     icon: Languages,
     title: 'Tag the languages',
-    text: 'Select every language you see on the sign or text, mark which one dominates, or choose “not sure” if you cannot tell.',
+    text: 'Select every language that is represented in the photo, mark the langauge that appears more prominent, or choose “not sure” if you cannot tell.',
   },
   {
     icon: Tag,
     title: 'Label the photo',
-    text: 'Mark it as Top-down (government, transit, municipal) or Bottom-up (storefront, community, independent) and choose the type of sign.',
+    text: 'Label it as Top-down (government, transit, municipal) or Bottom-up (storefront, local community, independent) and choose the type of display.',
   },
   {
     icon: ClipboardCheck,
     title: 'Submit for review',
-    text: 'For accurate representation every submission is checked before it appears on the public map.',
+    text: 'Accurate representation is a key component of our project, every submission will undergo the process of being before it appears on the public map.',
   },
 ]
 
@@ -36,7 +36,8 @@ export function FieldGuide({ heading = 'How contributions work' }: { heading?: s
           <p className="text-sm font-semibold uppercase tracking-wider text-sky-300">The field guide</p>
           <h2 className="mt-3 text-balance font-serif text-3xl leading-tight text-white md:text-4xl">{heading}</h2>
           <p className="mt-4 leading-relaxed text-slate-300">
-            From sidewalk to data point in five steps, following established linguistic landscape research: photograph,
+            Learn how to document public text displays seen throughout Chicago. From taking a photo to submitting for review. 
+            Follow five steps based on established linguistic landscape research: photograph,
             locate, tag, label, and review.
           </p>
         </div>

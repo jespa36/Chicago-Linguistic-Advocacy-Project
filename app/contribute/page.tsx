@@ -9,7 +9,7 @@ export const metadata: Metadata = { title: 'Contribute' }
 export default function ContributePage() {
   return (
     <>
-      <PageHeader eyebrow="Contribute" title="Help document Chicago's signs">
+      <PageHeader eyebrow="Contribute" title="Help document Chicago's linguistic landscape">
         <p>
           One person can&apos;t map all of Chicago. Photos of public signs and text from students, residents, and language
           advocates will help build a record of the languages that are visibily seen.
@@ -21,10 +21,10 @@ export default function ContributePage() {
           <div className="rounded-xl border border-dashed border-border bg-card p-6">
             <div className="flex items-center gap-3">
               <Hourglass className="size-5 text-primary" aria-hidden="true" />
-              <h2 className="font-semibold text-foreground">Photo submissions are coming soon</h2>
+              <h2 className="font-semibold text-foreground">Photo submissions..(work in progress)..</h2>
             </div>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              Work in progess, finishing the review system so that every submission can be checked before it appears on the map.
+              Work in progess, finishing the review system so that every submission can be checked for accuracy before it appears on the map.
               
             </p>
             <a
@@ -41,8 +41,8 @@ export default function ContributePage() {
               <h2 className="font-semibold text-foreground">Before you photograph</h2>
             </div>
             <ul className="mt-3 flex flex-col gap-2 text-sm leading-relaxed text-muted-foreground">
-              <li>Please photograph signs and text, not people. Avoid faces, license plates, and private homes.</li>
-              <li>Safety Always comes first, Stay on public property and follow local rules.</li>
+              <li>Please photograph top-down and bottom-up displays while avoiding people, faces, license plates, and private homes.</li>
+              <li>Safety Always comes first, stay on public property and follow local rules.</li>
               <li>Approved photo submissions will be shown publicly on the map, with the location included.</li>
             </ul>
           </div>

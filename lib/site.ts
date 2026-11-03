@@ -1,6 +1,6 @@
 export const SITE = {
-  name: 'LinguaChicago/Chicago Linguistic Lanscape Mapper/Chicago Multilingual Map',
-  tagline: 'Chicago&apos;s Langauge map/Langauges of Chicago'',
+  name: 'LinguaChicago or Chicago Linguistic Lanscape Mapper or Chicago Multilingual Map',
+  tagline: 'Chicago&apos;s Langauge map or Langauges of Chicago',
   github: 'https://github.com/jespa36',
   email: 'jespa36@uic.edu',
 }

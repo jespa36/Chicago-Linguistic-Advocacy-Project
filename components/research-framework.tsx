@@ -4,10 +4,10 @@ export function ResearchFramework() {
       <div className="rounded-xl border border-border bg-card p-6 md:p-8">
         <h2 className="font-serif text-2xl text-foreground">Research background</h2>
         <p className="mt-3 max-w-3xl text-pretty leading-relaxed text-muted-foreground">
-          The distinction between top-down and bottom-up linguistic displays 
-          comes from linguistic landscape research. Top-down displays come from governments and institutions, while bottom-up displays 
+          The distinction between top-down and bottom-up signs 
+          comes from linguistic landscape research. Top-down signage come from governments and institutions, while bottom-up signage 
           come from shops and local communities (Landry & Bourhis, 1997). Using digital tools to document 
-          these displays with photographs and interactive maps is done well by{' '}
+          these signs with photographs and interactive maps is done well by{' '}
           <a
             href="https://mlm.humanities.manchester.ac.uk/linguasnapp/"
             target="_blank"

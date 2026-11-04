@@ -4,7 +4,7 @@ const STEPS = [
   {
     icon: Camera,
     title: 'Snap a photo',
-    text: 'Take a photo of any public text. This includes street signs, storefront displays, community flyers, or even murals. Please photograph the text, not people.',
+    text: 'Take a photo of any sign. This includes street signs, storefront displays, community flyers, or even murals. Please avoid photographing others and focus on the text.',
   },
   {
     icon: MapPin,
@@ -36,7 +36,7 @@ export function FieldGuide({ heading = 'How contributions work' }: { heading?: s
           <p className="text-sm font-semibold uppercase tracking-wider text-sky-300">The field guide</p>
           <h2 className="mt-3 text-balance font-serif text-3xl leading-tight text-white md:text-4xl">{heading}</h2>
           <p className="mt-4 leading-relaxed text-slate-300">
-            Learn how to document public text seen throughout Chicago, from taking a photo to submitting it for review.
+            Learn how to document the signs seen throughout Chicago, from taking a photo to submitting it for review.
             Follow five steps based on established linguistic landscape research: photograph,
             locate, tag, label, and review.
           </p>

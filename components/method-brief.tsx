@@ -24,7 +24,7 @@ export function MethodBrief() {
           <div className="max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-wider text-accent">How it works</p>
             <h2 className="mt-3 text-balance font-serif text-3xl text-foreground md:text-4xl">
-              From census numbers to street-level signs
+              From census numbers to public signs
             </h2>
           </div>
           <Link

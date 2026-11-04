@@ -41,7 +41,7 @@ export default function ContributePage() {
               <h2 className="font-semibold text-foreground">Before you photograph</h2>
             </div>
             <ul className="mt-3 flex flex-col gap-2 text-sm leading-relaxed text-muted-foreground">
-              <li>Please photograph top-down and bottom-up displays while avoiding people, faces, license plates, and private homes.</li>
+              <li>Please photograph top-down and bottom-up signs. Try to avoid people, faces, license plates, and private homes.</li>
               <li>Safety Always comes first, stay on public property and follow local rules.</li>
               <li>Approved photo submissions will be shown publicly on the map, with the location included.</li>
             </ul>

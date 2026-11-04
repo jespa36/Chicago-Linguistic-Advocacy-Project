@@ -8,7 +8,7 @@ const STEPS = [
   },
   {
     title: 'What is visible',
-    body: 'Photo contributions keeps track of the languages that are visibily represented througout Chicagos landscape. These records include data such as storefronts, transit, government notices, flyers.',
+    body: 'We survey public signs and record which languages appear on them: storefronts, transit, government notices, flyers. Photos from the community are reviewed and kept separate.',
   },
   {
     title: 'The gap',
@@ -24,7 +24,7 @@ export function MethodBrief() {
           <div className="max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-wider text-accent">How it works</p>
             <h2 className="mt-3 text-balance font-serif text-3xl text-foreground md:text-4xl">
-              From census numbers to public displays
+              From census numbers to street-level signs
             </h2>
           </div>
           <Link

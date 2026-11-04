@@ -5,9 +5,9 @@ export function ResearchFramework() {
         <h2 className="font-serif text-2xl text-foreground">Research background</h2>
         <p className="mt-3 max-w-3xl text-pretty leading-relaxed text-muted-foreground">
           The distinction between top-down and bottom-up linguistic displays 
-          comes from linguistic landscape research. Top-down displays come from governments an institutions while bottom-up displays 
-          come from shops and local communities. (Landry & Bourhis, 1997). Using digital tools to document 
-          these displays with photograph and interactive maps is executed properly by{' '}
+          comes from linguistic landscape research. Top-down displays come from governments and institutions, while bottom-up displays 
+          come from shops and local communities (Landry & Bourhis, 1997). Using digital tools to document 
+          these displays with photographs and interactive maps is done well by{' '}
           <a
             href="https://mlm.humanities.manchester.ac.uk/linguasnapp/"
             target="_blank"
@@ -26,9 +26,9 @@ export function ResearchFramework() {
           >
             “Using smartphones to document linguistic landscapes: The LinguaSnapp mobile app.”
           </a>{' '}
-          To build on this research we document written language throughout Chicagos public environment. 
-          By comparing the top-down and bottom-up text we can examine the
-          gap between offical language representation and the languages reflected in everyday life across Chicago.
+          To build on this research, we document written language throughout Chicago’s public environment. 
+          By comparing top-down and bottom-up text, we can examine the
+          gap between official language representation and the languages reflected in everyday life across Chicago.
         </p>
       </div>
     </section>

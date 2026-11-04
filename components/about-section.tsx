@@ -20,7 +20,7 @@ const PILLARS = [
   {
     icon: Users,
     title: 'Community-driven',
-    text: 'Work in progress.. Every photo and pin helps researchers, educators, and advocates understand the city better. Submissions are reviewed..',
+    text: 'Photo contributions are a work in progress. Every photo and pin will help researchers, educators, and advocates understand the city better, and every submission is reviewed before it appears.',
   },
 ]
 
@@ -34,7 +34,7 @@ export function AboutSection() {
           <div>
             <p className="text-sm font-semibold uppercase tracking-wider text-accent">About the project</p>
             <h2 className="mt-3 text-balance font-serif text-3xl leading-tight text-foreground md:text-4xl">
-              Documenting the languages that shape Chicago while making it&apos;s linguistic landscape visible.
+              Documenting the languages that shape Chicago while making its linguistic landscape visible.
             </h2>
             <p className="mt-5 text-pretty text-lg leading-relaxed text-muted-foreground">
               Inspired by{' '}
@@ -51,8 +51,8 @@ export function AboutSection() {
               spaces. Ultimately, it reveals which languages are visibly recognized.
             </p>
             <p className="mt-4 leading-relaxed text-muted-foreground">
-              Every documented photo becomes a data point, helping us see the gap between what the city officially displays and
-              the broad mix of languages spoken by Chicagoans everyday.
+              Every documented sign becomes a data point, helping us see the gap between what the city officially displays and
+              the broad mix of languages spoken by Chicagoans every day.
             </p>
           </div>
 

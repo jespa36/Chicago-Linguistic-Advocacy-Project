@@ -9,10 +9,9 @@ export const metadata: Metadata = { title: 'Methodology' }
 export default function MethodPage() {
   return (
     <>
-      <PageHeader eyebrow="Methodology" title="How the numbers are made, and how the contributions are collected">
+      <PageHeader eyebrow="Methodology" title="How the numbers are made, and how signs are surveyed and submitted">
         <p>
-          The analytical framework explains the census math behind the gap. The field guide explains the steps needed to 
-          upload your contributions.
+          The analytical framework explains the census math behind the gap. The field guide explains the steps for contributing a photo.
         </p>
       </PageHeader>
       <MethodFramework />

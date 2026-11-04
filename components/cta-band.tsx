@@ -6,9 +6,9 @@ export function CtaBand() {
     <section className="bg-[var(--ink-navy)] text-white">
       <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-6 px-4 py-14 md:flex-row md:items-center md:px-6">
         <div className="max-w-xl">
-          <h2 className="text-balance font-serif text-3xl leading-tight">Help document the languages that are visibily seen.</h2>
+          <h2 className="text-balance font-serif text-3xl leading-tight">Help document the languages that are visible in public.</h2>
           <p className="mt-3 text-pretty leading-relaxed text-slate-300">
-            One person can&apos;t map all of Chicago. Photo submissions are work in progress..
+            One person can&apos;t map all of Chicago. Photo submissions are a work in progress.
           </p>
         </div>
         <Link

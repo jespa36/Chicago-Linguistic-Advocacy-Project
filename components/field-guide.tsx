@@ -4,7 +4,7 @@ const STEPS = [
   {
     icon: Camera,
     title: 'Snap a photo',
-    text: 'Take a photo of any linguistic landscape markings. Markings in public environments include street signs, storefront displays, community flyer, or even murals. Please photograph only the text that is visible.',
+    text: 'Take a photo of any public text. This includes street signs, storefront displays, community flyers, or even murals. Please photograph the text, not people.',
   },
   {
     icon: MapPin,
@@ -14,7 +14,7 @@ const STEPS = [
   {
     icon: Languages,
     title: 'Tag the languages',
-    text: 'Select every language that is represented in the photo, mark the langauge that appears more prominent, or choose “not sure” if you cannot tell.',
+    text: 'Select every language that is represented in the photo, mark the language that appears most prominent, or choose “not sure” if you cannot tell.',
   },
   {
     icon: Tag,
@@ -24,7 +24,7 @@ const STEPS = [
   {
     icon: ClipboardCheck,
     title: 'Submit for review',
-    text: 'Accurate representation is a key component of our project, every submission will undergo the process of being before it appears on the public map.',
+    text: 'Accurate representation is a key part of our project, so every submission is reviewed before it appears on the public map.',
   },
 ]
 
@@ -36,7 +36,7 @@ export function FieldGuide({ heading = 'How contributions work' }: { heading?: s
           <p className="text-sm font-semibold uppercase tracking-wider text-sky-300">The field guide</p>
           <h2 className="mt-3 text-balance font-serif text-3xl leading-tight text-white md:text-4xl">{heading}</h2>
           <p className="mt-4 leading-relaxed text-slate-300">
-            Learn how to document public text displays seen throughout Chicago. From taking a photo to submitting for review. 
+            Learn how to document public text seen throughout Chicago, from taking a photo to submitting it for review.
             Follow five steps based on established linguistic landscape research: photograph,
             locate, tag, label, and review.
           </p>

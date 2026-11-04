@@ -41,7 +41,7 @@ export function HomeHero() {
         <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-slate-200">
           The signs and text we see in public spaces don&apos;t always reflect the languages residents of Chicago speak at
           home. We compare the languages residents speak with the languages they can actually see, documenting where
-          official and public text leaves communities out.
+          public signs and text leave communities out.
         </p>
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">

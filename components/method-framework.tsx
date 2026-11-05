@@ -1,7 +1,7 @@
 const STEPS = [
   {
     title: 'Who speaks what',
-    body: 'Citywide, we use the 2025 American Community Survey 1-year estimates (table C16001). For the 77 community areas, we will use 2020–2024 5-year estimates from CMAP’s CCA 2026 Community Data Snapshots, because 1-year estimates are not available for small areas.',
+    body: 'Citywide, we use the 2025 American Community Survey 1-year estimates (table C16001). For the 77 community areas, we use 2020–2024 5-year estimates from CMAP’s CCA 2026 Community Data Snapshots, because 1-year estimates are not available for small areas. The 5-year data is sample-based, so margins of error can be large for areas with small populations, and because the two sources cover different years, their numbers can differ slightly.',
   },
   {
     title: 'What is visible',

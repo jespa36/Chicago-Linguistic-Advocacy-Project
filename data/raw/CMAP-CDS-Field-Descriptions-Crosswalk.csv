@@ -1,0 +1,796 @@
+table_name,field_name,cds_table,cds_label,cmap_data_hub_label,field_alias,data_source,additional_comments
+CCA_2026,GEOID,NA,NA,Geographic identity code,Geographic identity code,CMAP,Geographic identity code.
+CCA_2026,GEOG,NA,NA,Name of Community,Name of Community,CMAP,County/municipality/CCA name.
+CCA_2026,F2000_POP,NA,NA,Total population in 2000,Total population in 2000,"2000 Census: SF1, Table P001",Total population in 2000.
+CCA_2026,F2010_POP,NA,NA,Total population in 2010,Total population in 2010,"2010 Census: SF1, Table P001",Total population in 2010.
+CCA_2026,F2020_POP,General Population Characteristics,Total Population,Total population in 2020,General Population Characteristics - Total population in 2020,"2020 Census P.L. 94-171, Table P0010001",NA
+CCA_2026,F2020_HH,General Population Characteristics,Total Households,Total households in 2020,General Population Characteristics - Total households in 2020,"2020 Census P.L. 94-171, Table H0010002",NA
+CCA_2026,TOT_POP,General Population Characteristics,NA,Total population in 2024,General Population Characteristics - Total population in 2024,2020-2024 American Community Survey: Table B01001,NA
+CCA_2026,UND5,Age Cohorts,5 and under,Population 5 and under,Age Cohorts - Population 5 and under,2020-2024 American Community Survey: Table B01001,NA
+CCA_2026,A5_19,Age Cohorts,5 to 19,Population aged 5 to 19,Age Cohorts - Population aged 5 to 19,2020-2024 American Community Survey: Table B01001,NA
+CCA_2026,A20_34,Age Cohorts,20 to 34,Population aged 20 to 34,Age Cohorts - Population aged 20 to 34,2020-2024 American Community Survey: Table B01001,NA
+CCA_2026,A35_49,Age Cohorts,35 to 49,Population aged 35 to 49,Age Cohorts - Population aged 35 to 49,2020-2024 American Community Survey: Table B01001,NA
+CCA_2026,A50_64,Age Cohorts,50 to 64,Population aged 50 to 64,Age Cohorts - Population aged 50 to 64,2020-2024 American Community Survey: Table B01001,NA
+CCA_2026,A65_74,Age Cohorts,65 to 74,Population aged 65 to 74,Age Cohorts - Population aged 65 to 74,2020-2024 American Community Survey: Table B01001,NA
+CCA_2026,A75_84,Age Cohorts,75 to 84,Population aged 75 to 84,Age Cohorts - Population aged 75 to 84,2020-2024 American Community Survey: Table B01001,NA
+CCA_2026,OV85,Age Cohorts,85 and Older,Population over 85,Age Cohorts - Population over 85,2020-2024 American Community Survey: Table B01001,NA
+CCA_2026,MED_AGE,Age Cohorts,Median Age,Median age,Age Cohorts - Median age,2020-2024 American Community Survey: Table B01002,CCA and regional medians were estimated from grouped frequency distributions.
+CCA_2026,WHITE,Race and Ethnicity,White (Non-Hispanic),White (Non-Hispanic),Race and Ethnicity - White (Non-Hispanic),2020-2024 American Community Survey: Table B03002,NA
+CCA_2026,HISP,Race and Ethnicity,Hispanic or Latino (of Any Race),Hispanic or Latino (of Any Race),Race and Ethnicity - Hispanic or Latino (of Any Race),2020-2024 American Community Survey: Table B03002,NA
+CCA_2026,BLACK,Race and Ethnicity,Black (Non-Hispanic),Black (Non-Hispanic),Race and Ethnicity - Black (Non-Hispanic),2020-2024 American Community Survey: Table B03002,NA
+CCA_2026,ASIAN,Race and Ethnicity,Asian (Non-Hispanic),Asian (Non-Hispanic),Race and Ethnicity - Asian (Non-Hispanic),2020-2024 American Community Survey: Table B03002,NA
+CCA_2026,OTHER,Race and Ethnicity,Other (Non-Hispanic),Other (Non-Hispanic),Race and Ethnicity - Other (Non-Hispanic),2020-2024 American Community Survey: Table B03002,NA
+CCA_2026,POP_HH,Race and Ethnicity,NA,Population living in households,Race and Ethnicity - Population living in households,2020-2024 American Community Survey: Table B09019,Population living in households.
+CCA_2026,POP_16OV,Race and Ethnicity,NA,Population aged 16 and over,Race and Ethnicity - Population aged 16 and over,2020-2024 American Community Survey: Table B23001,Population aged 16 and over.
+CCA_2026,IN_LBFRC,Employment Status,In Labor Force,In Labor Force,Employment Status - In Labor Force,2020-2024 American Community Survey: Table B23001,NA
+CCA_2026,EMP,Employment Status,Employed,Employed,Employment Status - Employed,2020-2024 American Community Survey: Table B23001,Does not include military employees.
+CCA_2026,UNEMP,Employment Status,Unemployed,Unemployed,Employment Status - Unemployed,2020-2024 American Community Survey: Table B23001,NA
+CCA_2026,NOT_IN_LBFRC,Employment Status,Not In Labor Force,Not In Labor Force,Employment Status - Not In Labor Force,2020-2024 American Community Survey: Table B23001,NA
+CCA_2026,TOT_WRKR16OV,Mode of Travel to Work,Total Workers 16 and Over,Total Workers 16 and Over,Mode of Travel to Work - Total Workers 16 and Over,2020-2024 American Community Survey: Table B08301,NA
+CCA_2026,WORK_AT_HOME,Mode of Travel to Work,Work at Home,Work at Home,Mode of Travel to Work - Work at Home,2020-2024 American Community Survey: Table B08301,NA
+CCA_2026,TOT_COMM,Mode of Travel to Work,Total Commuters,Total Commuters,Mode of Travel to Work - Total Commuters,2020-2024 American Community Survey: Table B08301,NA
+CCA_2026,DROVE_AL,Mode of Travel to Work,Drove Alone,Drove Alone,Mode of Travel to Work - Drove Alone,2020-2024 American Community Survey: Table B08301,NA
+CCA_2026,CARPOOL,Mode of Travel to Work,Carpool,Carpool,Mode of Travel to Work - Carpool,2020-2024 American Community Survey: Table B08301,NA
+CCA_2026,TRANSIT,Mode of Travel to Work,Transit,Transit,Mode of Travel to Work - Transit,2020-2024 American Community Survey: Table B08301,NA
+CCA_2026,WALK_BIKE,Mode of Travel to Work,Walk or Bike,Walk or Bike,Mode of Travel to Work - Walk or Bike,2020-2024 American Community Survey: Table B08301,NA
+CCA_2026,COMM_OTHER,Mode of Travel to Work,Other,Other commute,Mode of Travel to Work - Other commute,2020-2024 American Community Survey: Table B08301,NA
+CCA_2026,AGG_TT,Mode of Travel to Work,NA,Aggregate travel time to work (in minutes),Mode of Travel to Work - Aggregate travel time to work (in minutes),2020-2024 American Community Survey: Table B08013,Aggregate travel time to work (in minutes) by workers 16 years and over. Does not include workers working at home.
+CCA_2026,NO_VEH,Vehicles Available,No Vehicle Available,No vehicles available to household,Vehicles Available - No vehicles available to household,2020-2024 American Community Survey: Table B25044,NA
+CCA_2026,ONE_VEH,Vehicles Available,1 Vehicle Available,1 vehicle available to household,Vehicles Available - 1 vehicle available to household,2020-2024 American Community Survey: Table B25044,NA
+CCA_2026,TWO_VEH,Vehicles Available,2 Vehicles Available,2 vehicles available to household,Vehicles Available - 2 vehicles available to household,2020-2024 American Community Survey: Table B25044,NA
+CCA_2026,THREEOM_VEH,Vehicles Available,3 or More  Vehicles Available,3 or more vehicles available to household,Vehicles Available - 3 or more vehicles available to household,2020-2024 American Community Survey: Table B25044,NA
+CCA_2026,POP_25OV,Vehicles Available,NA,Population aged 25 and over,Vehicles Available - Population aged 25 and over,2020-2024 American Community Survey: Table B15002,Population aged 25 and over.
+CCA_2026,LT_HS,Educational Attainment,Less Than High School Diploma,Less Than High School Diploma,Educational Attainment - Less Than High School Diploma,2020-2024 American Community Survey: Table B15002,NA
+CCA_2026,HS,Educational Attainment,High School Diploma or Equivalent,High School Diploma or Equivalent,Educational Attainment - High School Diploma or Equivalent,2020-2024 American Community Survey: Table B15002,NA
+CCA_2026,SOME_COLL,Educational Attainment,"Some College, No Degree","Some College, No Degree","Educational Attainment - Some College, No Degree",2020-2024 American Community Survey: Table B15002,NA
+CCA_2026,ASSOC,Educational Attainment,Associate's Degree,Associate's Degree,Educational Attainment - Associate's Degree,2020-2024 American Community Survey: Table B15002,NA
+CCA_2026,BACH,Educational Attainment,Bachelor's Degree,Bachelor's Degree,Educational Attainment - Bachelor's Degree,2020-2024 American Community Survey: Table B15002,NA
+CCA_2026,GRAD_PROF,Educational Attainment,Graduate or Professional Degree,Graduate or Professional Degree,Educational Attainment - Graduate or Professional Degree,2020-2024 American Community Survey: Table B15002,NA
+CCA_2026,INC_LT_25K,Household Income,"Less than $25,000","Income less than $25,000","Household Income - Income less than $25,000",2020-2024 American Community Survey: Table B19001,In 2024 dollars
+CCA_2026,INC_25_50K,Household Income,"$25,000 to $49,999","Income $25,000 to $49,999","Household Income - Income $25,000 to $49,999",2020-2024 American Community Survey: Table B19001,NA
+CCA_2026,INC_50_75K,Household Income,"$50,000 to $74,999","Income $50,000 to $74,999","Household Income - Income $50,000 to $74,999",2020-2024 American Community Survey: Table B19001,NA
+CCA_2026,INC_75_100K,Household Income,"$75,000 to $99,999","Income $75,000 to $99,999","Household Income - Income $75,000 to $99,999",2020-2024 American Community Survey: Table B19001,NA
+CCA_2026,INC_100_150K,Household Income,"$100,000 to $149,999","Income $100,000 to $149,999","Household Income - Income $100,000 to $149,999",2020-2024 American Community Survey: Table B19001,NA
+CCA_2026,INC_GT_150,Household Income,"$150,000 and Over","Income $150,000 and Over","Household Income - Income $150,000 and Over",2020-2024 American Community Survey: Table B19001,NA
+CCA_2026,MEDINC,Household Income,Median Income,Median Income,Household Income - Median Income,2020-2024 American Community Survey: Table B19013,CCA and regional medians were estimated from grouped frequency distributions.
+CCA_2026,INCPERCAP,Household Income,Per Capita Income,Income per Capita,Household Income - Income per Capita,2020-2024 American Community Survey: Table B19301,NA
+CCA_2026,TOT_HH,Housing Occupancy and Tenure,Occupied Housing Units,Total households,Housing Occupancy and Tenure - Total households,2020-2024 American Community Survey: Table B25002,NA
+CCA_2026,OWN_OCC_HU,Housing Occupancy and Tenure,Owner-Occupied Housing Units,Owner-Occupied Housing Units,Housing Occupancy and Tenure - Owner-Occupied Housing Units,2020-2024 American Community Survey: Table B25003,NA
+CCA_2026,RENT_OCC_HU,Housing Occupancy and Tenure,Renter-Occupied Housing Units,Renter-Occupied Housing Units,Housing Occupancy and Tenure - Renter-Occupied Housing Units,2020-2024 American Community Survey: Table B25003,NA
+CCA_2026,VAC_HU,Housing Occupancy and Tenure,Vacant Housing Units,Vacant Housing Units,Housing Occupancy and Tenure - Vacant Housing Units,2020-2024 American Community Survey: Table B25002,NA
+CCA_2026,HU_TOT,Housing Occupancy and Tenure,NA,Total housing units,Housing Occupancy and Tenure - Total housing units,2020-2024 American Community Survey: Table B25024,Total housing units.
+CCA_2026,HU_SNG_DET,Housing Type,"Single Family, Detached",Single family detached units,Housing Type - Single family detached units,2020-2024 American Community Survey: Table B25024,NA
+CCA_2026,HU_SNG_ATT,Housing Type,"Single Family, Attached",Single family attached units,Housing Type - Single family attached units,2020-2024 American Community Survey: Table B25024,NA
+CCA_2026,HU_2UN,Housing Type,2 Units,"Multi-family, 2 units (duplex)","Housing Type - Multi-family, 2 units (duplex)",2020-2024 American Community Survey: Table B25024,NA
+CCA_2026,HU_3_4UN,Housing Type,3 or 4 Units,"Multi-family, 3 to 4 units","Housing Type - Multi-family, 3 to 4 units",2020-2024 American Community Survey: Table B25024,NA
+CCA_2026,HU_5_9UN,Housing Type,5 to 9 Units,"Multi-family, 5 to 9 units","Housing Type - Multi-family, 5 to 9 units",2020-2024 American Community Survey: Table B25024,NA
+CCA_2026,HU_10_19UN,Housing Type,10 to 19 Units,"Multi-family, 10-19 units","Housing Type - Multi-family, 10-19 units",2020-2024 American Community Survey: Table B25024,NA
+CCA_2026,HU_GT_19UN,Housing Type,20 or More Units,"Multi-family, 20 or more units","Housing Type - Multi-family, 20 or more units",2020-2024 American Community Survey: Table B25024,NA
+CCA_2026,HU_MOBILE,Housing Type,Mobile Home/Other,"Other housing type: mobile home, RV, van, other","Housing Type - Other housing type: mobile home, RV, van, other",2020-2024 American Community Survey: Table B25024,"""Other"" includes boat, RV, van, etc."
+CCA_2026,MED_ROOMS,Housing Size,Median Number of Rooms,Median number of rooms,Housing Size - Median number of rooms,2020-2024 American Community Survey: Table B25018,"CCA and regional medians, estimated from grouped frequency distributions."
+CCA_2026,HA_AFT2010,Housing Age,Built 2010 or Later,Housing units built 2010 or Later,Housing Age - Housing units built 2010 or Later,2020-2024 American Community Survey: Table B25034,NA
+CCA_2026,HA_90_10,Housing Age,Built 1990 to 2009,Housing units built 1990 to 2009,Housing Age - Housing units built 1990 to 2009,2020-2024 American Community Survey: Table B25034,NA
+CCA_2026,HA_70_90,Housing Age,Built 1970 to 1989,Housing units built 1970 to 1989,Housing Age - Housing units built 1970 to 1989,2020-2024 American Community Survey: Table B25034,NA
+CCA_2026,HA_40_70,Housing Age,Built 1940 to 1969,Housing units built 1940 to 1969,Housing Age - Housing units built 1940 to 1969,2020-2024 American Community Survey: Table B25034,NA
+CCA_2026,HA_BEF1940,Housing Age,Built before 1940,Housing units built before 1940,Housing Age - Housing units built before 1940,2020-2024 American Community Survey: Table B25034,NA
+CCA_2026,MED_HA,Housing Age,Median Year Built,Median year of housing units built,Housing Age - Median year of housing units built,2020-2024 American Community Survey: Table B25035,CCA and regional medians  estimated from grouped frequency distributions.
+CCA_2026,BR_0_1,Housing Size,0 or 1 Bedrooms,Housing units with 0 or 1 bedrooms,Housing Size - Housing units with 0 or 1 bedrooms,2020-2024 American Community Survey: Table B25041,NA
+CCA_2026,BR_2,Housing Size,2 Bedrooms,Housing units with 2 bedrooms,Housing Size - Housing units with 2 bedrooms,2020-2024 American Community Survey: Table B25041,NA
+CCA_2026,BR_3,Housing Size,3 Bedrooms,Housing units with 3 bedrooms,Housing Size - Housing units with 3 bedrooms,2020-2024 American Community Survey: Table B25041,NA
+CCA_2026,BR_4,Housing Size,4 Bedrooms,Housing units with 4 bedrooms,Housing Size - Housing units with 4 bedrooms,2020-2024 American Community Survey: Table B25041,NA
+CCA_2026,BR_5,Housing Size,5 or More Bedrooms,Housing units with 5 or more bedrooms,Housing Size - Housing units with 5 or more bedrooms,2020-2024 American Community Survey: Table B25041,NA
+CCA_2026,HV_LT_150K,Housing Size,NA,"Home value less than $150,000","Housing Size - Home value less than $150,000",2020-2024 American Community Survey: Table B25075,In 2024 dollars
+CCA_2026,HV_500_1M,Housing Size,NA,"Home value $500,000 to $1,000,000","Housing Size - Home value $500,000 to $1,000,000",2020-2024 American Community Survey: Table B25075,NA
+CCA_2026,HV_GT_1M,Housing Size,NA,"Home value $1,000,000 or more","Housing Size - Home value $1,000,000 or more",2020-2024 American Community Survey: Table B25075,NA
+CCA_2026,MED_HV,Housing Size,NA,Median home value,Housing Size - Median home value,2020-2024 American Community Survey: Table B25077,Median home value. CCA and regional medians estimated from grouped frequency distributions.
+CCA_2026,RENT_LT500,Housing Size,NA,Units paying rent less than $500,Housing Size - Units paying rent less than $500,2020-2024 American Community Survey: Table B25063,NA
+CCA_2026,RENT_500_999,Housing Size,NA,Units paying rent between $500 to $999,Housing Size - Units paying rent between $500 to $999,2020-2024 American Community Survey: Table B25063,NA
+CCA_2026,RENT_1000_1499,Housing Size,NA,Units paying rent between $1000 to $1499,Housing Size - Units paying rent between $1000 to $1499,2020-2024 American Community Survey: Table B25063,NA
+CCA_2026,RENT_1500_2499,Housing Size,NA,Units paying rent between $1500 to $2499,Housing Size - Units paying rent between $1500 to $2499,2020-2024 American Community Survey: Table B25063,NA
+CCA_2026,RENT_GT2500,Housing Size,NA,Units paying rent above $2500,Housing Size - Units paying rent above $2500,2020-2024 American Community Survey: Table B25063,NA
+CCA_2026,MED_RENT,Housing Size,NA,Median gross rent,Housing Size - Median gross rent,2020-2024 American Community Survey: Table B25064,Median gross rent. CCA and regional medians estimated from grouped frequency distributions.
+CCA_2026,COMPUTER,Household Computer and Internet Access,One or More Computing Devices,Households with one or more computing device(es),Household Computer and Internet Access - Households with one or more computing device(es),2020-2024 American Community Survey: Table B28001,NA
+CCA_2026,ONLY_SMARTPHONE,Household Computer and Internet Access,Smartphone(s) Only,Households with only a smartphone as computing device,Household Computer and Internet Access - Households with only a smartphone as computing device,2020-2024 American Community Survey: Table B28001,NA
+CCA_2026,NO_COMPUTER,Household Computer and Internet Access,No Computing Device,Households with no computing device,Household Computer and Internet Access - Households with no computing device,2020-2024 American Community Survey: Table B28001,NA
+CCA_2026,INTERNET,Household Computer and Internet Access,Internet Access,Households with any kind of internet access,Household Computer and Internet Access - Households with any kind of internet access,2020-2024 American Community Survey: Table B28002,NA
+CCA_2026,BROADBAND,Household Computer and Internet Access,Broadband Subscription,Households with broadband internet access,Household Computer and Internet Access - Households with broadband internet access,2020-2024 American Community Survey: Table B28002,NA
+CCA_2026,NO_INTERNET,Household Computer and Internet Access,No Internet Access,Households with no internet access,Household Computer and Internet Access - Households with no internet access,2020-2024 American Community Survey: Table B28002,NA
+CCA_2026,DISAB_ONE,Population With a Disability,One Type of Disabilty Only,One Type of Disabilty Only,Population With a Disability - One Type of Disabilty Only,2020-2024 American Community Survey: Table C18108,NA
+CCA_2026,DISAB_TWOMOR,Population With a Disability,Two or More Types of Disabilty,Two or More Types of Disabilty,Population With a Disability - Two or More Types of Disabilty,2020-2024 American Community Survey: Table C18108,NA
+CCA_2026,DISAB_ANY,Population With a Disability,Number of People With a Disability,Number of People With a Disability,Population With a Disability - Number of People With a Disability,2020-2024 American Community Survey: Table C18108,NA
+CCA_2026,DIS_HEAR,Disability by Type,Hearing Difficulty,Hearing Difficulty,Disability by Type - Hearing Difficulty,"2020-2024 American Community Survey: Tables B18102, B18103, B18104, B18105, B18106, B18107",NA
+CCA_2026,DIS_VIS,Disability by Type,Vision Difficulty,Vision Difficulty,Disability by Type - Vision Difficulty,"2020-2024 American Community Survey: Tables B18102, B18103, B18104, B18105, B18106, B18107",NA
+CCA_2026,DIS_COG,Disability by Type,Cognitive Difficulty,Cognitive Difficulty,Disability by Type - Cognitive Difficulty,"2020-2024 American Community Survey: Tables B18102, B18103, B18104, B18105, B18106, B18107",NA
+CCA_2026,DIS_AMB,Disability by Type,Ambulatory Difficulty,Ambulatory Difficulty,Disability by Type - Ambulatory Difficulty,"2020-2024 American Community Survey: Tables B18102, B18103, B18104, B18105, B18106, B18107",NA
+CCA_2026,DIS_SLFCARE,Disability by Type,Self-Care Difficulty,Self-Care Difficulty,Disability by Type - Self-Care Difficulty,"2020-2024 American Community Survey: Tables B18102, B18103, B18104, B18105, B18106, B18107",NA
+CCA_2026,POP_18OV,Disability by Type,Population over 18,Population over 18,Disability by Type - Population over 18,"2020-2024 American Community Survey: Tables B18102, B18103, B18104, B18105, B18106, B18107",NA
+CCA_2026,DIS_INDPLIV,Disability by Type,Independent Living Difficulty,Independent Living Difficulty,Disability by Type - Independent Living Difficulty,"2020-2024 American Community Survey: Tables B18102, B18103, B18104, B18105, B18106, B18107",Age 18 and Over Only
+CCA_2026,DIS_UND18,Disability by Age Cohorts,0-17 with a disability,0-17 with a disability,Disability by Age Cohorts - 0-17 with a disability,2020-2024 American Community Survey: Table B18101,NA
+CCA_2026,DIS_18_64,Disability by Age Cohorts,18-64 with a disability,18-64 with a disability,Disability by Age Cohorts - 18-64 with a disability,2020-2024 American Community Survey: Table B18101,NA
+CCA_2026,DIS_65_75,Disability by Age Cohorts,65-75 with a disability,65-75 with a disability,Disability by Age Cohorts - 65-75 with a disability,2020-2024 American Community Survey: Table B18101,NA
+CCA_2026,DIS_75OV,Disability by Age Cohorts,75 and Over With a Disability,75 and Over With a Disability,Disability by Age Cohorts - 75 and Over With a Disability,2020-2024 American Community Survey: Table B18101,NA
+CCA_2026,UNINSURED,Health Insurance Coverage,Population without Health Insurance,Population without Health Insurance,Health Insurance Coverage - Population without Health Insurance,2020-2024 American Community Survey: Table B18135,NA
+CCA_2026,DIS_UNINSURED,Health Insurance Coverage,Population without Health Insurance and a Disability,Population without Health Insurance and a Disability,Health Insurance Coverage - Population without Health Insurance and a Disability,2020-2024 American Community Survey: Table B18135,NA
+CCA_2026,POP_CIV_NONINST,Health Insurance Coverage,Civilian non-institutional population,Civilian non-institutional population,Health Insurance Coverage - Civilian non-institutional population,2020-2024 American Community Survey: Table B18135,NA
+CCA_2026,TOT_EMP_RES,Health Insurance Coverage,NA,Total Employed Residents,Health Insurance Coverage - Total Employed Residents,"2023 U.S. Census Bureau, Longitudinal-Employer Household Dynamics Program (LEHD): Count of Employment of Community Residents","Home Area Profile (All Workers Residing in Given Geography), 2023 Data, Primary Jobs Only.  
+
+Data presented for municipalities extending beyond the 7-County CMAP region reflect only the Residents located within the region."
+CCA_2026,TOT_EMP_WORK,Employment of Community Residents,NA,Total Employees Working in a Geography,Employment of Community Residents - Total Employees Working in a Geography,"2023 U.S. Census Bureau, Longitudinal-Employer Household Dynamics Program: Count of Employment in the Community","Work Area Profile (All Workers Employed in Given Geography), 2023 Data, Primary Jobs Only. 
+
+Data presented for municipalities extending beyond the 7-County CMAP region reflect only the workers working within the region. 
+
+For municipalites not entirely in the CMAP 7-county region, data only reflect the portion of the municipality located within the region."
+CCA_2026,AVG_VMT,Annual Vehicle Miles Traveled (VMT) Per Household,Average Vehicle Miles Traveled,Annual Vehicle Miles Traveled (VMT) Per Household,Annual Vehicle Miles Traveled (VMT) Per Household - Annual Vehicle Miles Traveled (VMT) Per Household,"CMAP analysis of US Census Bureau (2020-2024 American Community Survey: Tables B25002 and B25046), HERE (ZIP+4 data), Illinois Environmental Protection Agency data (Odometer Readings), and Illinois Secretary of State data.",NA
+CCA_2026,TOT_ACRES,General Land Use*,Total Acres,NA,General Land Use - Total Acres,"CMAP 2023 Land Use Inventory, 
+Total Acreage",Additional information about 4-digit land use class codes is available here
+CCA_2026,SF,General Land Use*,Single-Family Residential Acres,NA,General Land Use - Single-Family Residential Acres,"CMAP 2023 Land Use Inventory, 
+Class Acreage","Includes Single-Family Residential (1110, 1111, 1112) and Mobile Home Parks and Trailer Courts (1140)"
+CCA_2026,Sfperc,General Land Use*,Single-Family Residential Percent,NA,General Land Use - Single-Family Residential Percent,"CMAP 2023 Land Use Inventory, 
+Percent of Total Acreage",NA
+CCA_2026,MF,General Land Use*,Multi-Family Residential Acres,NA,General Land Use - Multi-Family Residential Acres,"CMAP 2023 Land Use Inventory, 
+Class Acreage",Multi-Family (1130)
+CCA_2026,Mfperc,General Land Use*,Multi-Family Residential Percent,NA,General Land Use - Multi-Family Residential Percent,"CMAP 2023 Land Use Inventory, Percent of Total Acreage",NA
+CCA_2026,MIX,General Land Use*,Mixed Use Acres,NA,General Land Use - Mixed Use Acres,"CMAP 2023 Land Use Inventory, 
+Class Acreage",Urban Mix w/Residential Component (1216)
+CCA_2026,MIXperc,General Land Use*,Mixed Use Percent,NA,General Land Use - Mixed Use Percent,"CMAP 2023 Land Use Inventory, Percent of Total Acreage",NA
+CCA_2026,COMM,General Land Use*,Commercial Acres,NA,General Land Use - Commercial Acres,"CMAP 2023 Land Use Inventory, 
+Class Acreage","Includes Primarily Retail/Service (1211, 1212, 1214, 1215), Office (1220), Cultural/Entertainment (1240), and Hotel/Motel (1250)"
+CCA_2026,COMMperc,General Land Use*,Commercial Percent,NA,General Land Use - Commercial Percent,"CMAP 2023 Land Use Inventory,
+ Percent of Total Acreage",NA
+CCA_2026,INST,General Land Use*,Institutional Acres,NA,General Land Use - Institutional Acres,"CMAP 2023 Land Use Inventory, 
+Class Acreage","Includes Medical Facilities (1310), Educational Facilities (1320 series), Government Administration and Services (1330), Prison & Correctional Facilities (1340), Religious Facilities (1350), Cemeteries (1360), Other Institutional (1370), and National Laboratory (1380)"
+CCA_2026,INSTperc,General Land Use*,Institutional Percent,NA,General Land Use - Institutional Percent,"CMAP 2023 Land Use Inventory, 
+Percent of Total Acreage",NA
+CCA_2026,IND,General Land Use*,Industrial Acres,NA,General Land Use - Industrial Acres,"CMAP 2023 Land Use Inventory, 
+Class Acreage","Includes Mineral Extraction (1410), General Industrial < 100k sq. ft. (1420), Industrial G/E 100k sq. ft. (1430 series), and Storage (1450)"
+CCA_2026,INDperc,General Land Use*,Industrial Percent,NA,General Land Use - Industrial Percent,"CMAP 2023 Land Use Inventory, 
+Percent of Total Acreage",NA
+CCA_2026,TRANS,General Land Use*,Transportation and Other Acres,NA,General Land Use - Transportation and Other Acres,"CMAP 2023 Land Use Inventory, 
+Class Acreage","Includes Trans/Comm/Util/Waste (1500 series), Water (5000, 6200), Non-Parcel Right-of-Way (6300), and Non-Parcel NEC (6400)"
+CCA_2026,TRANSperc,General Land Use*,Transportation and Other Percent,NA,General Land Use - Transportation and Other Percent,"CMAP 2023 Land Use Inventory, 
+Percent of Total Acreage",NA
+CCA_2026,AG,General Land Use*,Agricultural Acres,NA,General Land Use - Agricultural Acres,"CMAP 2023 Land Use Inventory, 
+Class Acreage",Agriculture (2000)
+CCA_2026,Agperc,General Land Use*,Agricultural Percent,NA,General Land Use - Agricultural Percent,"CMAP 2023 Land Use Inventory, 
+Percent of Total Acreage",NA
+CCA_2026,OPEN,General Land Use*,Open Space Acres,NA,General Land Use - Open Space Acres,"CMAP 2023 Land Use Inventory, 
+Class Acreage",Includes Open Space (3000 series) and Non-parcel Open Space (6100)
+CCA_2026,OPENperc,General Land Use*,Open Space Percent,NA,General Land Use - Open Space Percent,"CMAP 2023 Land Use Inventory, 
+Percent of Total Acreage",NA
+CCA_2026,VACANT,General Land Use*,Vacant Acres,NA,General Land Use - Vacant Acres,"CMAP 2023 Land Use Inventory, 
+Class Acreage",Includes Vacant/Underdeveloped Land (4100 series) and Under Construction (4200 series)
+CCA_2026,VACperc,General Land Use*,Vacant Percent,NA,General Land Use - Vacant Percent,"CMAP 2023 Land Use Inventory, 
+Percent of Total Acreage",NA
+CCA_2026,CT_1PHH,Household Size,1-Person Household,NA,Household Size - 1-Person Household,2020-2024 American Community Survey: Table B11016,NA
+CCA_2026,CT_2PHH,Household Size,2-People Household,NA,Household Size - 2-People Household,2020-2024 American Community Survey: Table B11016,NA
+CCA_2026,CT_3PHH,Household Size,3-People Household,NA,Household Size - 3-People Household,2020-2024 American Community Survey: Table B11016,NA
+CCA_2026,CT_4MPHH,Household Size,4-or-More Person Household,NA,Household Size - 4-or-More Person Household,2020-2024 American Community Survey: Table B11016,NA
+CCA_2026,CT_FAM_HH,Household Type,Family,NA,Household Type - Family,2020-2024 American Community Survey: Tables B11001 & B11003,NA
+CCA_2026,CT_SP_WCHILD,Household Type,Single Parent with Child,NA,Household Type - Single Parent with Child,2020-2024 American Community Survey: Tables B11001 & B11003,NA
+CCA_2026,CT_NONFAM_HH,Household Type,Non-Family,NA,Household Type - Non-Family,2020-2024 American Community Survey: Tables B11001 & B11003,NA
+CCA_2026,HCUND20K,"Household Income Less Than $20,000 - Monthly Housing Cost as a Percentage of Household Income","Total Households less than $20,000",NA,"Household Income Less Than $20,000 - Monthly Housing Cost as a Percentage of Household Income - Total Households less than $20,000",2020-2024 American Community Survey: Table B25106,NA
+CCA_2026,HCUND20K_LT20PCT,"Household Income Less Than $20,000 - Monthly Housing Cost as a Percentage of Household Income",Less Than 20 percent,NA,"Household Income Less Than $20,000 - Monthly Housing Cost as a Percentage of Household Income - Less Than 20 percent",2020-2024 American Community Survey: Table B25106,NA
+CCA_2026,HCUND20K_20_29PCT,"Household Income Less Than $20,000 - Monthly Housing Cost as a Percentage of Household Income",20 to 29 percent,NA,"Household Income Less Than $20,000 - Monthly Housing Cost as a Percentage of Household Income - 20 to 29 percent",2020-2024 American Community Survey: Table B25106,NA
+CCA_2026,HCUND20K_30MPCT,"Household Income Less Than $20,000 - Monthly Housing Cost as a Percentage of Household Income",30 pecent or more,NA,"Household Income Less Than $20,000 - Monthly Housing Cost as a Percentage of Household Income - 30 pecent or more",2020-2024 American Community Survey: Table B25106,NA
+CCA_2026,HC20Kto49K,"Household Income $20,000 to $49,999 - Monthly Housing Cost as a Percentage of Household Income","Total Households $35,000 to $49,999",NA,"Household Income $20,000 to $49,999 - Monthly Housing Cost as a Percentage of Household Income - Total Households $35,000 to $49,999",2020-2024 American Community Survey: Table B25106,NA
+CCA_2026,HC20Kto49K_LT20PCT,"Household Income $20,000 to $49,999 - Monthly Housing Cost as a Percentage of Household Income",Less Than 20 percent,NA,"Household Income $20,000 to $49,999 - Monthly Housing Cost as a Percentage of Household Income - Less Than 20 percent",2020-2024 American Community Survey: Table B25106,NA
+CCA_2026,HC20Kto49K_20_29PCT,"Household Income $20,000 to $49,999 - Monthly Housing Cost as a Percentage of Household Income",20 to 29 percent,NA,"Household Income $20,000 to $49,999 - Monthly Housing Cost as a Percentage of Household Income - 20 to 29 percent",2020-2024 American Community Survey: Table B25106,NA
+CCA_2026,HC20Kto49K_30MPCT,"Household Income $20,000 to $49,999 - Monthly Housing Cost as a Percentage of Household Income",30 pecent or more,NA,"Household Income $20,000 to $49,999 - Monthly Housing Cost as a Percentage of Household Income - 30 pecent or more",2020-2024 American Community Survey: Table B25106,NA
+CCA_2026,HC50Kto75K,"Household Income $50,000 to $74,999 - Monthly Housing Cost as a Percentage of Household Income","Total Households $50,000 to $74,999",NA,"Household Income $50,000 to $74,999 - Monthly Housing Cost as a Percentage of Household Income - Total Households $50,000 to $74,999",2020-2024 American Community Survey: Table B25106,NA
+CCA_2026,HC50Kto75K_LT20PCT,"Household Income $50,000 to $74,999 - Monthly Housing Cost as a Percentage of Household Income",Less Than 20 percent,NA,"Household Income $50,000 to $74,999 - Monthly Housing Cost as a Percentage of Household Income - Less Than 20 percent",2020-2024 American Community Survey: Table B25106,NA
+CCA_2026,HC50Kto75K_20_29PCT,"Household Income $50,000 to $74,999 - Monthly Housing Cost as a Percentage of Household Income",20 to 29 percent,NA,"Household Income $50,000 to $74,999 - Monthly Housing Cost as a Percentage of Household Income - 20 to 29 percent",2020-2024 American Community Survey: Table B25106,NA
+CCA_2026,HC50Kto75K_30MPCT,"Household Income $50,000 to $74,999 - Monthly Housing Cost as a Percentage of Household Income",30 pecent or more,NA,"Household Income $50,000 to $74,999 - Monthly Housing Cost as a Percentage of Household Income - 30 pecent or more",2020-2024 American Community Survey: Table B25106,NA
+CCA_2026,HCOV75K,"Household Income $75,000 or more - Monthly Housing Cost as a Percentage of Household Income","Total Households $75,000 or more",NA,"Household Income $75,000 or more - Monthly Housing Cost as a Percentage of Household Income - Total Households $75,000 or more",2020-2024 American Community Survey: Table B25106,NA
+CCA_2026,HCOV75K_LT20PCT,"Household Income $75,000 or more - Monthly Housing Cost as a Percentage of Household Income",Less Than 20 percent,NA,"Household Income $75,000 or more - Monthly Housing Cost as a Percentage of Household Income - Less Than 20 percent",2020-2024 American Community Survey: Table B25106,NA
+CCA_2026,HCOV75K_20_29PCT,"Household Income $75,000 or more - Monthly Housing Cost as a Percentage of Household Income",20 to 29 percent,NA,"Household Income $75,000 or more - Monthly Housing Cost as a Percentage of Household Income - 20 to 29 percent",2020-2024 American Community Survey: Table B25106,NA
+CCA_2026,HCOV75K_30MPCT,"Household Income $75,000 or more - Monthly Housing Cost as a Percentage of Household Income",30 pecent or more,NA,"Household Income $75,000 or more - Monthly Housing Cost as a Percentage of Household Income - 30 pecent or more",2020-2024 American Community Survey: Table B25106,NA
+CCA_2026,NATIVE,Nativity,Native,NA,Nativity - Native,2020-2024 American Community Survey: Table B16005,NA
+CCA_2026,FOR_BORN,Nativity,Foreign Born,NA,Nativity - Foreign Born,2020-2024 American Community Survey: Table B16005,NA
+CCA_2026,POP_OV5,Nativity,Population over 5,NA,Nativity - Population over 5,2020-2024 American Community Survey: Table C16001,NA
+CCA_2026,NOT_ENGLISH,Language Spoken at Home and Ability to Speak English,Speak a language other than English,NA,Language Spoken at Home and Ability to Speak English - Speak a language other than English,2020-2024 American Community Survey: Table C16001,NA
+CCA_2026,LING_ISO,Language Spoken at Home and Ability to Speak English,"Speak English less than ""very well""",NA,"Language Spoken at Home and Ability to Speak English - Speak English less than ""very well""",2020-2024 American Community Survey: Table C16001,"For people who speak a language other than English at home, the ACS asks whether they speak English ""very well,"" ""well,"" ""not well,"" or ""not at all."""
+CCA_2026,ENGLISH,Language Spoken at Home and Ability to Speak English,English Only,NA,Language Spoken at Home and Ability to Speak English - English Only,2020-2024 American Community Survey: Table C16001,Population that speaks only English at home.
+CCA_2026,SPANISH,Language Spoken at Home and Ability to Speak English,Spanish,NA,Language Spoken at Home and Ability to Speak English - Spanish,2020-2024 American Community Survey: Table C16001,"These languages may be spoken exclusively, but people counted in these categories may also speak English (and may even speak mostly in English)."
+CCA_2026,SLAVIC,Language Spoken at Home and Ability to Speak English,Slavic Languages,NA,Language Spoken at Home and Ability to Speak English - Slavic Languages,2020-2024 American Community Survey: Table C16001,NA
+CCA_2026,CHINESE,Language Spoken at Home and Ability to Speak English,Chinese,NA,Language Spoken at Home and Ability to Speak English - Chinese,2020-2024 American Community Survey: Table C16001,NA
+CCA_2026,TAGALOG,Language Spoken at Home and Ability to Speak English,Tagalog,NA,Language Spoken at Home and Ability to Speak English - Tagalog,2020-2024 American Community Survey: Table C16001,NA
+CCA_2026,ARABIC,Language Spoken at Home and Ability to Speak English,Arabic,NA,Language Spoken at Home and Ability to Speak English - Arabic,2020-2024 American Community Survey: Table C16001,NA
+CCA_2026,KOREAN,Language Spoken at Home and Ability to Speak English,Korean,NA,Language Spoken at Home and Ability to Speak English - Korean,2020-2024 American Community Survey: Table C16001,NA
+CCA_2026,OTHER_ASIAN,Language Spoken at Home and Ability to Speak English,Other Asian Languages,NA,Language Spoken at Home and Ability to Speak English - Other Asian Languages,2020-2024 American Community Survey: Table C16001,NA
+CCA_2026,OTHER_EURO,Language Spoken at Home and Ability to Speak English,Other Indo-European Languages,NA,Language Spoken at Home and Ability to Speak English - Other Indo-European Languages,2020-2024 American Community Survey: Table C16001,NA
+CCA_2026,OTHER_UNSPEC,Language Spoken at Home and Ability to Speak English,Other/Unspecified Languages,NA,Language Spoken at Home and Ability to Speak English - Other/Unspecified Languages,2020-2024 American Community Survey: Table C16001,NA
+CCA_2026,F2000_WHITE,"Race and Ethnicity, Over Time",White (Non-Hispanic) (2000),NA,"Race and Ethnicity, Over Time - White (Non-Hispanic) (2000)","2000 Census: SF1, Table P004",NA
+CCA_2026,F2000_HISP,"Race and Ethnicity, Over Time",Hispanic or Latino (of Any Race) (2000),NA,"Race and Ethnicity, Over Time - Hispanic or Latino (of Any Race) (2000)","2000 Census: SF1, Table P004",NA
+CCA_2026,F2000_BLACK,"Race and Ethnicity, Over Time",Black (Non-Hispanic) (2000),NA,"Race and Ethnicity, Over Time - Black (Non-Hispanic) (2000)","2000 Census: SF1, Table P004",NA
+CCA_2026,F2000_ASIAN,"Race and Ethnicity, Over Time",Asian (Non-Hispanic) (2000),NA,"Race and Ethnicity, Over Time - Asian (Non-Hispanic) (2000)","2000 Census: SF1, Table P004",NA
+CCA_2026,F2000_OTHER,"Race and Ethnicity, Over Time",Other (Non-Hispanic) (2000),NA,"Race and Ethnicity, Over Time - Other (Non-Hispanic) (2000)","2000 Census: SF1, Table P004",NA
+Muni_2026,GEOID,NA,NA,Geographic identity code,Geographic identity code,CMAP,Geographic identity code.
+Muni_2026,GEOG,NA,NA,Name of Community,Name of Community,CMAP,County/municipality/CCA name.
+Muni_2026,F2000_POP,NA,NA,Total population in 2000,Total population in 2000,"2000 Census: SF1, Table P001",Total population in 2000.
+Muni_2026,F2010_POP,NA,NA,Total population in 2010,Total population in 2010,"2010 Census: SF1, Table P001",Total population in 2010.
+Muni_2026,F2020_POP,General Population Characteristics,Total Population,Total population in 2020,General Population Characteristics - Total population in 2020,"2020 Census P.L. 94-171, Table P0010001",NA
+Muni_2026,F2020_HH,General Population Characteristics,Total Households,Total households in 2020,General Population Characteristics - Total households in 2020,"2020 Census P.L. 94-171, Table H0010002",NA
+Muni_2026,TOT_POP,General Population Characteristics,NA,Total population in 2024,General Population Characteristics - Total population in 2024,2020-2024 American Community Survey: Table B01001,NA
+Muni_2026,UND5,Age Cohorts,5 and under,Population 5 and under,Age Cohorts - Population 5 and under,2020-2024 American Community Survey: Table B01001,NA
+Muni_2026,A5_19,Age Cohorts,5 to 19,Population aged 5 to 19,Age Cohorts - Population aged 5 to 19,2020-2024 American Community Survey: Table B01001,NA
+Muni_2026,A20_34,Age Cohorts,20 to 34,Population aged 20 to 34,Age Cohorts - Population aged 20 to 34,2020-2024 American Community Survey: Table B01001,NA
+Muni_2026,A35_49,Age Cohorts,35 to 49,Population aged 35 to 49,Age Cohorts - Population aged 35 to 49,2020-2024 American Community Survey: Table B01001,NA
+Muni_2026,A50_64,Age Cohorts,50 to 64,Population aged 50 to 64,Age Cohorts - Population aged 50 to 64,2020-2024 American Community Survey: Table B01001,NA
+Muni_2026,A65_74,Age Cohorts,65 to 74,Population aged 65 to 74,Age Cohorts - Population aged 65 to 74,2020-2024 American Community Survey: Table B01001,NA
+Muni_2026,A75_84,Age Cohorts,75 to 84,Population aged 75 to 84,Age Cohorts - Population aged 75 to 84,2020-2024 American Community Survey: Table B01001,NA
+Muni_2026,OV85,Age Cohorts,85 and Older,Population over 85,Age Cohorts - Population over 85,2020-2024 American Community Survey: Table B01001,NA
+Muni_2026,MED_AGE,Age Cohorts,Median Age,Median age,Age Cohorts - Median age,2020-2024 American Community Survey: Table B01002,CCA and regional medians were estimated from grouped frequency distributions.
+Muni_2026,WHITE,Race and Ethnicity,White (Non-Hispanic),White (Non-Hispanic),Race and Ethnicity - White (Non-Hispanic),2020-2024 American Community Survey: Table B03002,NA
+Muni_2026,HISP,Race and Ethnicity,Hispanic or Latino (of Any Race),Hispanic or Latino (of Any Race),Race and Ethnicity - Hispanic or Latino (of Any Race),2020-2024 American Community Survey: Table B03002,NA
+Muni_2026,BLACK,Race and Ethnicity,Black (Non-Hispanic),Black (Non-Hispanic),Race and Ethnicity - Black (Non-Hispanic),2020-2024 American Community Survey: Table B03002,NA
+Muni_2026,ASIAN,Race and Ethnicity,Asian (Non-Hispanic),Asian (Non-Hispanic),Race and Ethnicity - Asian (Non-Hispanic),2020-2024 American Community Survey: Table B03002,NA
+Muni_2026,OTHER,Race and Ethnicity,Other (Non-Hispanic),Other (Non-Hispanic),Race and Ethnicity - Other (Non-Hispanic),2020-2024 American Community Survey: Table B03002,NA
+Muni_2026,POP_HH,Race and Ethnicity,NA,Population living in households,Race and Ethnicity - Population living in households,2020-2024 American Community Survey: Table B09019,Population living in households.
+Muni_2026,POP_16OV,Race and Ethnicity,NA,Population aged 16 and over,Race and Ethnicity - Population aged 16 and over,2020-2024 American Community Survey: Table B23001,Population aged 16 and over.
+Muni_2026,IN_LBFRC,Employment Status,In Labor Force,In Labor Force,Employment Status - In Labor Force,2020-2024 American Community Survey: Table B23001,NA
+Muni_2026,EMP,Employment Status,Employed,Employed,Employment Status - Employed,2020-2024 American Community Survey: Table B23001,Does not include military employees.
+Muni_2026,UNEMP,Employment Status,Unemployed,Unemployed,Employment Status - Unemployed,2020-2024 American Community Survey: Table B23001,NA
+Muni_2026,NOT_IN_LBFRC,Employment Status,Not In Labor Force,Not In Labor Force,Employment Status - Not In Labor Force,2020-2024 American Community Survey: Table B23001,NA
+Muni_2026,TOT_WRKR16OV,Mode of Travel to Work,Total Workers 16 and Over,Total Workers 16 and Over,Mode of Travel to Work - Total Workers 16 and Over,2020-2024 American Community Survey: Table B08301,NA
+Muni_2026,WORK_AT_HOME,Mode of Travel to Work,Work at Home,Work at Home,Mode of Travel to Work - Work at Home,2020-2024 American Community Survey: Table B08301,NA
+Muni_2026,TOT_COMM,Mode of Travel to Work,Total Commuters,Total Commuters,Mode of Travel to Work - Total Commuters,2020-2024 American Community Survey: Table B08301,NA
+Muni_2026,DROVE_AL,Mode of Travel to Work,Drove Alone,Drove Alone,Mode of Travel to Work - Drove Alone,2020-2024 American Community Survey: Table B08301,NA
+Muni_2026,CARPOOL,Mode of Travel to Work,Carpool,Carpool,Mode of Travel to Work - Carpool,2020-2024 American Community Survey: Table B08301,NA
+Muni_2026,TRANSIT,Mode of Travel to Work,Transit,Transit,Mode of Travel to Work - Transit,2020-2024 American Community Survey: Table B08301,NA
+Muni_2026,WALK_BIKE,Mode of Travel to Work,Walk or Bike,Walk or Bike,Mode of Travel to Work - Walk or Bike,2020-2024 American Community Survey: Table B08301,NA
+Muni_2026,COMM_OTHER,Mode of Travel to Work,Other,Other commute,Mode of Travel to Work - Other commute,2020-2024 American Community Survey: Table B08301,NA
+Muni_2026,AGG_TT,Mode of Travel to Work,NA,Aggregate travel time to work (in minutes),Mode of Travel to Work - Aggregate travel time to work (in minutes),2020-2024 American Community Survey: Table B08013,Aggregate travel time to work (in minutes) by workers 16 years and over. Does not include workers working at home.
+Muni_2026,NO_VEH,Vehicles Available,No Vehicle Available,No vehicles available to household,Vehicles Available - No vehicles available to household,2020-2024 American Community Survey: Table B25044,NA
+Muni_2026,ONE_VEH,Vehicles Available,1 Vehicle Available,1 vehicle available to household,Vehicles Available - 1 vehicle available to household,2020-2024 American Community Survey: Table B25044,NA
+Muni_2026,TWO_VEH,Vehicles Available,2 Vehicles Available,2 vehicles available to household,Vehicles Available - 2 vehicles available to household,2020-2024 American Community Survey: Table B25044,NA
+Muni_2026,THREEOM_VEH,Vehicles Available,3 or More  Vehicles Available,3 or more vehicles available to household,Vehicles Available - 3 or more vehicles available to household,2020-2024 American Community Survey: Table B25044,NA
+Muni_2026,POP_25OV,Vehicles Available,NA,Population aged 25 and over,Vehicles Available - Population aged 25 and over,2020-2024 American Community Survey: Table B15002,Population aged 25 and over.
+Muni_2026,LT_HS,Educational Attainment,Less Than High School Diploma,Less Than High School Diploma,Educational Attainment - Less Than High School Diploma,2020-2024 American Community Survey: Table B15002,NA
+Muni_2026,HS,Educational Attainment,High School Diploma or Equivalent,High School Diploma or Equivalent,Educational Attainment - High School Diploma or Equivalent,2020-2024 American Community Survey: Table B15002,NA
+Muni_2026,SOME_COLL,Educational Attainment,"Some College, No Degree","Some College, No Degree","Educational Attainment - Some College, No Degree",2020-2024 American Community Survey: Table B15002,NA
+Muni_2026,ASSOC,Educational Attainment,Associate's Degree,Associate's Degree,Educational Attainment - Associate's Degree,2020-2024 American Community Survey: Table B15002,NA
+Muni_2026,BACH,Educational Attainment,Bachelor's Degree,Bachelor's Degree,Educational Attainment - Bachelor's Degree,2020-2024 American Community Survey: Table B15002,NA
+Muni_2026,GRAD_PROF,Educational Attainment,Graduate or Professional Degree,Graduate or Professional Degree,Educational Attainment - Graduate or Professional Degree,2020-2024 American Community Survey: Table B15002,NA
+Muni_2026,INC_LT_25K,Household Income,"Less than $25,000","Income less than $25,000","Household Income - Income less than $25,000",2020-2024 American Community Survey: Table B19001,In 2024 dollars
+Muni_2026,INC_25_50K,Household Income,"$25,000 to $49,999","Income $25,000 to $49,999","Household Income - Income $25,000 to $49,999",2020-2024 American Community Survey: Table B19001,NA
+Muni_2026,INC_50_75K,Household Income,"$50,000 to $74,999","Income $50,000 to $74,999","Household Income - Income $50,000 to $74,999",2020-2024 American Community Survey: Table B19001,NA
+Muni_2026,INC_75_100K,Household Income,"$75,000 to $99,999","Income $75,000 to $99,999","Household Income - Income $75,000 to $99,999",2020-2024 American Community Survey: Table B19001,NA
+Muni_2026,INC_100_150K,Household Income,"$100,000 to $149,999","Income $100,000 to $149,999","Household Income - Income $100,000 to $149,999",2020-2024 American Community Survey: Table B19001,NA
+Muni_2026,INC_GT_150,Household Income,"$150,000 and Over","Income $150,000 and Over","Household Income - Income $150,000 and Over",2020-2024 American Community Survey: Table B19001,NA
+Muni_2026,MEDINC,Household Income,Median Income,Median Income,Household Income - Median Income,2020-2024 American Community Survey: Table B19013,CCA and regional medians were estimated from grouped frequency distributions.
+Muni_2026,INCPERCAP,Household Income,Per Capita Income,Income per Capita,Household Income - Income per Capita,2020-2024 American Community Survey: Table B19301,NA
+Muni_2026,TOT_HH,Housing Occupancy and Tenure,Occupied Housing Units,Total households,Housing Occupancy and Tenure - Total households,2020-2024 American Community Survey: Table B25002,NA
+Muni_2026,OWN_OCC_HU,Housing Occupancy and Tenure,Owner-Occupied Housing Units,Owner-Occupied Housing Units,Housing Occupancy and Tenure - Owner-Occupied Housing Units,2020-2024 American Community Survey: Table B25003,NA
+Muni_2026,RENT_OCC_HU,Housing Occupancy and Tenure,Renter-Occupied Housing Units,Renter-Occupied Housing Units,Housing Occupancy and Tenure - Renter-Occupied Housing Units,2020-2024 American Community Survey: Table B25003,NA
+Muni_2026,VAC_HU,Housing Occupancy and Tenure,Vacant Housing Units,Vacant Housing Units,Housing Occupancy and Tenure - Vacant Housing Units,2020-2024 American Community Survey: Table B25002,NA
+Muni_2026,HU_TOT,Housing Occupancy and Tenure,NA,Total housing units,Housing Occupancy and Tenure - Total housing units,2020-2024 American Community Survey: Table B25024,Total housing units.
+Muni_2026,HU_SNG_DET,Housing Type,"Single Family, Detached",Single family detached units,Housing Type - Single family detached units,2020-2024 American Community Survey: Table B25024,NA
+Muni_2026,HU_SNG_ATT,Housing Type,"Single Family, Attached",Single family attached units,Housing Type - Single family attached units,2020-2024 American Community Survey: Table B25024,NA
+Muni_2026,HU_2UN,Housing Type,2 Units,"Multi-family, 2 units (duplex)","Housing Type - Multi-family, 2 units (duplex)",2020-2024 American Community Survey: Table B25024,NA
+Muni_2026,HU_3_4UN,Housing Type,3 or 4 Units,"Multi-family, 3 to 4 units","Housing Type - Multi-family, 3 to 4 units",2020-2024 American Community Survey: Table B25024,NA
+Muni_2026,HU_5_9UN,Housing Type,5 to 9 Units,"Multi-family, 5 to 9 units","Housing Type - Multi-family, 5 to 9 units",2020-2024 American Community Survey: Table B25024,NA
+Muni_2026,HU_10_19UN,Housing Type,10 to 19 Units,"Multi-family, 10-19 units","Housing Type - Multi-family, 10-19 units",2020-2024 American Community Survey: Table B25024,NA
+Muni_2026,HU_GT_19UN,Housing Type,20 or More Units,"Multi-family, 20 or more units","Housing Type - Multi-family, 20 or more units",2020-2024 American Community Survey: Table B25024,NA
+Muni_2026,HU_MOBILE,Housing Type,Mobile Home/Other,"Other housing type: mobile home, RV, van, other","Housing Type - Other housing type: mobile home, RV, van, other",2020-2024 American Community Survey: Table B25024,"""Other"" includes boat, RV, van, etc."
+Muni_2026,MED_ROOMS,Housing Size,Median Number of Rooms,Median number of rooms,Housing Size - Median number of rooms,2020-2024 American Community Survey: Table B25018,"CCA and regional medians, estimated from grouped frequency distributions."
+Muni_2026,HA_AFT2010,Housing Age,Built 2010 or Later,Housing units built 2010 or Later,Housing Age - Housing units built 2010 or Later,2020-2024 American Community Survey: Table B25034,NA
+Muni_2026,HA_90_10,Housing Age,Built 1990 to 2009,Housing units built 1990 to 2009,Housing Age - Housing units built 1990 to 2009,2020-2024 American Community Survey: Table B25034,NA
+Muni_2026,HA_70_90,Housing Age,Built 1970 to 1989,Housing units built 1970 to 1989,Housing Age - Housing units built 1970 to 1989,2020-2024 American Community Survey: Table B25034,NA
+Muni_2026,HA_40_70,Housing Age,Built 1940 to 1969,Housing units built 1940 to 1969,Housing Age - Housing units built 1940 to 1969,2020-2024 American Community Survey: Table B25034,NA
+Muni_2026,HA_BEF1940,Housing Age,Built before 1940,Housing units built before 1940,Housing Age - Housing units built before 1940,2020-2024 American Community Survey: Table B25034,NA
+Muni_2026,MED_HA,Housing Age,Median Year Built,Median year of housing units built,Housing Age - Median year of housing units built,2020-2024 American Community Survey: Table B25035,CCA and regional medians  estimated from grouped frequency distributions.
+Muni_2026,BR_0_1,Housing Size,0 or 1 Bedrooms,Housing units with 0 or 1 bedrooms,Housing Size - Housing units with 0 or 1 bedrooms,2020-2024 American Community Survey: Table B25041,NA
+Muni_2026,BR_2,Housing Size,2 Bedrooms,Housing units with 2 bedrooms,Housing Size - Housing units with 2 bedrooms,2020-2024 American Community Survey: Table B25041,NA
+Muni_2026,BR_3,Housing Size,3 Bedrooms,Housing units with 3 bedrooms,Housing Size - Housing units with 3 bedrooms,2020-2024 American Community Survey: Table B25041,NA
+Muni_2026,BR_4,Housing Size,4 Bedrooms,Housing units with 4 bedrooms,Housing Size - Housing units with 4 bedrooms,2020-2024 American Community Survey: Table B25041,NA
+Muni_2026,BR_5,Housing Size,5 or More Bedrooms,Housing units with 5 or more bedrooms,Housing Size - Housing units with 5 or more bedrooms,2020-2024 American Community Survey: Table B25041,NA
+Muni_2026,HV_LT_150K,Housing Size,NA,"Home value less than $150,000","Housing Size - Home value less than $150,000",2020-2024 American Community Survey: Table B25075,In 2024 dollars
+Muni_2026,HV_500_1M,Housing Size,NA,"Home value $500,000 to $1,000,000","Housing Size - Home value $500,000 to $1,000,000",2020-2024 American Community Survey: Table B25075,NA
+Muni_2026,HV_GT_1M,Housing Size,NA,"Home value $1,000,000 or more","Housing Size - Home value $1,000,000 or more",2020-2024 American Community Survey: Table B25075,NA
+Muni_2026,MED_HV,Housing Size,NA,Median home value,Housing Size - Median home value,2020-2024 American Community Survey: Table B25077,Median home value. CCA and regional medians estimated from grouped frequency distributions.
+Muni_2026,RENT_LT500,Housing Size,NA,Units paying rent less than $500,Housing Size - Units paying rent less than $500,2020-2024 American Community Survey: Table B25063,NA
+Muni_2026,RENT_500_999,Housing Size,NA,Units paying rent between $500 to $999,Housing Size - Units paying rent between $500 to $999,2020-2024 American Community Survey: Table B25063,NA
+Muni_2026,RENT_1000_1499,Housing Size,NA,Units paying rent between $1000 to $1499,Housing Size - Units paying rent between $1000 to $1499,2020-2024 American Community Survey: Table B25063,NA
+Muni_2026,RENT_1500_2499,Housing Size,NA,Units paying rent between $1500 to $2499,Housing Size - Units paying rent between $1500 to $2499,2020-2024 American Community Survey: Table B25063,NA
+Muni_2026,RENT_GT2500,Housing Size,NA,Units paying rent above $2500,Housing Size - Units paying rent above $2500,2020-2024 American Community Survey: Table B25063,NA
+Muni_2026,MED_RENT,Housing Size,NA,Median gross rent,Housing Size - Median gross rent,2020-2024 American Community Survey: Table B25064,Median gross rent. CCA and regional medians estimated from grouped frequency distributions.
+Muni_2026,COMPUTER,Household Computer and Internet Access,One or More Computing Devices,Households with one or more computing device(es),Household Computer and Internet Access - Households with one or more computing device(es),2020-2024 American Community Survey: Table B28001,NA
+Muni_2026,ONLY_SMARTPHONE,Household Computer and Internet Access,Smartphone(s) Only,Households with only a smartphone as computing device,Household Computer and Internet Access - Households with only a smartphone as computing device,2020-2024 American Community Survey: Table B28001,NA
+Muni_2026,NO_COMPUTER,Household Computer and Internet Access,No Computing Device,Households with no computing device,Household Computer and Internet Access - Households with no computing device,2020-2024 American Community Survey: Table B28001,NA
+Muni_2026,INTERNET,Household Computer and Internet Access,Internet Access,Households with any kind of internet access,Household Computer and Internet Access - Households with any kind of internet access,2020-2024 American Community Survey: Table B28002,NA
+Muni_2026,BROADBAND,Household Computer and Internet Access,Broadband Subscription,Households with broadband internet access,Household Computer and Internet Access - Households with broadband internet access,2020-2024 American Community Survey: Table B28002,NA
+Muni_2026,NO_INTERNET,Household Computer and Internet Access,No Internet Access,Households with no internet access,Household Computer and Internet Access - Households with no internet access,2020-2024 American Community Survey: Table B28002,NA
+Muni_2026,DISAB_ONE,Population With a Disability,One Type of Disabilty Only,One Type of Disabilty Only,Population With a Disability - One Type of Disabilty Only,2020-2024 American Community Survey: Table C18108,NA
+Muni_2026,DISAB_TWOMOR,Population With a Disability,Two or More Types of Disabilty,Two or More Types of Disabilty,Population With a Disability - Two or More Types of Disabilty,2020-2024 American Community Survey: Table C18108,NA
+Muni_2026,DISAB_ANY,Population With a Disability,Number of People With a Disability,Number of People With a Disability,Population With a Disability - Number of People With a Disability,2020-2024 American Community Survey: Table C18108,NA
+Muni_2026,DIS_HEAR,Disability by Type,Hearing Difficulty,Hearing Difficulty,Disability by Type - Hearing Difficulty,"2020-2024 American Community Survey: Tables B18102, B18103, B18104, B18105, B18106, B18107",NA
+Muni_2026,DIS_VIS,Disability by Type,Vision Difficulty,Vision Difficulty,Disability by Type - Vision Difficulty,"2020-2024 American Community Survey: Tables B18102, B18103, B18104, B18105, B18106, B18107",NA
+Muni_2026,DIS_COG,Disability by Type,Cognitive Difficulty,Cognitive Difficulty,Disability by Type - Cognitive Difficulty,"2020-2024 American Community Survey: Tables B18102, B18103, B18104, B18105, B18106, B18107",NA
+Muni_2026,DIS_AMB,Disability by Type,Ambulatory Difficulty,Ambulatory Difficulty,Disability by Type - Ambulatory Difficulty,"2020-2024 American Community Survey: Tables B18102, B18103, B18104, B18105, B18106, B18107",NA
+Muni_2026,DIS_SLFCARE,Disability by Type,Self-Care Difficulty,Self-Care Difficulty,Disability by Type - Self-Care Difficulty,"2020-2024 American Community Survey: Tables B18102, B18103, B18104, B18105, B18106, B18107",NA
+Muni_2026,POP_18OV,Disability by Type,Population over 18,Population over 18,Disability by Type - Population over 18,"2020-2024 American Community Survey: Tables B18102, B18103, B18104, B18105, B18106, B18107",NA
+Muni_2026,DIS_INDPLIV,Disability by Type,Independent Living Difficulty,Independent Living Difficulty,Disability by Type - Independent Living Difficulty,"2020-2024 American Community Survey: Tables B18102, B18103, B18104, B18105, B18106, B18107",Age 18 and Over Only
+Muni_2026,DIS_UND18,Disability by Age Cohorts,0-17 with a disability,0-17 with a disability,Disability by Age Cohorts - 0-17 with a disability,2020-2024 American Community Survey: Table B18101,NA
+Muni_2026,DIS_18_64,Disability by Age Cohorts,18-64 with a disability,18-64 with a disability,Disability by Age Cohorts - 18-64 with a disability,2020-2024 American Community Survey: Table B18101,NA
+Muni_2026,DIS_65_75,Disability by Age Cohorts,65-75 with a disability,65-75 with a disability,Disability by Age Cohorts - 65-75 with a disability,2020-2024 American Community Survey: Table B18101,NA
+Muni_2026,DIS_75OV,Disability by Age Cohorts,75 and Over With a Disability,75 and Over With a Disability,Disability by Age Cohorts - 75 and Over With a Disability,2020-2024 American Community Survey: Table B18101,NA
+Muni_2026,UNINSURED,Health Insurance Coverage,Population without Health Insurance,Population without Health Insurance,Health Insurance Coverage - Population without Health Insurance,2020-2024 American Community Survey: Table B18135,NA
+Muni_2026,DIS_UNINSURED,Health Insurance Coverage,Population without Health Insurance and a Disability,Population without Health Insurance and a Disability,Health Insurance Coverage - Population without Health Insurance and a Disability,2020-2024 American Community Survey: Table B18135,NA
+Muni_2026,POP_CIV_NONINST,Health Insurance Coverage,Civilian non-institutional population,Civilian non-institutional population,Health Insurance Coverage - Civilian non-institutional population,2020-2024 American Community Survey: Table B18135,NA
+Muni_2026,TOT_EMP_RES,Health Insurance Coverage,NA,Total Employed Residents,Health Insurance Coverage - Total Employed Residents,"2023 U.S. Census Bureau, Longitudinal-Employer Household Dynamics Program (LEHD): Count of Employment of Community Residents","Home Area Profile (All Workers Residing in Given Geography), 2023 Data, Primary Jobs Only.  
+
+Data presented for municipalities extending beyond the 7-County CMAP region reflect only the Residents located within the region."
+Muni_2026,TOT_EMP_WORK,Employment of Community Residents,NA,Total Employees Working in a Geography,Employment of Community Residents - Total Employees Working in a Geography,"2023 U.S. Census Bureau, Longitudinal-Employer Household Dynamics Program: Count of Employment in the Community","Work Area Profile (All Workers Employed in Given Geography), 2023 Data, Primary Jobs Only. 
+
+Data presented for municipalities extending beyond the 7-County CMAP region reflect only the workers working within the region. 
+
+For municipalites not entirely in the CMAP 7-county region, data only reflect the portion of the municipality located within the region."
+Muni_2026,IDES_START_EMP,Private Sector Employment,Count of Private Sector Jobs (2005),Count of Private Sector Jobs (2005),Private Sector Employment - Count of Private Sector Jobs (2005),"Illinois Department of Employment Security (IDES), Where Workers Work Report (2025)","Data available only for select municipalities. 
+Kendall County not included."
+Muni_2026,IDES_MID_EMP,Private Sector Employment,Count of Private Sector Jobs (2015),Count of Private Sector Jobs (2015),Private Sector Employment - Count of Private Sector Jobs (2015),"Illinois Department of Employment Security (IDES), Where Workers Work Report (2025)",NA
+Muni_2026,IDES_CURR_EMP,Private Sector Employment,Count of Private Sector Jobs (2025),Count of Private Sector Jobs (2025),Private Sector Employment - Count of Private Sector Jobs (2025),"Illinois Department of Employment Security (IDES), Where Workers Work Report (2025)",NA
+Muni_2026,AVG_VMT,Annual Vehicle Miles Traveled (VMT) Per Household,Average Vehicle Miles Traveled,Annual Vehicle Miles Traveled (VMT) Per Household,Annual Vehicle Miles Traveled (VMT) Per Household - Annual Vehicle Miles Traveled (VMT) Per Household,"CMAP analysis of US Census Bureau (2020-2024 American Community Survey: Tables B25002 and B25046), HERE (ZIP+4 data), Illinois Environmental Protection Agency data (Odometer Readings), and Illinois Secretary of State data.",NA
+Muni_2026,RET_SALES,General Merchandise Retail Sales,Total Retail Sales,Retail Sales,General Merchandise Retail Sales - Retail Sales,"Illinois Department of Revenue, 2025",NA
+Muni_2026,GEN_MERCH,General Merchandise Retail Sales,General Merchandise Sales,General Merchandise Sales,General Merchandise Retail Sales - General Merchandise Sales,"Illinois Department of Revenue, 2025",NA
+Muni_2026,RES_EAV,Equalized Assessed Value,Residential,Residential EAV,Equalized Assessed Value - Residential EAV,"Illinois Department of Revenue, 2024",NA
+Muni_2026,CMRCL_EAV,Equalized Assessed Value,Commercial,Commercial EAV,Equalized Assessed Value - Commercial EAV,"Illinois Department of Revenue, 2024",NA
+Muni_2026,IND_EAV,Equalized Assessed Value,Industrial,Industrial EAV,Equalized Assessed Value - Industrial EAV,"Illinois Department of Revenue, 2024",NA
+Muni_2026,RAIL_EAV,Equalized Assessed Value,Railroad,Railroad EAV,Equalized Assessed Value - Railroad EAV,"Illinois Department of Revenue, 2024",NA
+Muni_2026,FARM_EAV,Equalized Assessed Value,Farm,Farm EAV,Equalized Assessed Value - Farm EAV,"Illinois Department of Revenue, 2024",NA
+Muni_2026,MIN_EAV,Equalized Assessed Value,Mineral,Mineral EAV,Equalized Assessed Value - Mineral EAV,"Illinois Department of Revenue, 2024",NA
+Muni_2026,TOT_EAV,Equalized Assessed Value,Total,Total EAV,Equalized Assessed Value - Total EAV,"Illinois Department of Revenue, 2024",NA
+Muni_2026,TOT_ACRES,General Land Use*,Total Acres,NA,General Land Use - Total Acres,"CMAP 2023 Land Use Inventory, 
+Total Acreage",Additional information about 4-digit land use class codes is available here
+Muni_2026,SF,General Land Use*,Single-Family Residential Acres,NA,General Land Use - Single-Family Residential Acres,"CMAP 2023 Land Use Inventory, 
+Class Acreage","Includes Single-Family Residential (1110, 1111, 1112) and Mobile Home Parks and Trailer Courts (1140)"
+Muni_2026,Sfperc,General Land Use*,Single-Family Residential Percent,NA,General Land Use - Single-Family Residential Percent,"CMAP 2023 Land Use Inventory, 
+Percent of Total Acreage",NA
+Muni_2026,MF,General Land Use*,Multi-Family Residential Acres,NA,General Land Use - Multi-Family Residential Acres,"CMAP 2023 Land Use Inventory, 
+Class Acreage",Multi-Family (1130)
+Muni_2026,Mfperc,General Land Use*,Multi-Family Residential Percent,NA,General Land Use - Multi-Family Residential Percent,"CMAP 2023 Land Use Inventory, Percent of Total Acreage",NA
+Muni_2026,MIX,General Land Use*,Mixed Use Acres,NA,General Land Use - Mixed Use Acres,"CMAP 2023 Land Use Inventory, 
+Class Acreage",Urban Mix w/Residential Component (1216)
+Muni_2026,MIXperc,General Land Use*,Mixed Use Percent,NA,General Land Use - Mixed Use Percent,"CMAP 2023 Land Use Inventory, Percent of Total Acreage",NA
+Muni_2026,COMM,General Land Use*,Commercial Acres,NA,General Land Use - Commercial Acres,"CMAP 2023 Land Use Inventory, 
+Class Acreage","Includes Primarily Retail/Service (1211, 1212, 1214, 1215), Office (1220), Cultural/Entertainment (1240), and Hotel/Motel (1250)"
+Muni_2026,COMMperc,General Land Use*,Commercial Percent,NA,General Land Use - Commercial Percent,"CMAP 2023 Land Use Inventory,
+ Percent of Total Acreage",NA
+Muni_2026,INST,General Land Use*,Institutional Acres,NA,General Land Use - Institutional Acres,"CMAP 2023 Land Use Inventory, 
+Class Acreage","Includes Medical Facilities (1310), Educational Facilities (1320 series), Government Administration and Services (1330), Prison & Correctional Facilities (1340), Religious Facilities (1350), Cemeteries (1360), Other Institutional (1370), and National Laboratory (1380)"
+Muni_2026,INSTperc,General Land Use*,Institutional Percent,NA,General Land Use - Institutional Percent,"CMAP 2023 Land Use Inventory, 
+Percent of Total Acreage",NA
+Muni_2026,IND,General Land Use*,Industrial Acres,NA,General Land Use - Industrial Acres,"CMAP 2023 Land Use Inventory, 
+Class Acreage","Includes Mineral Extraction (1410), General Industrial < 100k sq. ft. (1420), Industrial G/E 100k sq. ft. (1430 series), and Storage (1450)"
+Muni_2026,INDperc,General Land Use*,Industrial Percent,NA,General Land Use - Industrial Percent,"CMAP 2023 Land Use Inventory, 
+Percent of Total Acreage",NA
+Muni_2026,TRANS,General Land Use*,Transportation and Other Acres,NA,General Land Use - Transportation and Other Acres,"CMAP 2023 Land Use Inventory, 
+Class Acreage","Includes Trans/Comm/Util/Waste (1500 series), Water (5000, 6200), Non-Parcel Right-of-Way (6300), and Non-Parcel NEC (6400)"
+Muni_2026,TRANSperc,General Land Use*,Transportation and Other Percent,NA,General Land Use - Transportation and Other Percent,"CMAP 2023 Land Use Inventory, 
+Percent of Total Acreage",NA
+Muni_2026,AG,General Land Use*,Agricultural Acres,NA,General Land Use - Agricultural Acres,"CMAP 2023 Land Use Inventory, 
+Class Acreage",Agriculture (2000)
+Muni_2026,Agperc,General Land Use*,Agricultural Percent,NA,General Land Use - Agricultural Percent,"CMAP 2023 Land Use Inventory, 
+Percent of Total Acreage",NA
+Muni_2026,OPEN,General Land Use*,Open Space Acres,NA,General Land Use - Open Space Acres,"CMAP 2023 Land Use Inventory, 
+Class Acreage",Includes Open Space (3000 series) and Non-parcel Open Space (6100)
+Muni_2026,OPENperc,General Land Use*,Open Space Percent,NA,General Land Use - Open Space Percent,"CMAP 2023 Land Use Inventory, 
+Percent of Total Acreage",NA
+Muni_2026,VACANT,General Land Use*,Vacant Acres,NA,General Land Use - Vacant Acres,"CMAP 2023 Land Use Inventory, 
+Class Acreage",Includes Vacant/Underdeveloped Land (4100 series) and Under Construction (4200 series)
+Muni_2026,VACperc,General Land Use*,Vacant Percent,NA,General Land Use - Vacant Percent,"CMAP 2023 Land Use Inventory, 
+Percent of Total Acreage",NA
+Muni_2026,CT_1PHH,Household Size,1-Person Household,NA,Household Size - 1-Person Household,2020-2024 American Community Survey: Table B11016,NA
+Muni_2026,CT_2PHH,Household Size,2-People Household,NA,Household Size - 2-People Household,2020-2024 American Community Survey: Table B11016,NA
+Muni_2026,CT_3PHH,Household Size,3-People Household,NA,Household Size - 3-People Household,2020-2024 American Community Survey: Table B11016,NA
+Muni_2026,CT_4MPHH,Household Size,4-or-More Person Household,NA,Household Size - 4-or-More Person Household,2020-2024 American Community Survey: Table B11016,NA
+Muni_2026,CT_FAM_HH,Household Type,Family,NA,Household Type - Family,2020-2024 American Community Survey: Tables B11001 & B11003,NA
+Muni_2026,CT_SP_WCHILD,Household Type,Single Parent with Child,NA,Household Type - Single Parent with Child,2020-2024 American Community Survey: Tables B11001 & B11003,NA
+Muni_2026,CT_NONFAM_HH,Household Type,Non-Family,NA,Household Type - Non-Family,2020-2024 American Community Survey: Tables B11001 & B11003,NA
+Muni_2026,HCUND20K,"Household Income Less Than $20,000 - Monthly Housing Cost as a Percentage of Household Income","Total Households less than $20,000",NA,"Household Income Less Than $20,000 - Monthly Housing Cost as a Percentage of Household Income - Total Households less than $20,000",2020-2024 American Community Survey: Table B25106,NA
+Muni_2026,HCUND20K_LT20PCT,"Household Income Less Than $20,000 - Monthly Housing Cost as a Percentage of Household Income",Less Than 20 percent,NA,"Household Income Less Than $20,000 - Monthly Housing Cost as a Percentage of Household Income - Less Than 20 percent",2020-2024 American Community Survey: Table B25106,NA
+Muni_2026,HCUND20K_20_29PCT,"Household Income Less Than $20,000 - Monthly Housing Cost as a Percentage of Household Income",20 to 29 percent,NA,"Household Income Less Than $20,000 - Monthly Housing Cost as a Percentage of Household Income - 20 to 29 percent",2020-2024 American Community Survey: Table B25106,NA
+Muni_2026,HCUND20K_30MPCT,"Household Income Less Than $20,000 - Monthly Housing Cost as a Percentage of Household Income",30 pecent or more,NA,"Household Income Less Than $20,000 - Monthly Housing Cost as a Percentage of Household Income - 30 pecent or more",2020-2024 American Community Survey: Table B25106,NA
+Muni_2026,HC20Kto49K,"Household Income $20,000 to $49,999 - Monthly Housing Cost as a Percentage of Household Income","Total Households $35,000 to $49,999",NA,"Household Income $20,000 to $49,999 - Monthly Housing Cost as a Percentage of Household Income - Total Households $35,000 to $49,999",2020-2024 American Community Survey: Table B25106,NA
+Muni_2026,HC20Kto49K_LT20PCT,"Household Income $20,000 to $49,999 - Monthly Housing Cost as a Percentage of Household Income",Less Than 20 percent,NA,"Household Income $20,000 to $49,999 - Monthly Housing Cost as a Percentage of Household Income - Less Than 20 percent",2020-2024 American Community Survey: Table B25106,NA
+Muni_2026,HC20Kto49K_20_29PCT,"Household Income $20,000 to $49,999 - Monthly Housing Cost as a Percentage of Household Income",20 to 29 percent,NA,"Household Income $20,000 to $49,999 - Monthly Housing Cost as a Percentage of Household Income - 20 to 29 percent",2020-2024 American Community Survey: Table B25106,NA
+Muni_2026,HC20Kto49K_30MPCT,"Household Income $20,000 to $49,999 - Monthly Housing Cost as a Percentage of Household Income",30 pecent or more,NA,"Household Income $20,000 to $49,999 - Monthly Housing Cost as a Percentage of Household Income - 30 pecent or more",2020-2024 American Community Survey: Table B25106,NA
+Muni_2026,HC50Kto75K,"Household Income $50,000 to $74,999 - Monthly Housing Cost as a Percentage of Household Income","Total Households $50,000 to $74,999",NA,"Household Income $50,000 to $74,999 - Monthly Housing Cost as a Percentage of Household Income - Total Households $50,000 to $74,999",2020-2024 American Community Survey: Table B25106,NA
+Muni_2026,HC50Kto75K_LT20PCT,"Household Income $50,000 to $74,999 - Monthly Housing Cost as a Percentage of Household Income",Less Than 20 percent,NA,"Household Income $50,000 to $74,999 - Monthly Housing Cost as a Percentage of Household Income - Less Than 20 percent",2020-2024 American Community Survey: Table B25106,NA
+Muni_2026,HC50Kto75K_20_29PCT,"Household Income $50,000 to $74,999 - Monthly Housing Cost as a Percentage of Household Income",20 to 29 percent,NA,"Household Income $50,000 to $74,999 - Monthly Housing Cost as a Percentage of Household Income - 20 to 29 percent",2020-2024 American Community Survey: Table B25106,NA
+Muni_2026,HC50Kto75K_30MPCT,"Household Income $50,000 to $74,999 - Monthly Housing Cost as a Percentage of Household Income",30 pecent or more,NA,"Household Income $50,000 to $74,999 - Monthly Housing Cost as a Percentage of Household Income - 30 pecent or more",2020-2024 American Community Survey: Table B25106,NA
+Muni_2026,HCOV75K,"Household Income $75,000 or more - Monthly Housing Cost as a Percentage of Household Income","Total Households $75,000 or more",NA,"Household Income $75,000 or more - Monthly Housing Cost as a Percentage of Household Income - Total Households $75,000 or more",2020-2024 American Community Survey: Table B25106,NA
+Muni_2026,HCOV75K_LT20PCT,"Household Income $75,000 or more - Monthly Housing Cost as a Percentage of Household Income",Less Than 20 percent,NA,"Household Income $75,000 or more - Monthly Housing Cost as a Percentage of Household Income - Less Than 20 percent",2020-2024 American Community Survey: Table B25106,NA
+Muni_2026,HCOV75K_20_29PCT,"Household Income $75,000 or more - Monthly Housing Cost as a Percentage of Household Income",20 to 29 percent,NA,"Household Income $75,000 or more - Monthly Housing Cost as a Percentage of Household Income - 20 to 29 percent",2020-2024 American Community Survey: Table B25106,NA
+Muni_2026,HCOV75K_30MPCT,"Household Income $75,000 or more - Monthly Housing Cost as a Percentage of Household Income",30 pecent or more,NA,"Household Income $75,000 or more - Monthly Housing Cost as a Percentage of Household Income - 30 pecent or more",2020-2024 American Community Survey: Table B25106,NA
+Muni_2026,NATIVE,Nativity,Native,NA,Nativity - Native,2020-2024 American Community Survey: Table B16005,NA
+Muni_2026,FOR_BORN,Nativity,Foreign Born,NA,Nativity - Foreign Born,2020-2024 American Community Survey: Table B16005,NA
+Muni_2026,POP_OV5,Nativity,Population over 5,NA,Nativity - Population over 5,2020-2024 American Community Survey: Table C16001,NA
+Muni_2026,NOT_ENGLISH,Language Spoken at Home and Ability to Speak English,Speak a language other than English,NA,Language Spoken at Home and Ability to Speak English - Speak a language other than English,2020-2024 American Community Survey: Table C16001,NA
+Muni_2026,LING_ISO,Language Spoken at Home and Ability to Speak English,"Speak English less than ""very well""",NA,"Language Spoken at Home and Ability to Speak English - Speak English less than ""very well""",2020-2024 American Community Survey: Table C16001,"For people who speak a language other than English at home, the ACS asks whether they speak English ""very well,"" ""well,"" ""not well,"" or ""not at all."""
+Muni_2026,ENGLISH,Language Spoken at Home and Ability to Speak English,English Only,NA,Language Spoken at Home and Ability to Speak English - English Only,2020-2024 American Community Survey: Table C16001,Population that speaks only English at home.
+Muni_2026,SPANISH,Language Spoken at Home and Ability to Speak English,Spanish,NA,Language Spoken at Home and Ability to Speak English - Spanish,2020-2024 American Community Survey: Table C16001,"These languages may be spoken exclusively, but people counted in these categories may also speak English (and may even speak mostly in English)."
+Muni_2026,SLAVIC,Language Spoken at Home and Ability to Speak English,Slavic Languages,NA,Language Spoken at Home and Ability to Speak English - Slavic Languages,2020-2024 American Community Survey: Table C16001,NA
+Muni_2026,CHINESE,Language Spoken at Home and Ability to Speak English,Chinese,NA,Language Spoken at Home and Ability to Speak English - Chinese,2020-2024 American Community Survey: Table C16001,NA
+Muni_2026,TAGALOG,Language Spoken at Home and Ability to Speak English,Tagalog,NA,Language Spoken at Home and Ability to Speak English - Tagalog,2020-2024 American Community Survey: Table C16001,NA
+Muni_2026,ARABIC,Language Spoken at Home and Ability to Speak English,Arabic,NA,Language Spoken at Home and Ability to Speak English - Arabic,2020-2024 American Community Survey: Table C16001,NA
+Muni_2026,KOREAN,Language Spoken at Home and Ability to Speak English,Korean,NA,Language Spoken at Home and Ability to Speak English - Korean,2020-2024 American Community Survey: Table C16001,NA
+Muni_2026,OTHER_ASIAN,Language Spoken at Home and Ability to Speak English,Other Asian Languages,NA,Language Spoken at Home and Ability to Speak English - Other Asian Languages,2020-2024 American Community Survey: Table C16001,NA
+Muni_2026,OTHER_EURO,Language Spoken at Home and Ability to Speak English,Other Indo-European Languages,NA,Language Spoken at Home and Ability to Speak English - Other Indo-European Languages,2020-2024 American Community Survey: Table C16001,NA
+Muni_2026,OTHER_UNSPEC,Language Spoken at Home and Ability to Speak English,Other/Unspecified Languages,NA,Language Spoken at Home and Ability to Speak English - Other/Unspecified Languages,2020-2024 American Community Survey: Table C16001,NA
+Muni_2026,F2000_WHITE,"Race and Ethnicity, Over Time",White (Non-Hispanic) (2000),NA,"Race and Ethnicity, Over Time - White (Non-Hispanic) (2000)","2000 Census: SF1, Table P004",NA
+Muni_2026,F2000_HISP,"Race and Ethnicity, Over Time",Hispanic or Latino (of Any Race) (2000),NA,"Race and Ethnicity, Over Time - Hispanic or Latino (of Any Race) (2000)","2000 Census: SF1, Table P004",NA
+Muni_2026,F2000_BLACK,"Race and Ethnicity, Over Time",Black (Non-Hispanic) (2000),NA,"Race and Ethnicity, Over Time - Black (Non-Hispanic) (2000)","2000 Census: SF1, Table P004",NA
+Muni_2026,F2000_ASIAN,"Race and Ethnicity, Over Time",Asian (Non-Hispanic) (2000),NA,"Race and Ethnicity, Over Time - Asian (Non-Hispanic) (2000)","2000 Census: SF1, Table P004",NA
+Muni_2026,F2000_OTHER,"Race and Ethnicity, Over Time",Other (Non-Hispanic) (2000),NA,"Race and Ethnicity, Over Time - Other (Non-Hispanic) (2000)","2000 Census: SF1, Table P004",NA
+Muni_2026,F2000_UND19,"Age Cohorts, Over Time
+(municipality snapshots only)",19 and Under (2000),NA,"Age Cohorts, Over Time (municipality snapshots only) - 19 and Under (2000)","2000 Census: SF1, Table P012",NA
+Muni_2026,F2000_A20_34,"Age Cohorts, Over Time
+(municipality snapshots only)",20 to 34 (2000),NA,"Age Cohorts, Over Time (municipality snapshots only) - 20 to 34 (2000)","2000 Census: SF1, Table P012",NA
+Muni_2026,F2000_A35_49,"Age Cohorts, Over Time
+(municipality snapshots only)",35 to 49 (2000),NA,"Age Cohorts, Over Time (municipality snapshots only) - 35 to 49 (2000)","2000 Census: SF1, Table P012",NA
+Muni_2026,F2000_A50_64,"Age Cohorts, Over Time
+(municipality snapshots only)",50 to 64 (2000),NA,"Age Cohorts, Over Time (municipality snapshots only) - 50 to 64 (2000)","2000 Census: SF1, Table P012",NA
+Muni_2026,F2000_OV65,"Age Cohorts, Over Time
+(municipality snapshots only)",65 and Over (2000),NA,"Age Cohorts, Over Time (municipality snapshots only) - 65 and Over (2000)","2000 Census: SF1, Table P012",NA
+Muni_2026,F2000_MED_AGE,"Age Cohorts, Over Time
+(municipality snapshots only)",Median Age (2000),NA,"Age Cohorts, Over Time (municipality snapshots only) - Median Age (2000)","2000 Census: SF1, Table P013",NA
+Muni_2026,F2000_TOT_HH,"Age Cohorts, Over Time
+(municipality snapshots only)",NA,NA,"Age Cohorts, Over Time (municipality snapshots only) - NA","2000 Census: SF1, Table H004",Occupied housing units (2000).
+Muni_2026,F2000_OWN_OCC_HU,"Housing Occupancy and Tenure, Over Time
+(municipality snapshots only)",Owner-Occupied (2000),NA,"Housing Occupancy and Tenure, Over Time (municipality snapshots only) - Owner-Occupied (2000)","2000 Census: SF1, Table H004",NA
+Muni_2026,F2000_RENT_OCC_HU,"Housing Occupancy and Tenure, Over Time
+(municipality snapshots only)",Renter-Occupied (2000),NA,"Housing Occupancy and Tenure, Over Time (municipality snapshots only) - Renter-Occupied (2000)","2000 Census: SF1, Table H004",NA
+Muni_2026,F2000_VAC_HU,"Housing Occupancy and Tenure, Over Time
+(municipality snapshots only)",Vacant Housing Units (2000),NA,"Housing Occupancy and Tenure, Over Time (municipality snapshots only) - Vacant Housing Units (2000)","2000 Census: SF1, Table H003",NA
+Muni_2026,F2000_HU_TOT,"Housing Occupancy and Tenure, Over Time
+(municipality snapshots only)",Total Housing Units (2000),NA,"Housing Occupancy and Tenure, Over Time (municipality snapshots only) - Total Housing Units (2000)","2000 Census: SF1, Table H003",NA
+Muni_2026,F2000_LT_HS,"Educational Attainment, Over Time
+(municipality snapshots only)",Less than High School Diploma (2000),NA,"Educational Attainment, Over Time (municipality snapshots only) - Less than High School Diploma (2000)","2000 Census: SF3, Table P037",NA
+Muni_2026,F2000_HS,"Educational Attainment, Over Time
+(municipality snapshots only)",High School Diploma or Equivalent (2000),NA,"Educational Attainment, Over Time (municipality snapshots only) - High School Diploma or Equivalent (2000)","2000 Census: SF3, Table P037",NA
+Muni_2026,F2000_SOME_COLL,"Educational Attainment, Over Time
+(municipality snapshots only)","Some College, No Degree (2000)",NA,"Educational Attainment, Over Time (municipality snapshots only) - Some College, No Degree (2000)","2000 Census: SF3, Table P037",NA
+Muni_2026,F2000_ASSOC,"Educational Attainment, Over Time
+(municipality snapshots only)",Associate's Degree (2000),NA,"Educational Attainment, Over Time (municipality snapshots only) - Associate's Degree (2000)","2000 Census: SF3, Table P037",NA
+Muni_2026,F2000_BACH,"Educational Attainment, Over Time
+(municipality snapshots only)",Bachelor's Degree (2000),NA,"Educational Attainment, Over Time (municipality snapshots only) - Bachelor's Degree (2000)","2000 Census: SF3, Table P037",NA
+Muni_2026,F2000_GRAD_PROF,"Educational Attainment, Over Time
+(municipality snapshots only)",Graduate or Professional Degree (2000),NA,"Educational Attainment, Over Time (municipality snapshots only) - Graduate or Professional Degree (2000)","2000 Census: SF3, Table P037",NA
+Muni_2026,F2000_POP_25OV,"Educational Attainment, Over Time
+(municipality snapshots only)",NA,NA,"Educational Attainment, Over Time (municipality snapshots only) - NA","2000 Census: SF3, Table P037",Population aged 25 and over
+Muni_2026,HT_Cost_Typical,Housing & Transportation (H+T) Costs as a Percentage of Household Income,"Total H+T Costs, Median-Income Family",NA,"Housing & Transportation (H+T) Costs as a Percentage of Household Income - Total H+T Costs, Median-Income Family","Center for Neighborhood Technology (CNT), H+T A􀀾ordability Index (2018-2022)",Unavailable for Chicago CCAs
+Muni_2026,HT_Cost_Mod,Housing & Transportation (H+T) Costs as a Percentage of Household Income,"Total H+T Costs, Moderate-Income Family",NA,"Housing & Transportation (H+T) Costs as a Percentage of Household Income - Total H+T Costs, Moderate-Income Family","Center for Neighborhood Technology (CNT), H+T A􀀾ordability Index (2018-2022)",Unavailable for Chicago CCAs
+Muni_2026,H_Cost_Typical,Housing & Transportation (H+T) Costs as a Percentage of Household Income,"Housing Costs, Median-Income Family",NA,"Housing & Transportation (H+T) Costs as a Percentage of Household Income - Housing Costs, Median-Income Family","Center for Neighborhood Technology (CNT), H+T A􀀾ordability Index (2018-2022)",Unavailable for Chicago CCAs
+Muni_2026,H_Cost_Mod,Housing & Transportation (H+T) Costs as a Percentage of Household Income,"Housing Costs, Moderate-Income Family",NA,"Housing & Transportation (H+T) Costs as a Percentage of Household Income - Housing Costs, Moderate-Income Family","Center for Neighborhood Technology (CNT), H+T A􀀾ordability Index (2018-2022)",Unavailable for Chicago CCAs
+Muni_2026,T_Cost_Typical,Housing & Transportation (H+T) Costs as a Percentage of Household Income,"Transportation Costs, Median-Income Family",NA,"Housing & Transportation (H+T) Costs as a Percentage of Household Income - Transportation Costs, Median-Income Family","Center for Neighborhood Technology (CNT), H+T A􀀾ordability Index (2018-2022)",Unavailable for Chicago CCAs
+Muni_2026,T_Cost_Mod,Housing & Transportation (H+T) Costs as a Percentage of Household Income,"Transportation Costs, Moderate-Income Family",NA,"Housing & Transportation (H+T) Costs as a Percentage of Household Income - Transportation Costs, Moderate-Income Family","Center for Neighborhood Technology (CNT), H+T A􀀾ordability Index (2018-2022)",Unavailable for Chicago CCAs
+Muni_2026,F2008_2018_PCTCHG_TOT_MGD,"Water Source and Demand Trends
+
+(Municipalities only)","Percent change in total water withdrawals, 2008-2018",NA,"Water Source and Demand Trends  (Municipalities only) - Percent change in total water withdrawals, 2008-2018","Analysis of Illinois Water Inventory Program water withdrawal data (2003-2018), Illinois Department of Natural Resources, Lake Michigan Allocation Program, 2018",NA
+Muni_2026,F2008_GPCD,"Daily  Water Demand per Capita
+
+(Municipalities only)","GPCD, 2008",NA,"Daily Water Demand per Capita  (Municipalities only) - GPCD, 2008","Analysis of Illinois Water Inventory Program water withdrawal data 
+(2008-2018)","Measured in gallons of water per capita per day (GPCD)
+
+Population values come from the U.S. Census. Presence of wells or suppliers that provide water outside of the municipal boundary could lead to artifically lower or higher GPCD values respectively."
+Muni_2026,F2018_GPCD,"Daily  Water Demand per Capita
+
+(Municipalities only)","GPCD, 2018",NA,"Daily Water Demand per Capita  (Municipalities only) - GPCD, 2018","Analysis of Illinois Water Inventory Program water withdrawal data 
+(2008-2018)","Measured in gallons of water per capita per day (GPCD)
+
+Population values come from the U.S. Census. Presence of wells or suppliers that provide water outside of the municipal boundary could lead to artifically lower or higher GPCD values respectively."
+Muni_2026,F2008_2018_PCTCHG_GPCD,"Daily  Water Demand per Capita
+
+(Municipalities only)","Percent Change in GPCD, 2008-2018",NA,"Daily Water Demand per Capita  (Municipalities only) - Percent Change in GPCD, 2008-2018","Analysis of Illinois Water Inventory Program water withdrawal data 
+(2008-2018)",NA
+Muni_2026,F2016_MO_WAT_INFLADJ2024,"Water and Wastewater Price Trends
+
+(Municipalities only)","2016 Water Bill per 5,000 gallons, adjusted to 2024 dollars",NA,"Water and Wastewater Price Trends  (Municipalities only) - 2016 Water Bill per 5,000 gallons, adjusted to 2024 dollars","Illinois-Indiana Sea Grant. Water Rates Data for Northeastern Illinois, IISG19-RCE-RLA-031.",Prices for were adjusted for inflation using the U.S. Bureau of Labor Statistic's Consumer Price Index for the Chicago-Naperville-Elgin region.
+Muni_2026,F2016_MO_SEW_INFLADJ2024,"Water and Wastewater Price Trends
+
+(Municipalities only)","2016 Sewer Bill per 5,000 gallons, adjusted to 2024 dollars",NA,"Water and Wastewater Price Trends  (Municipalities only) - 2016 Sewer Bill per 5,000 gallons, adjusted to 2024 dollars","Illinois-Indiana Sea Grant. Water Rates Data for Northeastern Illinois, IISG19-RCE-RLA-031.",NA
+Muni_2026,F2016_MO_COMBO_INFLADJ2024,"Water and Wastewater Price Trends
+
+(Municipalities only)","2016 Combined Bill per 5,000 gallons, adjusted to 2024 dollars",NA,"Water and Wastewater Price Trends  (Municipalities only) - 2016 Combined Bill per 5,000 gallons, adjusted to 2024 dollars","Illinois-Indiana Sea Grant. Water Rates Data for Northeastern Illinois, IISG19-RCE-RLA-031.",NA
+Muni_2026,F2022_MO_WAT_INFLADJ2024,"Water and Wastewater Price Trends
+
+(Municipalities only)","2022 Water Bill per 5,000 gallons, adjusted to 2024 dollars",NA,"Water and Wastewater Price Trends  (Municipalities only) - 2022 Water Bill per 5,000 gallons, adjusted to 2024 dollars","Illinois-Indiana Sea Grant. Water Rates Data for Northeastern Illinois, IISG19-RCE-RLA-031.",NA
+Muni_2026,F2022_MO_SEW_INFLADJ2024,"Water and Wastewater Price Trends
+
+(Municipalities only)","2022 Sewer Bill per 5,000 gallons, adjusted to 2024 dollars",NA,"Water and Wastewater Price Trends  (Municipalities only) - 2022 Sewer Bill per 5,000 gallons, adjusted to 2024 dollars","Illinois-Indiana Sea Grant. Water Rates Data for Northeastern Illinois, IISG19-RCE-RLA-031.","N/A indicates that the sewer price is flat, sewer is not provided, or the charge is calculated as a percentage of the drinking water charge."
+Muni_2026,F2022_MO_COMBO_INFLADJ2024,"Water and Wastewater Price Trends
+
+(Municipalities only)","2022 Combined Bill per 5,000 gallons, adjusted to 2024 dollars",NA,"Water and Wastewater Price Trends  (Municipalities only) - 2022 Combined Bill per 5,000 gallons, adjusted to 2024 dollars","Illinois-Indiana Sea Grant. Water Rates Data for Northeastern Illinois, IISG19-RCE-RLA-031.",NA
+Muni_2026,F2016_2022WAT_PCTCHG_ADJ,"Water and Wastewater Price Trends
+
+(Municipalities only)","Percent Change (2016-2022) of Water Bill per 5,000 gallons, adjusted to 2024 dollars",NA,"Water and Wastewater Price Trends  (Municipalities only) - Percent Change (2016-2022) of Water Bill per 5,000 gallons, adjusted to 2024 dollars","Illinois-Indiana Sea Grant. Water Rates Data for Northeastern Illinois, IISG19-RCE-RLA-031.",NA
+Muni_2026,F2016_2022SEW_PCTCHG_ADJ,"Water and Wastewater Price Trends
+
+(Municipalities only)","Percent Change (2016-2022) of Sewer Bill per 5,000 gallons, adjusted to 2024 dollars",NA,"Water and Wastewater Price Trends  (Municipalities only) - Percent Change (2016-2022) of Sewer Bill per 5,000 gallons, adjusted to 2024 dollars","Illinois-Indiana Sea Grant. Water Rates Data for Northeastern Illinois, IISG19-RCE-RLA-031.",NA
+Muni_2026,F2016_2022COMBO_PCTCHG_ADJ,"Water and Wastewater Price Trends
+
+(Municipalities only)","Percent Change (2016-2022) of Combined Bill per 5,000 gallons, adjusted to 2024 dollars",NA,"Water and Wastewater Price Trends  (Municipalities only) - Percent Change (2016-2022) of Combined Bill per 5,000 gallons, adjusted to 2024 dollars","Illinois-Indiana Sea Grant. Water Rates Data for Northeastern Illinois, IISG19-RCE-RLA-031.",NA
+Muni_2026,UTILITY_NAME,"Water Loss
+
+(Municipalities only)",Reporting utility,NA,Water Loss  (Municipalities only) - Reporting utility,"Illinois Department of Natural Resources, Lake Michigan Allocation Program, 2017","Data is only available for Lake Michigan permittees; however, the Justice and Willow Springs tables present demand and price data for the Justice-Willow Springs Water Comission, both municipalities have Lake Michigan permits, and therefore, have unique water loss tables."
+Muni_2026,F2017_NONREV_WATER,"Water Loss
+
+(Municipalities only)","Nonrevenue Water (MGD), 2017",NA,"Water Loss  (Municipalities only) - Nonrevenue Water (MGD), 2017","Illinois Department of Natural Resources, Lake Michigan Allocation Program, 2017",Reported in Millions of Gallons per Day (MGD)
+Muni_2026,F2017_ANNCOST,"Water Loss
+
+(Municipalities only)","Annual Cost of Nonrevenue Water, 2017",NA,"Water Loss  (Municipalities only) - Annual Cost of Nonrevenue Water, 2017","Illinois Department of Natural Resources, Lake Michigan Allocation Program, 2017",Cost is not adjusted for inflation.
+County_2026,GEOID,NA,NA,Geographic identity code,Geographic identity code,CMAP,Geographic identity code.
+County_2026,GEOG,NA,NA,Name of Community,Name of Community,CMAP,County/municipality/CCA name.
+County_2026,F2000_POP,NA,NA,Total population in 2000,Total population in 2000,"2000 Census: SF1, Table P001",Total population in 2000.
+County_2026,F2010_POP,NA,NA,Total population in 2010,Total population in 2010,"2010 Census: SF1, Table P001",Total population in 2010.
+County_2026,F2020_POP,General Population Characteristics,Total Population,Total population in 2020,General Population Characteristics - Total population in 2020,"2020 Census P.L. 94-171, Table P0010001",NA
+County_2026,F2020_HH,General Population Characteristics,Total Households,Total households in 2020,General Population Characteristics - Total households in 2020,"2020 Census P.L. 94-171, Table H0010002",NA
+County_2026,TOT_POP,General Population Characteristics,NA,Total population in 2024,General Population Characteristics - Total population in 2024,2020-2024 American Community Survey: Table B01001,NA
+County_2026,UND5,Age Cohorts,5 and under,Population 5 and under,Age Cohorts - Population 5 and under,2020-2024 American Community Survey: Table B01001,NA
+County_2026,A5_19,Age Cohorts,5 to 19,Population aged 5 to 19,Age Cohorts - Population aged 5 to 19,2020-2024 American Community Survey: Table B01001,NA
+County_2026,A20_34,Age Cohorts,20 to 34,Population aged 20 to 34,Age Cohorts - Population aged 20 to 34,2020-2024 American Community Survey: Table B01001,NA
+County_2026,A35_49,Age Cohorts,35 to 49,Population aged 35 to 49,Age Cohorts - Population aged 35 to 49,2020-2024 American Community Survey: Table B01001,NA
+County_2026,A50_64,Age Cohorts,50 to 64,Population aged 50 to 64,Age Cohorts - Population aged 50 to 64,2020-2024 American Community Survey: Table B01001,NA
+County_2026,A65_74,Age Cohorts,65 to 74,Population aged 65 to 74,Age Cohorts - Population aged 65 to 74,2020-2024 American Community Survey: Table B01001,NA
+County_2026,A75_84,Age Cohorts,75 to 84,Population aged 75 to 84,Age Cohorts - Population aged 75 to 84,2020-2024 American Community Survey: Table B01001,NA
+County_2026,OV85,Age Cohorts,85 and Older,Population over 85,Age Cohorts - Population over 85,2020-2024 American Community Survey: Table B01001,NA
+County_2026,MED_AGE,Age Cohorts,Median Age,Median age,Age Cohorts - Median age,2020-2024 American Community Survey: Table B01002,CCA and regional medians were estimated from grouped frequency distributions.
+County_2026,WHITE,Race and Ethnicity,White (Non-Hispanic),White (Non-Hispanic),Race and Ethnicity - White (Non-Hispanic),2020-2024 American Community Survey: Table B03002,NA
+County_2026,HISP,Race and Ethnicity,Hispanic or Latino (of Any Race),Hispanic or Latino (of Any Race),Race and Ethnicity - Hispanic or Latino (of Any Race),2020-2024 American Community Survey: Table B03002,NA
+County_2026,BLACK,Race and Ethnicity,Black (Non-Hispanic),Black (Non-Hispanic),Race and Ethnicity - Black (Non-Hispanic),2020-2024 American Community Survey: Table B03002,NA
+County_2026,ASIAN,Race and Ethnicity,Asian (Non-Hispanic),Asian (Non-Hispanic),Race and Ethnicity - Asian (Non-Hispanic),2020-2024 American Community Survey: Table B03002,NA
+County_2026,OTHER,Race and Ethnicity,Other (Non-Hispanic),Other (Non-Hispanic),Race and Ethnicity - Other (Non-Hispanic),2020-2024 American Community Survey: Table B03002,NA
+County_2026,POP_HH,Race and Ethnicity,NA,Population living in households,Race and Ethnicity - Population living in households,2020-2024 American Community Survey: Table B09019,Population living in households.
+County_2026,POP_16OV,Race and Ethnicity,NA,Population aged 16 and over,Race and Ethnicity - Population aged 16 and over,2020-2024 American Community Survey: Table B23001,Population aged 16 and over.
+County_2026,IN_LBFRC,Employment Status,In Labor Force,In Labor Force,Employment Status - In Labor Force,2020-2024 American Community Survey: Table B23001,NA
+County_2026,EMP,Employment Status,Employed,Employed,Employment Status - Employed,2020-2024 American Community Survey: Table B23001,Does not include military employees.
+County_2026,UNEMP,Employment Status,Unemployed,Unemployed,Employment Status - Unemployed,2020-2024 American Community Survey: Table B23001,NA
+County_2026,NOT_IN_LBFRC,Employment Status,Not In Labor Force,Not In Labor Force,Employment Status - Not In Labor Force,2020-2024 American Community Survey: Table B23001,NA
+County_2026,TOT_WRKR16OV,Mode of Travel to Work,Total Workers 16 and Over,Total Workers 16 and Over,Mode of Travel to Work - Total Workers 16 and Over,2020-2024 American Community Survey: Table B08301,NA
+County_2026,WORK_AT_HOME,Mode of Travel to Work,Work at Home,Work at Home,Mode of Travel to Work - Work at Home,2020-2024 American Community Survey: Table B08301,NA
+County_2026,TOT_COMM,Mode of Travel to Work,Total Commuters,Total Commuters,Mode of Travel to Work - Total Commuters,2020-2024 American Community Survey: Table B08301,NA
+County_2026,DROVE_AL,Mode of Travel to Work,Drove Alone,Drove Alone,Mode of Travel to Work - Drove Alone,2020-2024 American Community Survey: Table B08301,NA
+County_2026,CARPOOL,Mode of Travel to Work,Carpool,Carpool,Mode of Travel to Work - Carpool,2020-2024 American Community Survey: Table B08301,NA
+County_2026,TRANSIT,Mode of Travel to Work,Transit,Transit,Mode of Travel to Work - Transit,2020-2024 American Community Survey: Table B08301,NA
+County_2026,WALK_BIKE,Mode of Travel to Work,Walk or Bike,Walk or Bike,Mode of Travel to Work - Walk or Bike,2020-2024 American Community Survey: Table B08301,NA
+County_2026,COMM_OTHER,Mode of Travel to Work,Other,Other commute,Mode of Travel to Work - Other commute,2020-2024 American Community Survey: Table B08301,NA
+County_2026,AGG_TT,Mode of Travel to Work,NA,Aggregate travel time to work (in minutes),Mode of Travel to Work - Aggregate travel time to work (in minutes),2020-2024 American Community Survey: Table B08013,Aggregate travel time to work (in minutes) by workers 16 years and over. Does not include workers working at home.
+County_2026,NO_VEH,Vehicles Available,No Vehicle Available,No vehicles available to household,Vehicles Available - No vehicles available to household,2020-2024 American Community Survey: Table B25044,NA
+County_2026,ONE_VEH,Vehicles Available,1 Vehicle Available,1 vehicle available to household,Vehicles Available - 1 vehicle available to household,2020-2024 American Community Survey: Table B25044,NA
+County_2026,TWO_VEH,Vehicles Available,2 Vehicles Available,2 vehicles available to household,Vehicles Available - 2 vehicles available to household,2020-2024 American Community Survey: Table B25044,NA
+County_2026,THREEOM_VEH,Vehicles Available,3 or More  Vehicles Available,3 or more vehicles available to household,Vehicles Available - 3 or more vehicles available to household,2020-2024 American Community Survey: Table B25044,NA
+County_2026,POP_25OV,Vehicles Available,NA,Population aged 25 and over,Vehicles Available - Population aged 25 and over,2020-2024 American Community Survey: Table B15002,Population aged 25 and over.
+County_2026,LT_HS,Educational Attainment,Less Than High School Diploma,Less Than High School Diploma,Educational Attainment - Less Than High School Diploma,2020-2024 American Community Survey: Table B15002,NA
+County_2026,HS,Educational Attainment,High School Diploma or Equivalent,High School Diploma or Equivalent,Educational Attainment - High School Diploma or Equivalent,2020-2024 American Community Survey: Table B15002,NA
+County_2026,SOME_COLL,Educational Attainment,"Some College, No Degree","Some College, No Degree","Educational Attainment - Some College, No Degree",2020-2024 American Community Survey: Table B15002,NA
+County_2026,ASSOC,Educational Attainment,Associate's Degree,Associate's Degree,Educational Attainment - Associate's Degree,2020-2024 American Community Survey: Table B15002,NA
+County_2026,BACH,Educational Attainment,Bachelor's Degree,Bachelor's Degree,Educational Attainment - Bachelor's Degree,2020-2024 American Community Survey: Table B15002,NA
+County_2026,GRAD_PROF,Educational Attainment,Graduate or Professional Degree,Graduate or Professional Degree,Educational Attainment - Graduate or Professional Degree,2020-2024 American Community Survey: Table B15002,NA
+County_2026,INC_LT_25K,Household Income,"Less than $25,000","Income less than $25,000","Household Income - Income less than $25,000",2020-2024 American Community Survey: Table B19001,In 2024 dollars
+County_2026,INC_25_50K,Household Income,"$25,000 to $49,999","Income $25,000 to $49,999","Household Income - Income $25,000 to $49,999",2020-2024 American Community Survey: Table B19001,NA
+County_2026,INC_50_75K,Household Income,"$50,000 to $74,999","Income $50,000 to $74,999","Household Income - Income $50,000 to $74,999",2020-2024 American Community Survey: Table B19001,NA
+County_2026,INC_75_100K,Household Income,"$75,000 to $99,999","Income $75,000 to $99,999","Household Income - Income $75,000 to $99,999",2020-2024 American Community Survey: Table B19001,NA
+County_2026,INC_100_150K,Household Income,"$100,000 to $149,999","Income $100,000 to $149,999","Household Income - Income $100,000 to $149,999",2020-2024 American Community Survey: Table B19001,NA
+County_2026,INC_GT_150,Household Income,"$150,000 and Over","Income $150,000 and Over","Household Income - Income $150,000 and Over",2020-2024 American Community Survey: Table B19001,NA
+County_2026,MEDINC,Household Income,Median Income,Median Income,Household Income - Median Income,2020-2024 American Community Survey: Table B19013,CCA and regional medians were estimated from grouped frequency distributions.
+County_2026,INCPERCAP,Household Income,Per Capita Income,Income per Capita,Household Income - Income per Capita,2020-2024 American Community Survey: Table B19301,NA
+County_2026,TOT_HH,Housing Occupancy and Tenure,Occupied Housing Units,Total households,Housing Occupancy and Tenure - Total households,2020-2024 American Community Survey: Table B25002,NA
+County_2026,OWN_OCC_HU,Housing Occupancy and Tenure,Owner-Occupied Housing Units,Owner-Occupied Housing Units,Housing Occupancy and Tenure - Owner-Occupied Housing Units,2020-2024 American Community Survey: Table B25003,NA
+County_2026,RENT_OCC_HU,Housing Occupancy and Tenure,Renter-Occupied Housing Units,Renter-Occupied Housing Units,Housing Occupancy and Tenure - Renter-Occupied Housing Units,2020-2024 American Community Survey: Table B25003,NA
+County_2026,VAC_HU,Housing Occupancy and Tenure,Vacant Housing Units,Vacant Housing Units,Housing Occupancy and Tenure - Vacant Housing Units,2020-2024 American Community Survey: Table B25002,NA
+County_2026,HU_TOT,Housing Occupancy and Tenure,NA,Total housing units,Housing Occupancy and Tenure - Total housing units,2020-2024 American Community Survey: Table B25024,Total housing units.
+County_2026,HU_SNG_DET,Housing Type,"Single Family, Detached",Single family detached units,Housing Type - Single family detached units,2020-2024 American Community Survey: Table B25024,NA
+County_2026,HU_SNG_ATT,Housing Type,"Single Family, Attached",Single family attached units,Housing Type - Single family attached units,2020-2024 American Community Survey: Table B25024,NA
+County_2026,HU_2UN,Housing Type,2 Units,"Multi-family, 2 units (duplex)","Housing Type - Multi-family, 2 units (duplex)",2020-2024 American Community Survey: Table B25024,NA
+County_2026,HU_3_4UN,Housing Type,3 or 4 Units,"Multi-family, 3 to 4 units","Housing Type - Multi-family, 3 to 4 units",2020-2024 American Community Survey: Table B25024,NA
+County_2026,HU_5_9UN,Housing Type,5 to 9 Units,"Multi-family, 5 to 9 units","Housing Type - Multi-family, 5 to 9 units",2020-2024 American Community Survey: Table B25024,NA
+County_2026,HU_10_19UN,Housing Type,10 to 19 Units,"Multi-family, 10-19 units","Housing Type - Multi-family, 10-19 units",2020-2024 American Community Survey: Table B25024,NA
+County_2026,HU_GT_19UN,Housing Type,20 or More Units,"Multi-family, 20 or more units","Housing Type - Multi-family, 20 or more units",2020-2024 American Community Survey: Table B25024,NA
+County_2026,HU_MOBILE,Housing Type,Mobile Home/Other,"Other housing type: mobile home, RV, van, other","Housing Type - Other housing type: mobile home, RV, van, other",2020-2024 American Community Survey: Table B25024,"""Other"" includes boat, RV, van, etc."
+County_2026,MED_ROOMS,Housing Size,Median Number of Rooms,Median number of rooms,Housing Size - Median number of rooms,2020-2024 American Community Survey: Table B25018,"CCA and regional medians, estimated from grouped frequency distributions."
+County_2026,HA_AFT2010,Housing Age,Built 2010 or Later,Housing units built 2010 or Later,Housing Age - Housing units built 2010 or Later,2020-2024 American Community Survey: Table B25034,NA
+County_2026,HA_90_10,Housing Age,Built 1990 to 2009,Housing units built 1990 to 2009,Housing Age - Housing units built 1990 to 2009,2020-2024 American Community Survey: Table B25034,NA
+County_2026,HA_70_90,Housing Age,Built 1970 to 1989,Housing units built 1970 to 1989,Housing Age - Housing units built 1970 to 1989,2020-2024 American Community Survey: Table B25034,NA
+County_2026,HA_40_70,Housing Age,Built 1940 to 1969,Housing units built 1940 to 1969,Housing Age - Housing units built 1940 to 1969,2020-2024 American Community Survey: Table B25034,NA
+County_2026,HA_BEF1940,Housing Age,Built before 1940,Housing units built before 1940,Housing Age - Housing units built before 1940,2020-2024 American Community Survey: Table B25034,NA
+County_2026,MED_HA,Housing Age,Median Year Built,Median year of housing units built,Housing Age - Median year of housing units built,2020-2024 American Community Survey: Table B25035,CCA and regional medians  estimated from grouped frequency distributions.
+County_2026,BR_0_1,Housing Size,0 or 1 Bedrooms,Housing units with 0 or 1 bedrooms,Housing Size - Housing units with 0 or 1 bedrooms,2020-2024 American Community Survey: Table B25041,NA
+County_2026,BR_2,Housing Size,2 Bedrooms,Housing units with 2 bedrooms,Housing Size - Housing units with 2 bedrooms,2020-2024 American Community Survey: Table B25041,NA
+County_2026,BR_3,Housing Size,3 Bedrooms,Housing units with 3 bedrooms,Housing Size - Housing units with 3 bedrooms,2020-2024 American Community Survey: Table B25041,NA
+County_2026,BR_4,Housing Size,4 Bedrooms,Housing units with 4 bedrooms,Housing Size - Housing units with 4 bedrooms,2020-2024 American Community Survey: Table B25041,NA
+County_2026,BR_5,Housing Size,5 or More Bedrooms,Housing units with 5 or more bedrooms,Housing Size - Housing units with 5 or more bedrooms,2020-2024 American Community Survey: Table B25041,NA
+County_2026,HV_LT_150K,Housing Size,NA,"Home value less than $150,000","Housing Size - Home value less than $150,000",2020-2024 American Community Survey: Table B25075,In 2024 dollars
+County_2026,HV_500_1M,Housing Size,NA,"Home value $500,000 to $1,000,000","Housing Size - Home value $500,000 to $1,000,000",2020-2024 American Community Survey: Table B25075,NA
+County_2026,HV_GT_1M,Housing Size,NA,"Home value $1,000,000 or more","Housing Size - Home value $1,000,000 or more",2020-2024 American Community Survey: Table B25075,NA
+County_2026,MED_HV,Housing Size,NA,Median home value,Housing Size - Median home value,2020-2024 American Community Survey: Table B25077,Median home value. CCA and regional medians estimated from grouped frequency distributions.
+County_2026,RENT_LT500,Housing Size,NA,Units paying rent less than $500,Housing Size - Units paying rent less than $500,2020-2024 American Community Survey: Table B25063,NA
+County_2026,RENT_500_999,Housing Size,NA,Units paying rent between $500 to $999,Housing Size - Units paying rent between $500 to $999,2020-2024 American Community Survey: Table B25063,NA
+County_2026,RENT_1000_1499,Housing Size,NA,Units paying rent between $1000 to $1499,Housing Size - Units paying rent between $1000 to $1499,2020-2024 American Community Survey: Table B25063,NA
+County_2026,RENT_1500_2499,Housing Size,NA,Units paying rent between $1500 to $2499,Housing Size - Units paying rent between $1500 to $2499,2020-2024 American Community Survey: Table B25063,NA
+County_2026,RENT_GT2500,Housing Size,NA,Units paying rent above $2500,Housing Size - Units paying rent above $2500,2020-2024 American Community Survey: Table B25063,NA
+County_2026,MED_RENT,Housing Size,NA,Median gross rent,Housing Size - Median gross rent,2020-2024 American Community Survey: Table B25064,Median gross rent. CCA and regional medians estimated from grouped frequency distributions.
+County_2026,COMPUTER,Household Computer and Internet Access,One or More Computing Devices,Households with one or more computing device(es),Household Computer and Internet Access - Households with one or more computing device(es),2020-2024 American Community Survey: Table B28001,NA
+County_2026,ONLY_SMARTPHONE,Household Computer and Internet Access,Smartphone(s) Only,Households with only a smartphone as computing device,Household Computer and Internet Access - Households with only a smartphone as computing device,2020-2024 American Community Survey: Table B28001,NA
+County_2026,NO_COMPUTER,Household Computer and Internet Access,No Computing Device,Households with no computing device,Household Computer and Internet Access - Households with no computing device,2020-2024 American Community Survey: Table B28001,NA
+County_2026,INTERNET,Household Computer and Internet Access,Internet Access,Households with any kind of internet access,Household Computer and Internet Access - Households with any kind of internet access,2020-2024 American Community Survey: Table B28002,NA
+County_2026,BROADBAND,Household Computer and Internet Access,Broadband Subscription,Households with broadband internet access,Household Computer and Internet Access - Households with broadband internet access,2020-2024 American Community Survey: Table B28002,NA
+County_2026,NO_INTERNET,Household Computer and Internet Access,No Internet Access,Households with no internet access,Household Computer and Internet Access - Households with no internet access,2020-2024 American Community Survey: Table B28002,NA
+County_2026,DISAB_ONE,Population With a Disability,One Type of Disabilty Only,One Type of Disabilty Only,Population With a Disability - One Type of Disabilty Only,2020-2024 American Community Survey: Table C18108,NA
+County_2026,DISAB_TWOMOR,Population With a Disability,Two or More Types of Disabilty,Two or More Types of Disabilty,Population With a Disability - Two or More Types of Disabilty,2020-2024 American Community Survey: Table C18108,NA
+County_2026,DISAB_ANY,Population With a Disability,Number of People With a Disability,Number of People With a Disability,Population With a Disability - Number of People With a Disability,2020-2024 American Community Survey: Table C18108,NA
+County_2026,DIS_HEAR,Disability by Type,Hearing Difficulty,Hearing Difficulty,Disability by Type - Hearing Difficulty,"2020-2024 American Community Survey: Tables B18102, B18103, B18104, B18105, B18106, B18107",NA
+County_2026,DIS_VIS,Disability by Type,Vision Difficulty,Vision Difficulty,Disability by Type - Vision Difficulty,"2020-2024 American Community Survey: Tables B18102, B18103, B18104, B18105, B18106, B18107",NA
+County_2026,DIS_COG,Disability by Type,Cognitive Difficulty,Cognitive Difficulty,Disability by Type - Cognitive Difficulty,"2020-2024 American Community Survey: Tables B18102, B18103, B18104, B18105, B18106, B18107",NA
+County_2026,DIS_AMB,Disability by Type,Ambulatory Difficulty,Ambulatory Difficulty,Disability by Type - Ambulatory Difficulty,"2020-2024 American Community Survey: Tables B18102, B18103, B18104, B18105, B18106, B18107",NA
+County_2026,DIS_SLFCARE,Disability by Type,Self-Care Difficulty,Self-Care Difficulty,Disability by Type - Self-Care Difficulty,"2020-2024 American Community Survey: Tables B18102, B18103, B18104, B18105, B18106, B18107",NA
+County_2026,POP_18OV,Disability by Type,Population over 18,Population over 18,Disability by Type - Population over 18,"2020-2024 American Community Survey: Tables B18102, B18103, B18104, B18105, B18106, B18107",NA
+County_2026,DIS_INDPLIV,Disability by Type,Independent Living Difficulty,Independent Living Difficulty,Disability by Type - Independent Living Difficulty,"2020-2024 American Community Survey: Tables B18102, B18103, B18104, B18105, B18106, B18107",Age 18 and Over Only
+County_2026,DIS_UND18,Disability by Age Cohorts,0-17 with a disability,0-17 with a disability,Disability by Age Cohorts - 0-17 with a disability,2020-2024 American Community Survey: Table B18101,NA
+County_2026,DIS_18_64,Disability by Age Cohorts,18-64 with a disability,18-64 with a disability,Disability by Age Cohorts - 18-64 with a disability,2020-2024 American Community Survey: Table B18101,NA
+County_2026,DIS_65_75,Disability by Age Cohorts,65-75 with a disability,65-75 with a disability,Disability by Age Cohorts - 65-75 with a disability,2020-2024 American Community Survey: Table B18101,NA
+County_2026,DIS_75OV,Disability by Age Cohorts,75 and Over With a Disability,75 and Over With a Disability,Disability by Age Cohorts - 75 and Over With a Disability,2020-2024 American Community Survey: Table B18101,NA
+County_2026,UNINSURED,Health Insurance Coverage,Population without Health Insurance,Population without Health Insurance,Health Insurance Coverage - Population without Health Insurance,2020-2024 American Community Survey: Table B18135,NA
+County_2026,DIS_UNINSURED,Health Insurance Coverage,Population without Health Insurance and a Disability,Population without Health Insurance and a Disability,Health Insurance Coverage - Population without Health Insurance and a Disability,2020-2024 American Community Survey: Table B18135,NA
+County_2026,POP_CIV_NONINST,Health Insurance Coverage,Civilian non-institutional population,Civilian non-institutional population,Health Insurance Coverage - Civilian non-institutional population,2020-2024 American Community Survey: Table B18135,NA
+County_2026,TOT_EMP_RES,Health Insurance Coverage,NA,Total Employed Residents,Health Insurance Coverage - Total Employed Residents,"2023 U.S. Census Bureau, Longitudinal-Employer Household Dynamics Program (LEHD): Count of Employment of Community Residents","Home Area Profile (All Workers Residing in Given Geography), 2023 Data, Primary Jobs Only.  
+
+Data presented for municipalities extending beyond the 7-County CMAP region reflect only the Residents located within the region."
+County_2026,TOT_EMP_WORK,Employment of Community Residents,NA,Total Employees Working in a Geography,Employment of Community Residents - Total Employees Working in a Geography,"2023 U.S. Census Bureau, Longitudinal-Employer Household Dynamics Program: Count of Employment in the Community","Work Area Profile (All Workers Employed in Given Geography), 2023 Data, Primary Jobs Only. 
+
+Data presented for municipalities extending beyond the 7-County CMAP region reflect only the workers working within the region. 
+
+For municipalites not entirely in the CMAP 7-county region, data only reflect the portion of the municipality located within the region."
+County_2026,IDES_START_EMP,Private Sector Employment,Count of Private Sector Jobs (2005),Count of Private Sector Jobs (2005),Private Sector Employment - Count of Private Sector Jobs (2005),"Illinois Department of Employment Security (IDES), Where Workers Work Report (2025)","Data available only for select municipalities. 
+Kendall County not included."
+County_2026,IDES_MID_EMP,Private Sector Employment,Count of Private Sector Jobs (2015),Count of Private Sector Jobs (2015),Private Sector Employment - Count of Private Sector Jobs (2015),"Illinois Department of Employment Security (IDES), Where Workers Work Report (2025)",NA
+County_2026,IDES_CURR_EMP,Private Sector Employment,Count of Private Sector Jobs (2025),Count of Private Sector Jobs (2025),Private Sector Employment - Count of Private Sector Jobs (2025),"Illinois Department of Employment Security (IDES), Where Workers Work Report (2025)",NA
+County_2026,AVG_VMT,Annual Vehicle Miles Traveled (VMT) Per Household,Average Vehicle Miles Traveled,Annual Vehicle Miles Traveled (VMT) Per Household,Annual Vehicle Miles Traveled (VMT) Per Household - Annual Vehicle Miles Traveled (VMT) Per Household,"CMAP analysis of US Census Bureau (2020-2024 American Community Survey: Tables B25002 and B25046), HERE (ZIP+4 data), Illinois Environmental Protection Agency data (Odometer Readings), and Illinois Secretary of State data.",NA
+County_2026,RET_SALES,General Merchandise Retail Sales,Total Retail Sales,Retail Sales,General Merchandise Retail Sales - Retail Sales,"Illinois Department of Revenue, 2025",NA
+County_2026,GEN_MERCH,General Merchandise Retail Sales,General Merchandise Sales,General Merchandise Sales,General Merchandise Retail Sales - General Merchandise Sales,"Illinois Department of Revenue, 2025",NA
+County_2026,RES_EAV,Equalized Assessed Value,Residential,Residential EAV,Equalized Assessed Value - Residential EAV,"Illinois Department of Revenue, 2024",NA
+County_2026,CMRCL_EAV,Equalized Assessed Value,Commercial,Commercial EAV,Equalized Assessed Value - Commercial EAV,"Illinois Department of Revenue, 2024",NA
+County_2026,IND_EAV,Equalized Assessed Value,Industrial,Industrial EAV,Equalized Assessed Value - Industrial EAV,"Illinois Department of Revenue, 2024",NA
+County_2026,RAIL_EAV,Equalized Assessed Value,Railroad,Railroad EAV,Equalized Assessed Value - Railroad EAV,"Illinois Department of Revenue, 2024",NA
+County_2026,FARM_EAV,Equalized Assessed Value,Farm,Farm EAV,Equalized Assessed Value - Farm EAV,"Illinois Department of Revenue, 2024",NA
+County_2026,MIN_EAV,Equalized Assessed Value,Mineral,Mineral EAV,Equalized Assessed Value - Mineral EAV,"Illinois Department of Revenue, 2024",NA
+County_2026,TOT_EAV,Equalized Assessed Value,Total,Total EAV,Equalized Assessed Value - Total EAV,"Illinois Department of Revenue, 2024",NA
+County_2026,devs,"Ongoing and Completed Development Activity, 2020-2024",Number of Developments,Number of Developments,"Ongoing and Completed Development Activity, 2020-2024 - Number of Developments","Northeastern Illinois Development Database, CMAP","Only includes developments of at least 1 acre, 10 housing units, 10,000 square feet of non-residential space, or a change in land use."
+County_2026,resid_units,"Ongoing and Completed Development Activity, 2020-2024",Number of Residential Units,Number of Residential Units,"Ongoing and Completed Development Activity, 2020-2024 - Number of Residential Units","Northeastern Illinois Development Database, CMAP",NA
+County_2026,nonresid_sqft,"Ongoing and Completed Development Activity, 2020-2024",Non-Residential Square Footage,Non-Residential Square Footage,"Ongoing and Completed Development Activity, 2020-2024 - Non-Residential Square Footage","Northeastern Illinois Development Database, CMAP",NA
+County_2026,TOT_ACRES,General Land Use*,Total Acres,NA,General Land Use - Total Acres,"CMAP 2023 Land Use Inventory, 
+Total Acreage",Additional information about 4-digit land use class codes is available here
+County_2026,SF,General Land Use*,Single-Family Residential Acres,NA,General Land Use - Single-Family Residential Acres,"CMAP 2023 Land Use Inventory, 
+Class Acreage","Includes Single-Family Residential (1110, 1111, 1112) and Mobile Home Parks and Trailer Courts (1140)"
+County_2026,Sfperc,General Land Use*,Single-Family Residential Percent,NA,General Land Use - Single-Family Residential Percent,"CMAP 2023 Land Use Inventory, 
+Percent of Total Acreage",NA
+County_2026,MF,General Land Use*,Multi-Family Residential Acres,NA,General Land Use - Multi-Family Residential Acres,"CMAP 2023 Land Use Inventory, 
+Class Acreage",Multi-Family (1130)
+County_2026,Mfperc,General Land Use*,Multi-Family Residential Percent,NA,General Land Use - Multi-Family Residential Percent,"CMAP 2023 Land Use Inventory, Percent of Total Acreage",NA
+County_2026,MIX,General Land Use*,Mixed Use Acres,NA,General Land Use - Mixed Use Acres,"CMAP 2023 Land Use Inventory, 
+Class Acreage",Urban Mix w/Residential Component (1216)
+County_2026,MIXperc,General Land Use*,Mixed Use Percent,NA,General Land Use - Mixed Use Percent,"CMAP 2023 Land Use Inventory, Percent of Total Acreage",NA
+County_2026,COMM,General Land Use*,Commercial Acres,NA,General Land Use - Commercial Acres,"CMAP 2023 Land Use Inventory, 
+Class Acreage","Includes Primarily Retail/Service (1211, 1212, 1214, 1215), Office (1220), Cultural/Entertainment (1240), and Hotel/Motel (1250)"
+County_2026,COMMperc,General Land Use*,Commercial Percent,NA,General Land Use - Commercial Percent,"CMAP 2023 Land Use Inventory,
+ Percent of Total Acreage",NA
+County_2026,INST,General Land Use*,Institutional Acres,NA,General Land Use - Institutional Acres,"CMAP 2023 Land Use Inventory, 
+Class Acreage","Includes Medical Facilities (1310), Educational Facilities (1320 series), Government Administration and Services (1330), Prison & Correctional Facilities (1340), Religious Facilities (1350), Cemeteries (1360), Other Institutional (1370), and National Laboratory (1380)"
+County_2026,INSTperc,General Land Use*,Institutional Percent,NA,General Land Use - Institutional Percent,"CMAP 2023 Land Use Inventory, 
+Percent of Total Acreage",NA
+County_2026,IND,General Land Use*,Industrial Acres,NA,General Land Use - Industrial Acres,"CMAP 2023 Land Use Inventory, 
+Class Acreage","Includes Mineral Extraction (1410), General Industrial < 100k sq. ft. (1420), Industrial G/E 100k sq. ft. (1430 series), and Storage (1450)"
+County_2026,INDperc,General Land Use*,Industrial Percent,NA,General Land Use - Industrial Percent,"CMAP 2023 Land Use Inventory, 
+Percent of Total Acreage",NA
+County_2026,TRANS,General Land Use*,Transportation and Other Acres,NA,General Land Use - Transportation and Other Acres,"CMAP 2023 Land Use Inventory, 
+Class Acreage","Includes Trans/Comm/Util/Waste (1500 series), Water (5000, 6200), Non-Parcel Right-of-Way (6300), and Non-Parcel NEC (6400)"
+County_2026,TRANSperc,General Land Use*,Transportation and Other Percent,NA,General Land Use - Transportation and Other Percent,"CMAP 2023 Land Use Inventory, 
+Percent of Total Acreage",NA
+County_2026,AG,General Land Use*,Agricultural Acres,NA,General Land Use - Agricultural Acres,"CMAP 2023 Land Use Inventory, 
+Class Acreage",Agriculture (2000)
+County_2026,Agperc,General Land Use*,Agricultural Percent,NA,General Land Use - Agricultural Percent,"CMAP 2023 Land Use Inventory, 
+Percent of Total Acreage",NA
+County_2026,OPEN,General Land Use*,Open Space Acres,NA,General Land Use - Open Space Acres,"CMAP 2023 Land Use Inventory, 
+Class Acreage",Includes Open Space (3000 series) and Non-parcel Open Space (6100)
+County_2026,OPENperc,General Land Use*,Open Space Percent,NA,General Land Use - Open Space Percent,"CMAP 2023 Land Use Inventory, 
+Percent of Total Acreage",NA
+County_2026,VACANT,General Land Use*,Vacant Acres,NA,General Land Use - Vacant Acres,"CMAP 2023 Land Use Inventory, 
+Class Acreage",Includes Vacant/Underdeveloped Land (4100 series) and Under Construction (4200 series)
+County_2026,VACperc,General Land Use*,Vacant Percent,NA,General Land Use - Vacant Percent,"CMAP 2023 Land Use Inventory, 
+Percent of Total Acreage",NA
+County_2026,CT_1PHH,Household Size,1-Person Household,NA,Household Size - 1-Person Household,2020-2024 American Community Survey: Table B11016,NA
+County_2026,CT_2PHH,Household Size,2-People Household,NA,Household Size - 2-People Household,2020-2024 American Community Survey: Table B11016,NA
+County_2026,CT_3PHH,Household Size,3-People Household,NA,Household Size - 3-People Household,2020-2024 American Community Survey: Table B11016,NA
+County_2026,CT_4MPHH,Household Size,4-or-More Person Household,NA,Household Size - 4-or-More Person Household,2020-2024 American Community Survey: Table B11016,NA
+County_2026,CT_FAM_HH,Household Type,Family,NA,Household Type - Family,2020-2024 American Community Survey: Tables B11001 & B11003,NA
+County_2026,CT_SP_WCHILD,Household Type,Single Parent with Child,NA,Household Type - Single Parent with Child,2020-2024 American Community Survey: Tables B11001 & B11003,NA
+County_2026,CT_NONFAM_HH,Household Type,Non-Family,NA,Household Type - Non-Family,2020-2024 American Community Survey: Tables B11001 & B11003,NA
+County_2026,HCUND20K,"Household Income Less Than $20,000 - Monthly Housing Cost as a Percentage of Household Income","Total Households less than $20,000",NA,"Household Income Less Than $20,000 - Monthly Housing Cost as a Percentage of Household Income - Total Households less than $20,000",2020-2024 American Community Survey: Table B25106,NA
+County_2026,HCUND20K_LT20PCT,"Household Income Less Than $20,000 - Monthly Housing Cost as a Percentage of Household Income",Less Than 20 percent,NA,"Household Income Less Than $20,000 - Monthly Housing Cost as a Percentage of Household Income - Less Than 20 percent",2020-2024 American Community Survey: Table B25106,NA
+County_2026,HCUND20K_20_29PCT,"Household Income Less Than $20,000 - Monthly Housing Cost as a Percentage of Household Income",20 to 29 percent,NA,"Household Income Less Than $20,000 - Monthly Housing Cost as a Percentage of Household Income - 20 to 29 percent",2020-2024 American Community Survey: Table B25106,NA
+County_2026,HCUND20K_30MPCT,"Household Income Less Than $20,000 - Monthly Housing Cost as a Percentage of Household Income",30 pecent or more,NA,"Household Income Less Than $20,000 - Monthly Housing Cost as a Percentage of Household Income - 30 pecent or more",2020-2024 American Community Survey: Table B25106,NA
+County_2026,HC20Kto49K,"Household Income $20,000 to $49,999 - Monthly Housing Cost as a Percentage of Household Income","Total Households $35,000 to $49,999",NA,"Household Income $20,000 to $49,999 - Monthly Housing Cost as a Percentage of Household Income - Total Households $35,000 to $49,999",2020-2024 American Community Survey: Table B25106,NA
+County_2026,HC20Kto49K_LT20PCT,"Household Income $20,000 to $49,999 - Monthly Housing Cost as a Percentage of Household Income",Less Than 20 percent,NA,"Household Income $20,000 to $49,999 - Monthly Housing Cost as a Percentage of Household Income - Less Than 20 percent",2020-2024 American Community Survey: Table B25106,NA
+County_2026,HC20Kto49K_20_29PCT,"Household Income $20,000 to $49,999 - Monthly Housing Cost as a Percentage of Household Income",20 to 29 percent,NA,"Household Income $20,000 to $49,999 - Monthly Housing Cost as a Percentage of Household Income - 20 to 29 percent",2020-2024 American Community Survey: Table B25106,NA
+County_2026,HC20Kto49K_30MPCT,"Household Income $20,000 to $49,999 - Monthly Housing Cost as a Percentage of Household Income",30 pecent or more,NA,"Household Income $20,000 to $49,999 - Monthly Housing Cost as a Percentage of Household Income - 30 pecent or more",2020-2024 American Community Survey: Table B25106,NA
+County_2026,HC50Kto75K,"Household Income $50,000 to $74,999 - Monthly Housing Cost as a Percentage of Household Income","Total Households $50,000 to $74,999",NA,"Household Income $50,000 to $74,999 - Monthly Housing Cost as a Percentage of Household Income - Total Households $50,000 to $74,999",2020-2024 American Community Survey: Table B25106,NA
+County_2026,HC50Kto75K_LT20PCT,"Household Income $50,000 to $74,999 - Monthly Housing Cost as a Percentage of Household Income",Less Than 20 percent,NA,"Household Income $50,000 to $74,999 - Monthly Housing Cost as a Percentage of Household Income - Less Than 20 percent",2020-2024 American Community Survey: Table B25106,NA
+County_2026,HC50Kto75K_20_29PCT,"Household Income $50,000 to $74,999 - Monthly Housing Cost as a Percentage of Household Income",20 to 29 percent,NA,"Household Income $50,000 to $74,999 - Monthly Housing Cost as a Percentage of Household Income - 20 to 29 percent",2020-2024 American Community Survey: Table B25106,NA
+County_2026,HC50Kto75K_30MPCT,"Household Income $50,000 to $74,999 - Monthly Housing Cost as a Percentage of Household Income",30 pecent or more,NA,"Household Income $50,000 to $74,999 - Monthly Housing Cost as a Percentage of Household Income - 30 pecent or more",2020-2024 American Community Survey: Table B25106,NA
+County_2026,HCOV75K,"Household Income $75,000 or more - Monthly Housing Cost as a Percentage of Household Income","Total Households $75,000 or more",NA,"Household Income $75,000 or more - Monthly Housing Cost as a Percentage of Household Income - Total Households $75,000 or more",2020-2024 American Community Survey: Table B25106,NA
+County_2026,HCOV75K_LT20PCT,"Household Income $75,000 or more - Monthly Housing Cost as a Percentage of Household Income",Less Than 20 percent,NA,"Household Income $75,000 or more - Monthly Housing Cost as a Percentage of Household Income - Less Than 20 percent",2020-2024 American Community Survey: Table B25106,NA
+County_2026,HCOV75K_20_29PCT,"Household Income $75,000 or more - Monthly Housing Cost as a Percentage of Household Income",20 to 29 percent,NA,"Household Income $75,000 or more - Monthly Housing Cost as a Percentage of Household Income - 20 to 29 percent",2020-2024 American Community Survey: Table B25106,NA
+County_2026,HCOV75K_30MPCT,"Household Income $75,000 or more - Monthly Housing Cost as a Percentage of Household Income",30 pecent or more,NA,"Household Income $75,000 or more - Monthly Housing Cost as a Percentage of Household Income - 30 pecent or more",2020-2024 American Community Survey: Table B25106,NA
+County_2026,NATIVE,Nativity,Native,NA,Nativity - Native,2020-2024 American Community Survey: Table B16005,NA
+County_2026,FOR_BORN,Nativity,Foreign Born,NA,Nativity - Foreign Born,2020-2024 American Community Survey: Table B16005,NA
+County_2026,POP_OV5,Nativity,Population over 5,NA,Nativity - Population over 5,2020-2024 American Community Survey: Table C16001,NA
+County_2026,NOT_ENGLISH,Language Spoken at Home and Ability to Speak English,Speak a language other than English,NA,Language Spoken at Home and Ability to Speak English - Speak a language other than English,2020-2024 American Community Survey: Table C16001,NA
+County_2026,LING_ISO,Language Spoken at Home and Ability to Speak English,"Speak English less than ""very well""",NA,"Language Spoken at Home and Ability to Speak English - Speak English less than ""very well""",2020-2024 American Community Survey: Table C16001,"For people who speak a language other than English at home, the ACS asks whether they speak English ""very well,"" ""well,"" ""not well,"" or ""not at all."""
+County_2026,ENGLISH,Language Spoken at Home and Ability to Speak English,English Only,NA,Language Spoken at Home and Ability to Speak English - English Only,2020-2024 American Community Survey: Table C16001,Population that speaks only English at home.
+County_2026,SPANISH,Language Spoken at Home and Ability to Speak English,Spanish,NA,Language Spoken at Home and Ability to Speak English - Spanish,2020-2024 American Community Survey: Table C16001,"These languages may be spoken exclusively, but people counted in these categories may also speak English (and may even speak mostly in English)."
+County_2026,SLAVIC,Language Spoken at Home and Ability to Speak English,Slavic Languages,NA,Language Spoken at Home and Ability to Speak English - Slavic Languages,2020-2024 American Community Survey: Table C16001,NA
+County_2026,CHINESE,Language Spoken at Home and Ability to Speak English,Chinese,NA,Language Spoken at Home and Ability to Speak English - Chinese,2020-2024 American Community Survey: Table C16001,NA
+County_2026,TAGALOG,Language Spoken at Home and Ability to Speak English,Tagalog,NA,Language Spoken at Home and Ability to Speak English - Tagalog,2020-2024 American Community Survey: Table C16001,NA
+County_2026,ARABIC,Language Spoken at Home and Ability to Speak English,Arabic,NA,Language Spoken at Home and Ability to Speak English - Arabic,2020-2024 American Community Survey: Table C16001,NA
+County_2026,KOREAN,Language Spoken at Home and Ability to Speak English,Korean,NA,Language Spoken at Home and Ability to Speak English - Korean,2020-2024 American Community Survey: Table C16001,NA
+County_2026,OTHER_ASIAN,Language Spoken at Home and Ability to Speak English,Other Asian Languages,NA,Language Spoken at Home and Ability to Speak English - Other Asian Languages,2020-2024 American Community Survey: Table C16001,NA
+County_2026,OTHER_EURO,Language Spoken at Home and Ability to Speak English,Other Indo-European Languages,NA,Language Spoken at Home and Ability to Speak English - Other Indo-European Languages,2020-2024 American Community Survey: Table C16001,NA
+County_2026,OTHER_UNSPEC,Language Spoken at Home and Ability to Speak English,Other/Unspecified Languages,NA,Language Spoken at Home and Ability to Speak English - Other/Unspecified Languages,2020-2024 American Community Survey: Table C16001,NA
+County_2026,F2000_WHITE,"Race and Ethnicity, Over Time",White (Non-Hispanic) (2000),NA,"Race and Ethnicity, Over Time - White (Non-Hispanic) (2000)","2000 Census: SF1, Table P004",NA
+County_2026,F2000_HISP,"Race and Ethnicity, Over Time",Hispanic or Latino (of Any Race) (2000),NA,"Race and Ethnicity, Over Time - Hispanic or Latino (of Any Race) (2000)","2000 Census: SF1, Table P004",NA
+County_2026,F2000_BLACK,"Race and Ethnicity, Over Time",Black (Non-Hispanic) (2000),NA,"Race and Ethnicity, Over Time - Black (Non-Hispanic) (2000)","2000 Census: SF1, Table P004",NA
+County_2026,F2000_ASIAN,"Race and Ethnicity, Over Time",Asian (Non-Hispanic) (2000),NA,"Race and Ethnicity, Over Time - Asian (Non-Hispanic) (2000)","2000 Census: SF1, Table P004",NA
+County_2026,F2000_OTHER,"Race and Ethnicity, Over Time",Other (Non-Hispanic) (2000),NA,"Race and Ethnicity, Over Time - Other (Non-Hispanic) (2000)","2000 Census: SF1, Table P004",NA
+County_2026,HT_Cost_Typical,Housing & Transportation (H+T) Costs as a Percentage of Household Income,"Total H+T Costs, Median-Income Family",NA,"Housing & Transportation (H+T) Costs as a Percentage of Household Income - Total H+T Costs, Median-Income Family","Center for Neighborhood Technology (CNT), H+T A􀀾ordability Index (2018-2022)",Unavailable for Chicago CCAs
+County_2026,HT_Cost_Mod,Housing & Transportation (H+T) Costs as a Percentage of Household Income,"Total H+T Costs, Moderate-Income Family",NA,"Housing & Transportation (H+T) Costs as a Percentage of Household Income - Total H+T Costs, Moderate-Income Family","Center for Neighborhood Technology (CNT), H+T A􀀾ordability Index (2018-2022)",Unavailable for Chicago CCAs
+County_2026,H_Cost_Typical,Housing & Transportation (H+T) Costs as a Percentage of Household Income,"Housing Costs, Median-Income Family",NA,"Housing & Transportation (H+T) Costs as a Percentage of Household Income - Housing Costs, Median-Income Family","Center for Neighborhood Technology (CNT), H+T A􀀾ordability Index (2018-2022)",Unavailable for Chicago CCAs
+County_2026,H_Cost_Mod,Housing & Transportation (H+T) Costs as a Percentage of Household Income,"Housing Costs, Moderate-Income Family",NA,"Housing & Transportation (H+T) Costs as a Percentage of Household Income - Housing Costs, Moderate-Income Family","Center for Neighborhood Technology (CNT), H+T A􀀾ordability Index (2018-2022)",Unavailable for Chicago CCAs
+County_2026,T_Cost_Typical,Housing & Transportation (H+T) Costs as a Percentage of Household Income,"Transportation Costs, Median-Income Family",NA,"Housing & Transportation (H+T) Costs as a Percentage of Household Income - Transportation Costs, Median-Income Family","Center for Neighborhood Technology (CNT), H+T A􀀾ordability Index (2018-2022)",Unavailable for Chicago CCAs
+County_2026,T_Cost_Mod,Housing & Transportation (H+T) Costs as a Percentage of Household Income,"Transportation Costs, Moderate-Income Family",NA,"Housing & Transportation (H+T) Costs as a Percentage of Household Income - Transportation Costs, Moderate-Income Family","Center for Neighborhood Technology (CNT), H+T A􀀾ordability Index (2018-2022)",Unavailable for Chicago CCAs
+County_2026,withdrawals_2018_deep_groundwater,"Water Source
+
+(Counties only)","Total Water Withdrawals (MGD), Deep Groundwater",NA,"Water Source  (Counties only) - Total Water Withdrawals (MGD), Deep Groundwater","Analysis of Illinois Water Inventory Program water withdrawal data
+ (2008-2018)
+
+Includes all community water suppliers and industrial and commercial wells/intakes, private residential wells are not included.",Refers to water held in sandstone aquifers more than 500 ft below land surface
+County_2026,withdrawals_2018_lake_michigan,"Water Source
+
+(Counties only)","Total Water Withdrawals (MGD), Lake Michigan",NA,"Water Source  (Counties only) - Total Water Withdrawals (MGD), Lake Michigan","Analysis of Illinois Water Inventory Program water withdrawal data
+ (2008-2018)
+
+Includes all community water suppliers and industrial and commercial wells/intakes, private residential wells are not included.",NA
+County_2026,withdrawals_2018_other_river,"Water Source
+
+(Counties only)","Total Water Withdrawals (MGD), Riverine",NA,"Water Source  (Counties only) - Total Water Withdrawals (MGD), Riverine","Analysis of Illinois Water Inventory Program water withdrawal data
+ (2008-2018)
+
+Includes all community water suppliers and industrial and commercial wells/intakes, private residential wells are not included.",NA
+County_2026,withdrawals_2018_shallow_groundwater,"Water Source
+
+(Counties only)","Total Water Withdrawals (MGD), Shallow Groundwater",NA,"Water Source  (Counties only) - Total Water Withdrawals (MGD), Shallow Groundwater","Analysis of Illinois Water Inventory Program water withdrawal data
+ (2008-2018)
+
+Includes all community water suppliers and industrial and commercial wells/intakes, private residential wells are not included.",Refers to water held in soil or rock within 500 ft below land surface
+County_2026,percent_2018_deep_groundwater,"Water Source
+
+(Counties only)","Total Water Withdrawals (Percent), Deep Groundwater",NA,"Water Source  (Counties only) - Total Water Withdrawals (Percent), Deep Groundwater","Analysis of Illinois Water Inventory Program water withdrawal data
+ (2008-2018)
+
+Includes all community water suppliers and industrial and commercial wells/intakes, private residential wells are not included.",Refers to water held in sandstone aquifers more than 500 ft below land surface
+County_2026,percent_2018_lake_michigan,"Water Source
+
+(Counties only)","Total Water Withdrawals (Percent), Lake Michigan",NA,"Water Source  (Counties only) - Total Water Withdrawals (Percent), Lake Michigan","Analysis of Illinois Water Inventory Program water withdrawal data
+ (2008-2018)
+
+Includes all community water suppliers and industrial and commercial wells/intakes, private residential wells are not included.",NA
+County_2026,percent_2018_other_river,"Water Source
+
+(Counties only)","Total Water Withdrawals (Percent), Riverine",NA,"Water Source  (Counties only) - Total Water Withdrawals (Percent), Riverine","Analysis of Illinois Water Inventory Program water withdrawal data
+ (2008-2018)
+
+Includes all community water suppliers and industrial and commercial wells/intakes, private residential wells are not included.",NA
+County_2026,percent_2018_shallow_groundwater,"Water Source
+
+(Counties only)","Total Water Withdrawals (Percent), Shallow Groundwater",NA,"Water Source  (Counties only) - Total Water Withdrawals (Percent), Shallow Groundwater","Analysis of Illinois Water Inventory Program water withdrawal data
+ (2008-2018)
+
+Includes all community water suppliers and industrial and commercial wells/intakes, private residential wells are not included.",Refers to water held in soil or rock within 500 ft below land surface

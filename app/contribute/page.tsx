@@ -12,7 +12,7 @@ export default function ContributePage() {
       <PageHeader eyebrow="Contribute" title="Help document Chicago's linguistic landscape">
         <p>
           One person can&apos;t map all of Chicago. Photos of public signs and text from students, residents, and language
-          advocates will help build a record of the languages that are visibily seen.
+          advocates will help build a record of the languages that are visible in public space.
         </p>
       </PageHeader>
 
@@ -21,11 +21,10 @@ export default function ContributePage() {
           <div className="rounded-xl border border-dashed border-border bg-card p-6">
             <div className="flex items-center gap-3">
               <Hourglass className="size-5 text-primary" aria-hidden="true" />
-              <h2 className="font-semibold text-foreground">Photo submissions..(work in progress)..</h2>
+              <h2 className="font-semibold text-foreground">Photo submissions are a work in progress</h2>
             </div>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              Work in progess, finishing the review system so that every submission can be checked for accuracy before it appears on the map.
-              
+              We are finishing the review system so that every submission can be checked for accuracy before it appears on the map. For now, you can send photos by email.
             </p>
             <a
               href={`mailto:${SITE.email}?subject=LinguaChicago%20contributions`}
@@ -42,7 +41,7 @@ export default function ContributePage() {
             </div>
             <ul className="mt-3 flex flex-col gap-2 text-sm leading-relaxed text-muted-foreground">
               <li>Please photograph top-down and bottom-up signs. Try to avoid people, faces, license plates, and private homes.</li>
-              <li>Safety Always comes first, stay on public property and follow local rules.</li>
+              <li>Safety always comes first. Stay on public property and follow local rules.</li>
               <li>Approved photo submissions will be shown publicly on the map, with the location included.</li>
             </ul>
           </div>

@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
 import { Hourglass, ShieldCheck } from 'lucide-react'
+import { ContributeForm } from '@/components/contribute-form'
 import { FieldGuide } from '@/components/field-guide'
 import { PageHeader } from '@/components/page-header'
 import { SITE } from '@/lib/site'
+import { SUPABASE_ENABLED } from '@/lib/supabase'
 
 export const metadata: Metadata = { title: 'Contribute' }
 
@@ -18,6 +20,9 @@ export default function ContributePage() {
 
       <section className="mx-auto max-w-7xl px-4 pb-16 md:px-6">
         <div className="grid gap-6 md:grid-cols-2">
+          {SUPABASE_ENABLED ? (
+            <ContributeForm />
+          ) : (
           <div className="rounded-xl border border-dashed border-border bg-card p-6">
             <div className="flex items-center gap-3">
               <Hourglass className="size-5 text-primary" aria-hidden="true" />
@@ -33,6 +38,7 @@ export default function ContributePage() {
               Email {SITE.email}
             </a>
           </div>
+          )}
 
           <div className="rounded-xl border border-border bg-card p-6">
             <div className="flex items-center gap-3">

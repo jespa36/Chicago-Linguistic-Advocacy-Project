@@ -1,11 +1,12 @@
 'use client'
 
 import dynamic from 'next/dynamic'
-import { useState } from 'react'
-import { MapPin } from 'lucide-react'
+import { useEffect, useState } from 'react'
+import { Camera, MapPin } from 'lucide-react'
 import { AREA_BY_ID, SNAPSHOTS } from '@/lib/data'
 import { LANGUAGES } from '@/lib/metrics'
 import { MAP_MODES, type MapMode } from '@/lib/map-modes'
+import { SUPABASE_ENABLED, fetchApprovedPhotos, type CommunityPhoto } from '@/lib/supabase'
 import { cn } from '@/lib/utils'
 import { AreaPanel } from './area-panel'
 import { MapLegend } from './map-legend'
@@ -24,6 +25,15 @@ export function MapExplorer() {
   const [language, setLanguage] = useState(LANGUAGES[0] ?? '')
   const [selectedId, setSelectedId] = useState<number | null>(null)
   const [showSnapshots, setShowSnapshots] = useState(true)
+  const [showCommunity, setShowCommunity] = useState(true)
+  const [photos, setPhotos] = useState<CommunityPhoto[]>([])
+
+  useEffect(() => {
+    if (!SUPABASE_ENABLED) return
+    const ctl = new AbortController()
+    fetchApprovedPhotos(ctl.signal).then(setPhotos).catch(() => {})
+    return () => ctl.abort()
+  }, [])
 
   const activeMode = MAP_MODES.find((m) => m.value === mode)!
   const selected = selectedId ? AREA_BY_ID.get(selectedId) ?? null : null
@@ -86,6 +96,18 @@ export function MapExplorer() {
               <MapPin className="size-4" aria-hidden="true" />
               Field snapshots ({SNAPSHOTS.length})
             </label>
+            {SUPABASE_ENABLED && (
+              <label className="flex cursor-pointer items-center gap-2 text-sm text-muted-foreground">
+                <input
+                  type="checkbox"
+                  checked={showCommunity}
+                  onChange={(e) => setShowCommunity(e.target.checked)}
+                  className="size-4 accent-primary"
+                />
+                <Camera className="size-4" aria-hidden="true" />
+                Community photos ({photos.length})
+              </label>
+            )}
           </div>
           <p className="border-b border-border px-4 py-2 text-xs text-muted-foreground md:px-6">{activeMode.hint}</p>
           <div className="relative h-[60vh] min-h-[440px] lg:h-[720px]">
@@ -94,6 +116,7 @@ export function MapExplorer() {
               language={language}
               selectedId={selectedId}
               showSnapshots={showSnapshots}
+              communityPhotos={showCommunity ? photos : []}
               onSelect={setSelectedId}
             />
             <div className="pointer-events-none absolute bottom-4 left-4 z-[500]">

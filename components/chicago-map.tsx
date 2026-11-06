@@ -6,6 +6,7 @@ import type { Feature, FeatureCollection, Geometry } from 'geojson'
 import type { Layer, PathOptions } from 'leaflet'
 import boundaries from '@/lib/community-areas.json'
 import { AREA_BY_ID, SNAPSHOTS } from '@/lib/data'
+import { SIGN_TYPES, type CommunityPhoto } from '@/lib/supabase'
 import { areaFill, type MapMode } from '@/lib/map-modes'
 
 type AreaProps = { id: number; name: string }
@@ -17,10 +18,11 @@ type ChicagoMapProps = {
   language: string
   selectedId: number | null
   showSnapshots: boolean
+  communityPhotos?: CommunityPhoto[]
   onSelect: (id: number) => void
 }
 
-export default function ChicagoMap({ mode, language, selectedId, showSnapshots, onSelect }: ChicagoMapProps) {
+export default function ChicagoMap({ mode, language, selectedId, showSnapshots, communityPhotos = [], onSelect }: ChicagoMapProps) {
   const style = (feature?: Feature<Geometry, AreaProps>): PathOptions => {
     const area = feature ? AREA_BY_ID.get(feature.properties.id) : undefined
     const selected = feature?.properties.id === selectedId
@@ -96,6 +98,33 @@ url="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gra
             </Popup>
           </CircleMarker>
         ))}
+      {communityPhotos.map((p) => (
+        <CircleMarker
+          key={p.id}
+          center={[p.latitude, p.longitude]}
+          radius={6}
+          pathOptions={{ color: '#fbf8f2', weight: 2, fillColor: '#e4002b', fillOpacity: 1 }}
+        >
+          <Popup>
+            <div className="flex max-w-60 flex-col gap-1.5 font-sans">
+              <span className="text-[11px] font-medium uppercase tracking-wider text-muted-foreground">
+                Community photo · {SIGN_TYPES.find((t) => t.value === p.sign_type)?.label ?? 'Sign'}
+                {p.community_area ? ` · ${AREA_BY_ID.get(p.community_area)?.name ?? ''}` : ''}
+              </span>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={p.photo_url} alt="Community-submitted photo of a public sign" loading="lazy" className="max-h-44 w-full rounded object-cover" />
+              {p.note && <span className="text-xs leading-relaxed text-foreground/80">{p.note}</span>}
+              <span className="flex flex-wrap gap-1 pt-1">
+                {p.languages.map((l) => (
+                  <span key={l} className="rounded-sm bg-secondary px-1.5 py-0.5 text-[11px] text-secondary-foreground">{l}</span>
+                ))}
+                {p.language_unsure && <span className="text-[11px] text-muted-foreground">(contributor unsure of one language)</span>}
+              </span>
+              <span className="text-[11px] text-muted-foreground">Example only. Not counted in area scores.</span>
+            </div>
+          </Popup>
+        </CircleMarker>
+      ))}
     </MapContainer>
   )
 }

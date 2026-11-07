@@ -3,7 +3,7 @@
 A language-equity map for Chicago: compare the languages residents speak (Census data) with the
 languages visible on public signs (field survey), across the city's 77 community areas.
 
-Built with Next.js (static export), Tailwind CSS, and Leaflet. Hosted on GitHub Pages.
+Map is built with Next.js (static export), Tailwind CSS, and Leaflet. Hosted on GitHub Pages.
 
 ## Pages
 
@@ -24,16 +24,7 @@ pnpm dev
 
 Open http://localhost:3000.
 
-## Deploy to GitHub Pages
-
-1. Push this project to a GitHub repository.
-2. In the repository: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-3. Push to `main`. The workflow in `.github/workflows/pages.yml` builds and deploys.
-
-The workflow sets `BASE_PATH` to `/<repository-name>` so links work on a project site. If you deploy to a
-user site (`<name>.github.io`) or a custom domain, delete the `BASE_PATH` line in the workflow.
-
-## Where the data lives
+## Where the data is located
 
 - `lib/citywide.ts` — citywide Census figures (source: `data/raw/`, see `data/raw/SOURCE.md`).
 - `lib/area-data.ts` — per-community-area Census and signage-survey data. Empty until added; areas without

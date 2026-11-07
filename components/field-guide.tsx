@@ -33,7 +33,7 @@ export function FieldGuide({ heading = 'How contributions work' }: { heading?: s
     <section id="field-guide" className="scroll-mt-20 bg-[var(--ink-navy)]">
       <div className="mx-auto max-w-7xl px-4 py-20 md:px-6">
         <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-wider text-sky-300">The field guide</p>
+          <p className="text-sm font-semibold uppercase tracking-wider text-sky-300">Upload Guide</p>
           <h2 className="mt-3 text-balance font-serif text-3xl leading-tight text-white md:text-4xl">{heading}</h2>
           <p className="mt-4 leading-relaxed text-slate-300">
             Learn how to document the signs seen throughout Chicago, from taking a photo to submitting it for review.

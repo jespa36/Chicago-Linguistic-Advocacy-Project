@@ -11,11 +11,11 @@ export default function MethodPage() {
     <>
       <PageHeader eyebrow="Methodology" title="How the numbers are made, and how signs are surveyed and submitted">
         <p>
-          The analytical framework explains the census math behind the gap. The field guide explains the steps for contributing a photo.
+          The analytical framework explains the census math behind the gap. The Upload Guide gives an explanation and process of all the steps needed to contribute a photo.
         </p>
       </PageHeader>
       <MethodFramework />
-      <FieldGuide heading="The field guide" />
+      <FieldGuide heading="Upload Guide" />
       <ResearchFramework />
     </>
   )

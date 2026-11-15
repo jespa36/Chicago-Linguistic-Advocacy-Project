@@ -1,6 +1,8 @@
 export const SITE = {
   name: 'LinguaChicago',
   tagline: 'Languages of Chicago',
+  // Public address of the site. Update origin if the repository or account name changes.
+  origin: 'https://jespa36.github.io',
   github: 'https://github.com/jespa36',
   email: 'jespa36@uic.edu',
 }

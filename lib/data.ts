@@ -1,4 +1,5 @@
 import { AREA_DATA, SNAPSHOT_DATA } from './area-data'
+import { CORRIDORS } from './corridors'
 
 export type Region =
   | 'Far North'
@@ -119,6 +120,10 @@ const AREAS: [number, string, Region][] = [
 
 export const COMMUNITY_AREAS: CommunityArea[] = AREAS.map(([id, name, region]) => {
   const d = AREA_DATA[id] ?? {}
+  // Survey results come from the surveyed street(s) in this area (see lib/corridors.ts).
+  const streets = CORRIDORS.filter((c) => c.areaId === id && c.signsSurveyed > 0)
+  const signs = streets.reduce((sum, c) => sum + c.signsSurveyed, 0)
+  const withOther = streets.reduce((sum, c) => sum + c.withNonEnglish, 0)
   return {
     id,
     name,
@@ -126,8 +131,8 @@ export const COMMUNITY_AREAS: CommunityArea[] = AREAS.map(([id, name, region]) =
     speakers: d.speakers ?? null,
     lep: d.lep ?? null,
     languages: d.languages ?? [],
-    visibility: d.visibility ?? null,
-    signsSurveyed: d.signsSurveyed ?? null,
+    visibility: signs > 0 ? Math.round((withOther / signs) * 100) : (d.visibility ?? null),
+    signsSurveyed: signs > 0 ? signs : (d.signsSurveyed ?? null),
   }
 })
 

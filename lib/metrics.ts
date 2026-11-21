@@ -11,6 +11,17 @@ export const NO_DATA_COLOR = '#b9b3a8'
  */
 export const MIN_SIGNS_SURVEYED = 30
 
+/** 95% Wilson score interval for k of n signs, as whole percents. Honest about small samples. */
+export function wilsonRange(k: number, n: number): [number, number] {
+  if (n <= 0) return [0, 100]
+  const z = 1.96
+  const p = k / n
+  const denom = 1 + (z * z) / n
+  const center = (p + (z * z) / (2 * n)) / denom
+  const half = (z * Math.sqrt((p * (1 - p)) / n + (z * z) / (4 * n * n))) / denom
+  return [Math.max(0, Math.round((center - half) * 100)), Math.min(100, Math.round((center + half) * 100))]
+}
+
 export const STATUS_META: Record<EquityStatus, { label: string; color: string; description: string }> = {
   represented: {
     label: 'Well represented',

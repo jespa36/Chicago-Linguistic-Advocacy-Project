@@ -5,7 +5,7 @@ export function DataProgress() {
   const stats = cityStats()
   const progress = [
     { label: 'Census language data (by community area)', value: stats.withCensus },
-    { label: `Signage survey (${MIN_SIGNS_SURVEYED}+ signs per area)`, value: stats.withSignage },
+    { label: `Signage survey (${MIN_SIGNS_SURVEYED}+ signs on a surveyed street)`, value: stats.withSignage },
   ]
 
   return (
@@ -27,7 +27,7 @@ export function DataProgress() {
             </li>
           ))}
           <li className="flex items-baseline justify-between text-sm">
-            <span className="text-muted-foreground">Field snapshots</span>
+            <span className="text-muted-foreground">Example photos</span>
             <span className="tabular-nums text-foreground">{SNAPSHOTS.length} recorded</span>
           </li>
         </ul>

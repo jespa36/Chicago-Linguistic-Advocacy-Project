@@ -94,7 +94,7 @@ export function MapExplorer() {
                 className="size-4 accent-primary"
               />
               <MapPin className="size-4" aria-hidden="true" />
-              Field snapshots ({SNAPSHOTS.length})
+              Example photos ({SNAPSHOTS.length})
             </label>
             {SUPABASE_ENABLED && (
               <label className="flex cursor-pointer items-center gap-2 text-sm text-muted-foreground">

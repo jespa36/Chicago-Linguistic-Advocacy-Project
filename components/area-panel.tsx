@@ -1,5 +1,6 @@
 import { MousePointerClick, X } from 'lucide-react'
 import { SNAPSHOTS, type CommunityArea } from '@/lib/data'
+import { CORRIDORS } from '@/lib/corridors'
 import {
   MIN_SIGNS_SURVEYED,
   STATUS_META,
@@ -7,6 +8,7 @@ import {
   cityStats,
   equityStatus,
   representationPct,
+  wilsonRange,
   type EquityStatus,
 } from '@/lib/metrics'
 import { DataPending } from './data-pending'
@@ -84,6 +86,7 @@ export function AreaPanel({ area, onClear }: { area: CommunityArea | null; onCle
   // Only areas that are actually scored show a match; English-predominant and unscored areas show a dash.
   const match = status === 'represented' || status === 'partial' || status === 'under' ? representationPct(area) : null
   const snapshots = SNAPSHOTS.filter((s) => s.areaId === area.id)
+  const streets = CORRIDORS.filter((c) => c.areaId === area.id)
   const neutral = status === 'english' || status === 'nodata' || status === 'insufficient'
 
   return (
@@ -143,7 +146,10 @@ export function AreaPanel({ area, onClear }: { area: CommunityArea | null; onCle
           </p>
         ) : (
           area.signsSurveyed !== null && (
-            <p className="text-xs text-muted-foreground">Based on {area.signsSurveyed} signs surveyed.</p>
+            <p className="text-xs text-muted-foreground">
+              Based on {area.signsSurveyed} signs surveyed
+              {streets.length > 0 ? ` along ${streets.map((c) => c.street).join(' and ')}` : ''}.
+            </p>
           )
         )}
       </div>
@@ -167,6 +173,36 @@ export function AreaPanel({ area, onClear }: { area: CommunityArea | null; onCle
         )}
       </div>
 
+      {streets.length > 0 && (
+        <div className="flex flex-col gap-3 border-t border-border pt-5">
+          <h4 className="text-sm font-semibold text-foreground">Surveyed {streets.length > 1 ? 'streets' : 'street'}</h4>
+          {streets.map((c) => {
+            const [lo, hi] = wilsonRange(c.withNonEnglish, c.signsSurveyed)
+            return (
+              <article key={c.id} className="rounded-md border border-border p-3">
+                <p className="text-sm font-semibold text-foreground">{c.street}</p>
+                {(c.from || c.to) && (
+                  <p className="text-xs text-muted-foreground">
+                    {c.from}
+                    {c.from && c.to ? ' to ' : ''}
+                    {c.to}
+                  </p>
+                )}
+                <p className="mt-2 text-sm leading-relaxed text-foreground/80">
+                  {c.withNonEnglish} of {c.signsSurveyed} signs include another language
+                  {c.topLanguage ? `, most often ${c.topLanguage}` : ''}. With a sample this size, the true share on this
+                  street is likely between {lo}% and {hi}%.
+                </p>
+              </article>
+            )
+          })}
+          <p className="text-xs leading-relaxed text-muted-foreground">
+            These counts describe the street above, not every sign in {area.name}. Main commercial streets often show more
+            languages than quieter blocks.
+          </p>
+        </div>
+      )}
+
       {ADVOCACY[status] && (
         <div className="flex flex-col gap-2 border-t border-border pt-5">
           <h4 className="text-sm font-semibold text-foreground">Advocacy focus</h4>
@@ -175,7 +211,7 @@ export function AreaPanel({ area, onClear }: { area: CommunityArea | null; onCle
       )}
 
       <div className="flex flex-col gap-3 border-t border-border pt-5">
-        <h4 className="text-sm font-semibold text-foreground">Field snapshots</h4>
+        <h4 className="text-sm font-semibold text-foreground">Example photos</h4>
         {snapshots.length > 0 ? (
           snapshots.map((s) => (
             <article key={s.id} className="rounded-md border border-border p-3">

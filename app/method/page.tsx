@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { FieldGuide } from '@/components/field-guide'
+import { MethodDatasets } from '@/components/method-datasets'
 import { MethodFramework } from '@/components/method-framework'
 import { PageHeader } from '@/components/page-header'
 import { ResearchFramework } from '@/components/research-framework'
@@ -15,6 +16,7 @@ export default function MethodPage() {
         </p>
       </PageHeader>
       <MethodFramework />
+      <MethodDatasets />
       <FieldGuide heading="Upload Guide" />
       <ResearchFramework />
     </>

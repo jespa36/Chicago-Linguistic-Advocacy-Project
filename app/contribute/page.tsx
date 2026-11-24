@@ -14,7 +14,9 @@ export default function ContributePage() {
       <PageHeader eyebrow="Contribute" title="Help document Chicago's linguistic landscape">
         <p>
           One person can&apos;t map all of Chicago. Photos of public signs and text from students, residents, and language
-          advocates will help build a record of the languages that are visible in public space.
+          advocates will help build a record of the languages that are visible in public space. Community uploads are for
+          signs that include at least one language other than English. Bilingual signs (English plus another language)
+          are welcome, and English-only signs should not be uploaded.
         </p>
       </PageHeader>
 
@@ -46,6 +48,7 @@ export default function ContributePage() {
               <h2 className="font-semibold text-foreground">Before you photograph</h2>
             </div>
             <ul className="mt-3 flex flex-col gap-2 text-sm leading-relaxed text-muted-foreground">
+              <li>Only upload signs with at least one language other than English. English-only signs aren’t needed here.</li>
               <li>Please photograph top-down and bottom-up signs. Try to avoid people, faces, license plates, and private homes.</li>
               <li>Safety always comes first. Stay on public property and follow local rules.</li>
               <li>Approved photo submissions will be shown publicly on the map, with the location included.</li>

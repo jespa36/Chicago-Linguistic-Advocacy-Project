@@ -1,12 +1,16 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import { createPortal } from 'react-dom'
 import { useMap } from 'react-leaflet'
 import L from 'leaflet'
 
 function escapeHtml(text: string) {
   return text.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c] as string)
 }
+
+/** Mapillary only publishes sign and coverage features at zoom 14, so the layer waits until the map is that close. */
+const MIN_ZOOM = 14
 
 interface MapillaryLayerProps {
   showSigns: boolean
@@ -19,9 +23,19 @@ export default function MapillaryLayer({
 }: MapillaryLayerProps) {
   const map = useMap()
   const token = process.env.NEXT_PUBLIC_MAPILLARY_TOKEN
+  const [zoom, setZoom] = useState(() => map.getZoom())
+  const zoomOk = zoom >= MIN_ZOOM
 
   useEffect(() => {
-    if (!token || (!showSigns && !showCoverage)) return
+    const onZoom = () => setZoom(map.getZoom())
+    map.on('zoomend', onZoom)
+    return () => {
+      map.off('zoomend', onZoom)
+    }
+  }, [map])
+
+  useEffect(() => {
+    if (!token || !zoomOk || (!showSigns && !showCoverage)) return
     if (!map || !map.getContainer()) return
 
     let active = true
@@ -40,6 +54,7 @@ export default function MapillaryLayer({
           const coverageLayer = vectorGrid.protobuf(
             `https://tiles.mapillary.com/maps/vtp/mly1_public/2/{z}/{x}/{y}?access_token=${token}`,
             {
+              minNativeZoom: 14,
               maxNativeZoom: 14,
               maxZoom: 20,
               vectorTileLayerStyles: {
@@ -69,6 +84,7 @@ export default function MapillaryLayer({
           const signsLayer = vectorGrid.protobuf(
             `https://tiles.mapillary.com/maps/vtp/mly_map_feature_traffic_sign/2/{z}/{x}/{y}?access_token=${token}`,
             {
+              minNativeZoom: 14,
               maxNativeZoom: 14,
               maxZoom: 20,
               interactive: true,
@@ -126,7 +142,36 @@ export default function MapillaryLayer({
         } catch {}
       })
     }
-  }, [map, token, showSigns, showCoverage])
+  }, [map, token, zoomOk, showSigns, showCoverage])
 
-  return null
+  if (!showSigns && !showCoverage) return null
+  const notice = !token
+    ? 'The Mapillary layer is off: this build has no Mapillary token.'
+    : !zoomOk
+      ? `Zoom in closer to see Mapillary signs (zoom ${Math.round(zoom)}, needs ${MIN_ZOOM} or more).`
+      : null
+  if (!notice) return null
+  return createPortal(
+    <div
+      role="status"
+      style={{
+        position: 'absolute',
+        top: 12,
+        left: '50%',
+        transform: 'translateX(-50%)',
+        zIndex: 1000,
+        background: 'rgba(11,34,51,0.92)',
+        color: '#fff',
+        padding: '6px 12px',
+        fontSize: 13,
+        borderRadius: 4,
+        pointerEvents: 'none',
+        maxWidth: '90%',
+        textAlign: 'center',
+      }}
+    >
+      {notice}
+    </div>,
+    map.getContainer(),
+  )
 }

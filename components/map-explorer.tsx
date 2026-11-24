@@ -105,11 +105,17 @@ export function MapExplorer() {
                   className="size-4 accent-primary"
                 />
                 <Camera className="size-4" aria-hidden="true" />
-                Community photos ({photos.length})
+                Community photos: signs with another language ({photos.length})
               </label>
             )}
           </div>
           <p className="border-b border-border px-4 py-2 text-xs text-muted-foreground md:px-6">{activeMode.hint}</p>
+          {SUPABASE_ENABLED && showCommunity && (
+            <p className="border-b border-border px-4 py-2 text-xs text-muted-foreground md:px-6">
+              Red dots are community photos of signs with at least one language other than English. They are examples, left
+              out of the scores, which come from counting every sign on a surveyed street.
+            </p>
+          )}
           <div className="relative h-[60vh] min-h-[440px] lg:h-[720px]">
             <ChicagoMap
               mode={mode}

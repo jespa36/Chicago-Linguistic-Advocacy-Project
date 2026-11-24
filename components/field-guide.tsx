@@ -4,7 +4,7 @@ const STEPS = [
   {
     icon: Camera,
     title: 'Snap a photo',
-    text: 'Take a photo of any sign. This includes street signs, storefront displays, community flyers, or even murals. Please avoid photographing others and focus on the text.',
+    text: 'Take a photo of a sign that includes at least one language other than English. This includes street signs, storefront displays, community flyers, or even murals. English-only signs should not be uploaded. Please avoid photographing others and focus on the text.',
   },
   {
     icon: MapPin,
@@ -14,7 +14,7 @@ const STEPS = [
   {
     icon: Languages,
     title: 'Tag the languages',
-    text: 'Select every language that is represented in the photo, mark the language that appears most prominent, or choose “not sure” if you cannot tell.',
+    text: 'Select every language that is represented in the photo, including at least one language other than English. Bilingual signs can have English checked as well. Mark the language that appears most prominent, or choose “not sure” if you cannot tell what a language is.',
   },
   {
     icon: Tag,
@@ -38,7 +38,7 @@ export function FieldGuide({ heading = 'How contributions work' }: { heading?: s
           <p className="mt-4 leading-relaxed text-slate-300">
             Learn how to document the signs seen throughout Chicago, from taking a photo to submitting it for review.
             Follow five steps based on established linguistic landscape research: photograph,
-            locate, tag, label, and review.
+            locate, tag, label, and review. Community uploads show multilingual signs only, so they are examples and are not counted in the survey scores.
           </p>
         </div>
         <ol className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-5">

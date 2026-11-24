@@ -120,7 +120,7 @@ url="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gra
                 ))}
                 {p.language_unsure && <span className="text-[11px] text-muted-foreground">(contributor unsure of one language)</span>}
               </span>
-              <span className="text-[11px] text-muted-foreground">Example only. Not counted in area scores.</span>
+              <span className="text-[11px] text-muted-foreground">Shows a language other than English. Example only, not counted in area scores.</span>
             </div>
           </Popup>
         </CircleMarker>

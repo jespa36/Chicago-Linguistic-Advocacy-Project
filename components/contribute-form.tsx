@@ -15,6 +15,13 @@ const PinPicker = dynamic(() => import('./pin-picker'), {
 
 const LANGS = ['English', 'Spanish', 'Polish', 'Chinese', 'Arabic', 'Tagalog', 'Korean', 'Russian', 'Ukrainian', 'Urdu', 'Vietnamese']
 const COOLDOWN_MS = 30_000
+const NON_ENGLISH_MSG =
+  'Community uploads are for signs with at least one language other than English. Pick that language (English can stay checked for a bilingual sign), or check the “not sure” box if you can’t tell what it is.'
+
+/** A submission needs a language other than English, or a flagged language the contributor couldn’t identify. */
+function hasNonEnglish(languages: string[], unsure: boolean) {
+  return unsure || languages.some((l) => l.trim().toLowerCase() !== 'english')
+}
 
 type Status = { kind: 'idle' } | { kind: 'working' } | { kind: 'done' } | { kind: 'error'; msg: string }
 
@@ -35,6 +42,8 @@ export function ContributeForm() {
   const honeypot = useRef<HTMLInputElement>(null)
 
   const area = pin ? areaAt(pin.lat, pin.lng) : null
+  const pickedLangs = Array.from(new Set([...langs, ...other.split(',').map((s) => s.trim()).filter(Boolean)]))
+  const englishOnly = pickedLangs.length > 0 && !hasNonEnglish(pickedLangs, unsure)
   const outside = pin !== null && area === null
 
   async function onFile(f: File | null) {
@@ -76,8 +85,8 @@ export function ContributeForm() {
     if (!file) return setStatus({ kind: 'error', msg: 'Add a photo first.' })
     if (!pin || outside) return setStatus({ kind: 'error', msg: 'Place the pin on a spot inside Chicago.' })
     const extra = other.split(',').map((s) => s.trim()).filter(Boolean)
-    const languages = [...langs, ...extra].slice(0, 10)
-    if (languages.length === 0 && !unsure) return setStatus({ kind: 'error', msg: 'Pick the languages you see, or check “I’m not sure”.' })
+    const languages = Array.from(new Set([...langs, ...extra])).slice(0, 10)
+    if (!hasNonEnglish(languages, unsure)) return setStatus({ kind: 'error', msg: NON_ENGLISH_MSG })
     if (!consent) return setStatus({ kind: 'error', msg: 'Please agree to the public posting note.' })
 
     setStatus({ kind: 'working' })
@@ -132,7 +141,10 @@ export function ContributeForm() {
     <form onSubmit={onSubmit} className="flex flex-col gap-6 rounded-xl border border-border bg-card p-6">
       <div>
         <h2 className="font-semibold text-foreground">Add a photo of a public sign</h2>
-        <p className="mt-1 text-sm text-muted-foreground">Takes about a minute. Photos are reviewed before they appear on the map.</p>
+        <p className="mt-1 text-sm text-muted-foreground">
+          For signs with a language other than English. Bilingual signs are welcome; English-only signs aren’t needed. Takes
+          about a minute, and photos are reviewed before they appear on the map.
+        </p>
       </div>
 
       <div className="flex flex-col gap-2">
@@ -167,7 +179,7 @@ export function ContributeForm() {
       </div>
 
       <fieldset className="flex flex-col gap-2">
-        <legend className={label}>3. Which languages are on it?</legend>
+        <legend className={label}>3. Which languages are on it? Include at least one besides English.</legend>
         <div className="flex flex-wrap gap-2">
           {LANGS.map((l) => (
             <label key={l} className={`cursor-pointer rounded-full border px-3 py-1 text-sm ${langs.includes(l) ? 'border-primary bg-primary text-primary-foreground' : 'border-border text-foreground'}`}>
@@ -176,10 +188,16 @@ export function ContributeForm() {
             </label>
           ))}
         </div>
+        {englishOnly && (
+          <p role="alert" className="text-sm font-medium text-accent">
+            Only English is selected. Community uploads are for signs with another language too. Add that language, or
+            leave this sign out.
+          </p>
+        )}
         <input value={other} onChange={(e) => setOther(e.target.value)} maxLength={80} placeholder="Other languages (separate with commas)" className={field} aria-label="Other languages" />
         <label className="flex items-center gap-2 text-sm text-muted-foreground">
           <input type="checkbox" checked={unsure} onChange={(e) => setUnsure(e.target.checked)} className="size-4 accent-primary" />
-          I’m not sure what language one of them is
+          There’s another language on it, but I’m not sure which
         </label>
         <input value={dominant} onChange={(e) => setDominant(e.target.value)} maxLength={60} placeholder="Main language, if one stands out (optional)" className={field} aria-label="Main language" />
       </fieldset>

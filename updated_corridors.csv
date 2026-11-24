@@ -1,0 +1,7 @@
+id,area_id,neighborhood,street,from_street,to_street,distance_mi,signs_surveyed,with_non_english,pct_non_english,top_language,surveyed_on
+albany-park-lawrence,14,Albany Park,W Lawrence Ave,N Sacramento Ave,N Central Park Ave,0.75,247,212,85.8%,Spanish / Korean,2026-11-24
+humboldt-park-division,23,Humboldt Park,W Division St,N Western Ave,N California Ave,0.5,239,168,70.3%,Spanish,2026-11-24
+rogers-park-clark,1,Rogers Park,N Clark St,W Devon Ave,W Howard St,1.5,200,107,53.5%,Spanish,2026-11-24
+edgewater-broadway,77,Edgewater,N Broadway,W Bryn Mawr Ave,W Granville Ave,0.75,195,131,67.2%,Spanish / Slavic,2026-11-24
+uptown-argyle,3,Uptown,W Argyle St,N Kenmore Ave,N Sheridan Rd,0.25,194,147,75.8%,Spanish / Vietnamese / Chinese,2026-11-24
+west-ridge-devon,2,West Ridge,W Devon Ave,N Western Ave,N California Ave,0.5,188,103,54.8%,Spanish / Indo-European,2026-11-24

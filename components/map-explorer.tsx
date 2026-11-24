@@ -2,7 +2,7 @@
 
 import dynamic from 'next/dynamic'
 import { useEffect, useState } from 'react'
-import { Camera, MapPin } from 'lucide-react'
+import { Camera, MapPin, Signpost } from 'lucide-react'
 import { AREA_BY_ID, SNAPSHOTS } from '@/lib/data'
 import { LANGUAGES } from '@/lib/metrics'
 import { MAP_MODES, type MapMode } from '@/lib/map-modes'
@@ -26,6 +26,7 @@ export function MapExplorer() {
   const [selectedId, setSelectedId] = useState<number | null>(null)
   const [showSnapshots, setShowSnapshots] = useState(true)
   const [showCommunity, setShowCommunity] = useState(true)
+  const [showMapillary, setShowMapillary] = useState(false)
   const [photos, setPhotos] = useState<CommunityPhoto[]>([])
 
   useEffect(() => {
@@ -108,6 +109,16 @@ export function MapExplorer() {
                 Community photos: signs with another language ({photos.length})
               </label>
             )}
+            <label className="flex cursor-pointer items-center gap-2 text-sm text-muted-foreground">
+              <input
+                type="checkbox"
+                checked={showMapillary}
+                onChange={(e) => setShowMapillary(e.target.checked)}
+                className="size-4 accent-primary"
+              />
+              <Signpost className="size-4" aria-hidden="true" />
+              Mapillary street signs
+            </label>
           </div>
           <p className="border-b border-border px-4 py-2 text-xs text-muted-foreground md:px-6">{activeMode.hint}</p>
           {SUPABASE_ENABLED && showCommunity && (
@@ -116,12 +127,19 @@ export function MapExplorer() {
               out of the scores, which come from counting every sign on a surveyed street.
             </p>
           )}
+          {showMapillary && (
+            <p className="border-b border-border px-4 py-2 text-xs text-muted-foreground md:px-6">
+              Amber dots show municipal and traffic signs detected in Mapillary street-level imagery. Kept separate from the
+              multilingual sign survey and community photo dataset.
+            </p>
+          )}
           <div className="relative h-[60vh] min-h-[440px] lg:h-[720px]">
             <ChicagoMap
               mode={mode}
               language={language}
               selectedId={selectedId}
               showSnapshots={showSnapshots}
+              showMapillary={showMapillary}
               communityPhotos={showCommunity ? photos : []}
               onSelect={setSelectedId}
             />

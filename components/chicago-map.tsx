@@ -8,6 +8,7 @@ import boundaries from '@/lib/community-areas.json'
 import { AREA_BY_ID, SNAPSHOTS } from '@/lib/data'
 import { SIGN_TYPES, type CommunityPhoto } from '@/lib/supabase'
 import { areaFill, type MapMode } from '@/lib/map-modes'
+import MapillaryLayer from './MapillaryLayer'
 
 type AreaProps = { id: number; name: string }
 
@@ -18,11 +19,20 @@ type ChicagoMapProps = {
   language: string
   selectedId: number | null
   showSnapshots: boolean
+  showMapillary?: boolean
   communityPhotos?: CommunityPhoto[]
   onSelect: (id: number) => void
 }
 
-export default function ChicagoMap({ mode, language, selectedId, showSnapshots, communityPhotos = [], onSelect }: ChicagoMapProps) {
+export default function ChicagoMap({
+  mode,
+  language,
+  selectedId,
+  showSnapshots,
+  showMapillary = false,
+  communityPhotos = [],
+  onSelect,
+}: ChicagoMapProps) {
   const style = (feature?: Feature<Geometry, AreaProps>): PathOptions => {
     const area = feature ? AREA_BY_ID.get(feature.properties.id) : undefined
     const selected = feature?.properties.id === selectedId
@@ -57,9 +67,9 @@ export default function ChicagoMap({ mode, language, selectedId, showSnapshots, 
       attributionControl
     >
       <TileLayer
-url="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}"
-          attribution='Basemap &copy; Esri, HERE, Garmin, OpenStreetMap contributors · Boundaries: City of Chicago'
-          maxNativeZoom={16}
+        url="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}"
+        attribution='Basemap &copy; Esri, HERE, Garmin, OpenStreetMap contributors · Boundaries: City of Chicago'
+        maxNativeZoom={16}
       />
       <GeoJSON
         key={`${mode}-${language}-${selectedId}`}
@@ -68,10 +78,10 @@ url="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gra
         onEachFeature={onEachFeature}
       />
       <TileLayer
-          url="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}"
-          pane="shadowPane"
-          maxNativeZoom={16}
-        />
+        url="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}"
+        pane="shadowPane"
+        maxNativeZoom={16}
+      />
       {showSnapshots &&
         SNAPSHOTS.map((s) => (
           <CircleMarker
@@ -125,6 +135,7 @@ url="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gra
           </Popup>
         </CircleMarker>
       ))}
+      <MapillaryLayer showSigns={showMapillary} />
     </MapContainer>
   )
 }

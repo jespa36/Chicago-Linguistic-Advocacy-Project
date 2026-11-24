@@ -4,6 +4,10 @@ import { useEffect } from 'react'
 import { useMap } from 'react-leaflet'
 import L from 'leaflet'
 
+function escapeHtml(text: string) {
+  return text.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c] as string)
+}
+
 interface MapillaryLayerProps {
   showSigns: boolean
   showCoverage?: boolean
@@ -69,7 +73,8 @@ export default function MapillaryLayer({
               maxZoom: 20,
               interactive: true,
               vectorTileLayerStyles: {
-                point: () => ({
+                // Mapillary names the layer inside these tiles "traffic_sign".
+                traffic_sign: () => ({
                   radius: 4,
                   fill: true,
                   fillColor: '#f59e0b',
@@ -87,7 +92,7 @@ export default function MapillaryLayer({
             'click',
             (e: { latlng: L.LatLng; layer?: { properties?: Record<string, string> } }) => {
               const props = e.layer?.properties || {}
-              const signType = (props.value || 'traffic-sign').replaceAll('--', ' · ')
+              const signType = escapeHtml(String(props.value || 'traffic-sign').replaceAll('--', ' · '))
               L.popup()
                 .setLatLng(e.latlng)
                 .setContent(

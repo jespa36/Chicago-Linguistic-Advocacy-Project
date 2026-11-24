@@ -130,7 +130,11 @@ export function MapExplorer() {
           {showMapillary && (
             <p className="border-b border-border px-4 py-2 text-xs text-muted-foreground md:px-6">
               Amber dots show municipal and traffic signs detected in Mapillary street-level imagery. Kept separate from the
-              multilingual sign survey and community photo dataset.
+              multilingual sign survey and community photo dataset. Zoom in to street level to see them. Street-level data ©{' '}
+              <a href="https://www.mapillary.com" target="_blank" rel="noopener noreferrer" className="underline">
+                Mapillary
+              </a>
+              , CC BY-SA 4.0.
             </p>
           )}
           <div className="relative h-[60vh] min-h-[440px] lg:h-[720px]">

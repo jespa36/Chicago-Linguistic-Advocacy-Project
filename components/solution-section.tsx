@@ -49,8 +49,8 @@ export function SolutionSection() {
               One idea for closing this gap: a QR code next to or on the English sign.
             </h2>
             <p className="mt-5 text-pretty leading-relaxed text-muted-foreground">
-              It is unrealistic for every langauge to appear on one sign. It would be too expensive as well as hard to read and understand. A smaller idea and
-              solution to this would be to put a QR code beside or on a English-only sign that would be able to translate the information to any other language a person speaks. The census
+              It is unrealistic for every language to appear on one sign. It would be too expensive as well as hard to read and understand. A smaller idea and
+              solution to this would be to put a QR code beside or on an English-only sign that would be able to translate the information to any other language a person speaks. The census
               data on this site could help decide which languages to offer, and the sign survey could show the areas where gaps are the biggest. 
               This would be a way to help people who do not speak English understand the information on the sign, which is
               most often English-only.

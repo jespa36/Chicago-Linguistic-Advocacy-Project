@@ -87,16 +87,18 @@ export function MapExplorer() {
                 </select>
               </label>
             )}
-            <label className="flex cursor-pointer items-center gap-2 text-sm text-muted-foreground sm:ml-auto">
-              <input
-                type="checkbox"
-                checked={showSnapshots}
-                onChange={(e) => setShowSnapshots(e.target.checked)}
-                className="size-4 accent-primary"
-              />
-              <MapPin className="size-4" aria-hidden="true" />
-              Example photos ({SNAPSHOTS.length})
-            </label>
+            {SNAPSHOTS.length > 0 && (
+              <label className="flex cursor-pointer items-center gap-2 text-sm text-muted-foreground sm:ml-auto">
+                <input
+                  type="checkbox"
+                  checked={showSnapshots}
+                  onChange={(e) => setShowSnapshots(e.target.checked)}
+                  className="size-4 accent-primary"
+                />
+                <MapPin className="size-4" aria-hidden="true" />
+                Example photos ({SNAPSHOTS.length})
+              </label>
+            )}
             {SUPABASE_ENABLED && (
               <label className="flex cursor-pointer items-center gap-2 text-sm text-muted-foreground">
                 <input

@@ -26,10 +26,12 @@ export function DataProgress() {
               </div>
             </li>
           ))}
-          <li className="flex items-baseline justify-between text-sm">
-            <span className="text-muted-foreground">Example photos</span>
-            <span className="tabular-nums text-foreground">{SNAPSHOTS.length} recorded</span>
-          </li>
+          {SNAPSHOTS.length > 0 && (
+            <li className="flex items-baseline justify-between text-sm">
+              <span className="text-muted-foreground">Example photos</span>
+              <span className="tabular-nums text-foreground">{SNAPSHOTS.length} recorded</span>
+            </li>
+          )}
         </ul>
         <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
           Only real, sourced data is shown on this site. Areas without data appear in gray as &ldquo;No data yet.&rdquo;

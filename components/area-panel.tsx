@@ -210,10 +210,10 @@ export function AreaPanel({ area, onClear }: { area: CommunityArea | null; onCle
         </div>
       )}
 
+      {snapshots.length > 0 && (
       <div className="flex flex-col gap-3 border-t border-border pt-5">
         <h4 className="text-sm font-semibold text-foreground">Example photos</h4>
-        {snapshots.length > 0 ? (
-          snapshots.map((s) => (
+        {snapshots.map((s) => (
             <article key={s.id} className="rounded-md border border-border p-3">
               <p className="text-[11px] font-medium uppercase tracking-wider text-muted-foreground">
                 {s.type}
@@ -223,11 +223,9 @@ export function AreaPanel({ area, onClear }: { area: CommunityArea | null; onCle
               <p className="mt-1 text-sm leading-relaxed text-foreground/80">{s.note}</p>
               <p className="mt-2 text-xs text-muted-foreground">{s.languages.join(' · ')}</p>
             </article>
-          ))
-        ) : (
-          <p className="text-sm text-muted-foreground">None recorded yet.</p>
-        )}
+          ))}
       </div>
+      )}
     </div>
   )
 }

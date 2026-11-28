@@ -198,7 +198,7 @@ export function AreaPanel({ area, onClear }: { area: CommunityArea | null; onCle
           })}
           <p className="text-xs leading-relaxed text-muted-foreground">
             These counts describe the street above, not every sign in {area.name}. Main commercial streets often show more
-            languages than quieter blocks.
+            languages than quieter blocks, and English-only signs are easy to miss when counting, so the share shown may run slightly high.
           </p>
         </div>
       )}

@@ -1,4 +1,4 @@
-import { Images, ListChecks } from 'lucide-react'
+import { Images, ListChecks, TriangleAlert } from 'lucide-react'
 
 export function MethodDatasets() {
   return (
@@ -39,6 +39,20 @@ export function MethodDatasets() {
           </p>
         </article>
       </div>
+      <article className="mt-6 rounded-xl border border-border bg-card p-6">
+        <div className="flex items-center gap-3">
+          <TriangleAlert className="size-5 text-accent" aria-hidden="true" />
+          <h3 className="font-semibold text-foreground">A limit on our counts: English-only signs are easy to miss</h3>
+        </div>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Each street was counted on foot by one person, and English-only signs are so common that they are easy to overlook.
+          If some were missed, the share of signs with another language is a little too high, so read the exact percentages as
+          upper estimates. To see how much this could matter, we asked how many English-only signs would have to be missing
+          before a street moved to a lower category. West Ridge is the closest: if we missed about as many English-only signs
+          as we recorded, it would drop from “well represented” to “partially represented.” For the other five streets, the
+          number missed would have to be at least 1.7 times the English-only signs we did record.
+        </p>
+      </article>
     </section>
   )
 }
